@@ -1,0 +1,6 @@
+<mat-form-field>
+  <mat-label>{{"CHOOSE_CITY" | translate}}</mat-label>
+  <mat-select [formControl]="cityCtrl">
+    <mat-option *ngFor="let city of CITIES_BE" [value]="city.id"  [disabled]="city.disabled">{{city.label}}  {{city.languages}}</mat-option>
+  </mat-select>
+</mat-form-field>

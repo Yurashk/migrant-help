@@ -1,0 +1,17 @@
+<mat-dialog-content>
+  <p>{{'LETTER_FORM.LETTER_READY' | translate}}</p>
+  <p>to : {{data.email}}</p>
+    <div class="email-holder">
+{{ email() }}
+    </div> 
+</mat-dialog-content>
+<mat-dialog-actions
+  style="display: flex; justify-content: space-between; width: 100%"
+>
+  <button matButton  (click)="onNoClick()">{{'COMMON.BACK' | translate}}</button>
+    <button matFab extended cdkFocusInitial (cdkCopyToClipboardCopied)="openSnackBar()" [cdkCopyToClipboard]="email()" >
+      <mat-icon *ngIf="!copied">content_copy</mat-icon>
+      <mat-icon color="primary" *ngIf="copied">check_circle</mat-icon>
+      {{'LETTER_FORM.COPY_BUTTON' | translate}}
+    </button>
+</mat-dialog-actions>

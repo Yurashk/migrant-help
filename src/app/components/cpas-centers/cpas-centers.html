@@ -1,0 +1,92 @@
+<div class="card-list">
+  <mat-accordion *ngIf="currentCity=='bruxelles'">
+    <mat-expansion-panel
+      (opened)="panelOpenState.set(true)"
+      (closed)="panelOpenState.set(false)"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span class="kind-badge" [class.center]="'center'">
+            {{ "CPAS.KIND.CENTER" | translate }}
+          </span>
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ "CPAS_EXPLAIN.check" | translate }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>{{ "CPAS_EXPLAIN.centers_text" | translate }}</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState.set(true)"
+      (closed)="panelOpenState.set(false)"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span class="kind-badge" [class.antenna]="'antenna'">
+            {{ "CPAS.KIND.ANTENNA" | translate }}
+          </span>
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ "CPAS_EXPLAIN.check" | translate }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>{{ "CPAS_EXPLAIN.antennas_text" | translate }}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-card *ngFor="let center of centersSorted">
+    <mat-card-title>{{ center.name }}</mat-card-title>
+
+    <mat-card-subtitle
+      >{{ center.city }}, {{ center.commune }}
+    </mat-card-subtitle>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <p><mat-icon>location_on</mat-icon>{{ center.address }}</p>
+      <p><mat-icon>outgoing_mail</mat-icon> {{ center.email }}</p>
+      <a
+        [href]="'tel:' + center.phone"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+          color: #2a2f3c;
+        "
+        ><mat-icon>call</mat-icon> {{ center.phone }}</a
+      >
+      <p *ngIf="center.email">
+        <mat-icon>hub</mat-icon>
+        <span
+          class="kind-badge"
+          [class.center]="center.kind === 'center'"
+          [class.antenna]="center.kind === 'antenna'"
+        >
+          {{
+            center.kind === "center"
+              ? ("CPAS.KIND.CENTER" | translate)
+              : ("CPAS.KIND.ANTENNA" | translate)
+          }}
+        </span>
+      </p>
+    </mat-card-content>
+
+    <mat-card-footer>
+      <button
+        matButton="elevated"
+        style="width: 150px"
+        (click)="navigateToCpas(center.id)"
+      >
+        {{ "BUTTONS.Select" | translate }}
+      </button>
+      <a
+        matMiniFab
+        [href]="mapUrlFor(center)"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open map"
+      >
+        <mat-icon>location_on</mat-icon>
+      </a>
+    </mat-card-footer>
+  </mat-card>
+</div>

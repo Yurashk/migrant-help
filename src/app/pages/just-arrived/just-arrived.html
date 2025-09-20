@@ -1,0 +1,33 @@
+<mat-card class="title-card">
+  <mat-card-title>{{ "NEW_INCOMER.title" | translate }}</mat-card-title>
+  <mat-card-content style="text-align: center">{{
+    "NEW_INCOMER.description" | translate
+  }}</mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <div *ngFor="let stepKey of stepKeys" class="guide-step">
+      <div class="icon-holder">
+        <mat-icon class="step-icon" color="primary">{{
+          stepIcons[stepKey] || "info"
+        }}</mat-icon>
+      </div>
+      <div class="guide-step-info">
+        <h4>{{ "NEW_INCOMER.steps." + stepKey + ".title" | translate }}</h4>
+        <p
+          [innerHTML]="
+            'NEW_INCOMER.steps.' + stepKey + '.description'
+              | translate
+              | markdown
+          "
+        ></p>
+      </div>
+      <mat-divider />
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-card style="margin-top: 5px">
+  <mat-card-title>{{ "USEFUL_LINKS.TITLE" | translate }}</mat-card-title>
+  <!-- <button matButton="filled" style="margin-top:20px">Basic</button>
+  <button matButton="filled">Basic</button> -->
+</mat-card>

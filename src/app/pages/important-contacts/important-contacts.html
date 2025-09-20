@@ -1,0 +1,275 @@
+<mat-card class="intro-card">
+  <mat-card-header>
+    <mat-card-title >
+      <mat-icon aria-hidden="true">contacts</mat-icon>
+      <b>{{ 'CONTACTS_PAGE.H1' | translate }}</b>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="lead">
+    {{ 'CONTACTS_PAGE.LEAD' | translate }}
+  </mat-card-content>
+</mat-card>
+<div class="cards">
+  <!-- Emergency services -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>sos</mat-icon>{{ "CONTACTS.LABELS.EMERGENCY_SERVICES" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="'tel:' + d.emergencyServices.phone"
+        aria-label="Call emergency services"
+      >
+        <mat-icon>call</mat-icon>
+        {{ "CONTACTS.ACTIONS.CALL" | translate }} 
+      </a>
+      {{ d.emergencyServices.phone }}
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Police direct -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>local_police</mat-icon>{{ "CONTACTS.LABELS.POLICE_DIRECT" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="'tel:' + d.policeDirect.phone"
+        aria-label="Call police"
+      >
+        <mat-icon>call</mat-icon>
+        {{ "CONTACTS.ACTIONS.CALL" | translate }} 
+      </a>
+      {{ d.policeDirect.phone }}
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- On-call doctor -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>medical_services</mat-icon>{{ "CONTACTS.LABELS.ON_CALL_DOCTOR" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="'tel:' + d.onCallDoctor.phone"
+        aria-label="Call on-call doctor"
+      >
+        <mat-icon>call</mat-icon>
+        {{ "CONTACTS.ACTIONS.CALL" | translate }} 
+      </a>
+      {{ d.onCallDoctor.phone }}
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Violence helpline -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>support</mat-icon>{{ "CONTACTS.LABELS.VIOLENCE_HELPLINE" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="'tel:' + d.violenceHelpline.phone"
+        aria-label="Call violence helpline"
+      >
+        <mat-icon>call</mat-icon>
+        {{ "CONTACTS.ACTIONS.CALL" | translate }} 
+      </a>
+      {{ d.violenceHelpline.phone }}
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Missing children -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>child_care</mat-icon>{{ "CONTACTS.LABELS.MISSING_CHILDREN" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="'tel:' + d.missingChildren.phone"
+        aria-label="Call Child Focus"
+      >
+        <mat-icon>call</mat-icon>
+        {{ "CONTACTS.ACTIONS.CALL" | translate }} 
+      </a>
+      {{ d.missingChildren.phone }}
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Immigration Office -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>public</mat-icon>{{ "CONTACTS.LABELS.IMMIGRATION_OFFICE" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.immigrationOffice.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open Immigration Office website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Newcomers info -->
+  <mat-card class="contact-card" >
+    <mat-card-content class="label">
+      <mat-icon matListIcon>info</mat-icon>{{ "CONTACTS.LABELS.NEWCOMERS_INFO" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.newcomersInfo.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open newcomers info website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- CPAS -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>diversity_1</mat-icon>{{ "CONTACTS.LABELS.CPAS" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.cpas.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open CPAS website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Red Cross -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>volunteer_activism</mat-icon>{{ "CONTACTS.LABELS.RED_CROSS" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.redCross.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open Red Cross website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Actiris -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>work</mat-icon>{{ "CONTACTS.LABELS.ACTIRIS" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.actiris.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open Actiris website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- VDAB -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>work_outline</mat-icon>{{ "CONTACTS.LABELS.VDAB" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.vdab.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open VDAB website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- FOREM -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>business_center</mat-icon>{{ "CONTACTS.LABELS.FOREM" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.forem.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open FOREM website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+
+  <!-- Mutualities -->
+  <mat-card class="contact-card">
+    <mat-card-content class="label">
+      <mat-icon matListIcon>health_and_safety</mat-icon>{{ "CONTACTS.LABELS.MUTUALITIES" | translate }}
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <a
+        matButton="outlined"
+        [href]="d.mutualities.websites[0]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open CM website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+      <a
+        matButton="outlined"
+        [href]="d.mutualities.websites[1]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open Partena website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+      <a
+        matButton="outlined"
+        [href]="d.mutualities.websites[2]"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open Solidaris website"
+      >
+        <mat-icon>language</mat-icon>
+        {{ "CONTACTS.ACTIONS.WEBSITE" | translate }}
+      </a>
+    </mat-card-footer>
+  </mat-card>
+</div>

@@ -1,0 +1,32 @@
+ <mat-card class="pp-card">
+      <mat-card-title style="justify-content: center;text-align: center;margin-top: 20px;">{{ 'PRIVACY.TITLE' | translate }}</mat-card-title>
+      <mat-card-content>
+
+        <p class="muted">
+          {{ 'PRIVACY.UPDATED_AT' | translate:{ date: '09.09.2025' } }}
+        </p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.INTRO.TITLE' | translate }}</h3>
+        <p>
+          {{ 'PRIVACY.SECTIONS.INTRO.TEXT' | translate:{
+            appName: ('APP.NAME' | translate)
+          } }}
+        </p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.INFO_NATURE.TITLE' | translate }}</h3>
+        <p>{{ 'PRIVACY.SECTIONS.INFO_NATURE.TEXT' | translate }}</p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.DATA.TITLE' | translate }}</h3>
+        <p>{{ 'PRIVACY.SECTIONS.DATA.TEXT' | translate }}</p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.LIABILITY.TITLE' | translate }}</h3>
+        <p>{{ 'PRIVACY.SECTIONS.LIABILITY.TEXT' | translate }}</p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.LINKS.TITLE' | translate }}</h3>
+        <p>{{ 'PRIVACY.SECTIONS.LINKS.TEXT' | translate }}</p>
+
+        <h3>{{ 'PRIVACY.SECTIONS.CHANGES.TITLE' | translate }}</h3>
+        <p>{{ 'PRIVACY.SECTIONS.CHANGES.TEXT' | translate }}</p>
+
+      </mat-card-content>
+    </mat-card>

@@ -1,0 +1,48 @@
+.title-card {
+  align-content: center;
+  margin-bottom: 20px;
+}
+mat-card {
+   color:  #2a2f3c;
+  padding-top: 10px;
+  background-color: white;
+  mat-card-title {
+    text-align: center;
+  }
+}
+
+.guide-description {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.guide-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  .icon-holder {
+    padding: 3px;
+    width: 30px;
+    mat-icon {
+      color: #3e74adc8;
+      font-size: 26px;
+      margin-top: 4px;
+    }
+  }
+
+  h4 {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: #3f51b5;
+    text-decoration: underline;
+  }
+}

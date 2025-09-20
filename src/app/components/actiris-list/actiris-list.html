@@ -1,0 +1,21 @@
+<div class="actiris-list">
+  <mat-card class="actiris-card" *ngFor="let c of allActirisesSorted">
+    <mat-card-title>{{ c.name }}</mat-card-title>
+    <mat-card-subtitle>{{ c.city }}({{ c.postalCode }})</mat-card-subtitle>
+
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <p><mat-icon>place</mat-icon> {{ c.address }}</p>
+      <p><mat-icon>call</mat-icon> {{ c.phone }}</p>
+      <p><mat-icon>language</mat-icon> {{ c.languages.join(", ") }}</p>
+    </mat-card-content>
+    <mat-card-footer>
+      <a matButton="elevated" color="primary" (click)="navigateToActiris(c.id)">
+        {{ "BUTTONS.Select" | translate }}
+      </a>
+      <a matMiniFab [href]="mapUrlFor(c)" target="_blank">
+        <mat-icon>location_on</mat-icon>
+      </a>
+    </mat-card-footer>
+  </mat-card>
+</div>

@@ -1,0 +1,21 @@
+ <nav class="breadcrumbs" aria-label="breadcrumb">
+      <ol>
+        <li *ngFor="let c of crumbs(); let last = last">
+          <a *ngIf="!last && c.url; else current" [routerLink]="c.url">
+            <ng-container *ngIf="c.labelKey; else raw1">
+              {{ c.labelKey | translate:c.params }}
+            </ng-container>
+            <ng-template #raw1>{{ c.label }} </ng-template>
+            <span>|</span>
+          </a>
+          <ng-template #current>
+            <span aria-current="page">
+              <ng-container *ngIf="c.labelKey; else raw2">
+                {{ c.labelKey | translate:c.params }}
+              </ng-container>
+              <ng-template #raw2>{{ c.label }}</ng-template>
+            </span>
+          </ng-template>
+        </li>
+      </ol>
+    </nav>

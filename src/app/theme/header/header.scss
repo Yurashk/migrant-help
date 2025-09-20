@@ -1,0 +1,28 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+    background-color: #C6FF00;
+  }
+  mat-toolbar{
+    background-color: #0288D1;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    color:white;
+    height: 85px;
+    span i{
+        color: white;
+    }
+    .router-link{
+        color:white
+    }
+    button{
+        color: white;
+    }
+    a{
+        cursor: pointer;
+        &:hover{
+            color: greenyellow;
+        }
+    }
+  }

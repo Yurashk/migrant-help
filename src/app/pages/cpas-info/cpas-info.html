@@ -1,0 +1,28 @@
+<mat-card style="margin-bottom: 20px">
+  <mat-card-title>{{ "cpas_steps_title" | translate }}</mat-card-title>
+  <mat-card-content style="text-align: justify; margin-top: 10px;">
+    {{ "cpas_list_title" | translate }}
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <div
+      *ngFor="let stepKey of stepArray; let i = index"
+      [attr.data-index]="i"
+      class="guide-step"
+    >
+      <div class="icon-holder">
+        <mat-icon class="step-icon" color="primary">{{
+          stepIcons[i] || "info"
+        }}</mat-icon>
+      </div>
+      <div class="guide-step-info">
+        <h4>{{ "cpas_steps." + stepKey + ".title" | translate }}</h4>
+        <p
+          [innerHTML]="'cpas_steps.' + stepKey + '.description' | translate"
+        ></p>
+      </div>
+      <mat-divider />
+    </div>
+  </mat-card-content>
+</mat-card>

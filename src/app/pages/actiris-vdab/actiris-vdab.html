@@ -1,0 +1,17 @@
+<div class="cpas-container">
+  <mat-card>
+    <mat-card-content> {{ "WHAT_IS_ACTIRIS" | translate }}</mat-card-content>
+  </mat-card>
+  <div class="search-bar-container">
+    <div class="search-container">
+      <app-search-bar
+        class="search-bar"
+        (searchChanged)="getSearchTerm($event)"
+      ></app-search-bar>
+    </div>
+    <div class="search-container">
+      <app-choose-city class="search-bar"></app-choose-city>
+    </div>
+  </div>
+  <app-actiris-list [searchTerm]="searchTerm()"></app-actiris-list>
+</div>

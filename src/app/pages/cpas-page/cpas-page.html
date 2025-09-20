@@ -1,0 +1,28 @@
+<div class="cpas-container">
+  <mat-card>
+    <mat-card-title><mat-icon>location_city</mat-icon>CPAS/OCMW</mat-card-title>
+    <mat-card-content>
+      <span>{{ "WHAT_IS_CPAS" | translate }}</span>
+      <button
+        style="width: 200px; margin-top: 20px"
+        routerLink="/cpas-info"
+        matButton="elevated"
+      >
+        {{ "CPAS_HELP" | translate }}?
+      </button></mat-card-content
+    >
+  </mat-card>
+  <div class="search-bar-container">
+    <div class="search-container">
+      <app-search-bar
+        class="search-bar"
+        (searchChanged)="getSearchTerm($event)"
+      ></app-search-bar>
+    </div>
+    <div class="search-container">
+      <app-choose-city class="search-bar"></app-choose-city>
+    </div>
+  </div>
+  
+  <app-cpas-centers [searchTerm]="searchTerm()"></app-cpas-centers>
+</div>

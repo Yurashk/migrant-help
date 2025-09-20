@@ -1,0 +1,42 @@
+<mat-card class="cpas-card">
+  <mat-card-header>
+    <mat-card-title>{{ currentCpas?.name }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ currentCpas?.commune }} — {{ currentCpas?.city }}</mat-card-subtitle
+    >
+  </mat-card-header>
+
+  <mat-card-content *ngIf="id">
+    <p>
+      <mat-icon color="primary">location_on</mat-icon>
+      {{ currentCpas?.address }}
+    </p>
+    <p *ngIf="currentCpas?.phone">
+      <mat-icon color="primary">call</mat-icon>
+      <a href="tel:{{ currentCpas?.phone }}">{{ currentCpas?.phone }}</a>
+    </p>
+    <p *ngIf="currentCpas?.email">
+      <mat-icon color="primary">email</mat-icon>
+      <a href="mailto:{{ currentCpas?.email }}">{{ currentCpas?.email }}</a>
+    </p>
+    <p *ngIf="currentCpas?.website">
+      <mat-icon color="primary">public</mat-icon>
+      <a href="{{ currentCpas?.website }}" target="_blank">{{
+        currentCpas?.website
+      }}</a>
+    </p>
+    <p *ngIf="currentCpas?.postalCode">
+      <mat-icon color="primary">local_post_office</mat-icon>
+      {{ currentCpas?.postalCode }}
+    </p>
+
+    <mat-divider class="my-3"></mat-divider>
+    <div class="buttons-help-container">
+        
+        <button matFab extended (click)="navigateToCpas(currentCpas?.id)">
+        <mat-icon>mail</mat-icon>
+        {{"LETTER_STEPPER.TITLE" | translate}}
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

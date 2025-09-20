@@ -1,0 +1,30 @@
+.example-input-wrapper {
+  margin-bottom: 16px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+mat-card {
+  min-height: 80vh;
+  background-color: white;
+  color: #2a2f3c;
+  mat-card-title {
+    text-align: center;
+    margin-top:10px;
+    color: #2a2f3c;
+  }
+  mat-divider{
+    background-color: #2a2f3c;
+  }
+  mat-card-subtitle {
+    text-align: justify;
+    padding: 15px;
+    color: #2a2f3c;
+  }
+  mat-vertical-stepper {
+    background-color: white;
+    color: #2a2f3c;
+  }
+}

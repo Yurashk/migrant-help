@@ -1,0 +1,83 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.intro-card {
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  background-color: white;
+  color: #2a2f3c;
+  .mat-mdc-card-title,
+  mat-card-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 400;
+    gap: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    mat-icon {
+      font-size: 24px;
+      width: 24px;
+      height: 24px;
+      color: rgb(123, 2, 2);
+    }
+  }
+}
+/* 2 карточки в ряд, на мобиле — одна */
+.contact-card {
+  flex: 1 1 calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: white;
+  letter-spacing: 0.5px;
+  min-width: 290px; /* чтобы не схлопывалась на узких экранах */
+  color: #2a2f3c;
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    mat-icon {
+      color: rgba(123, 2, 2, 0.829);
+    }
+  }
+  mat-card-footer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    gap: 20px;
+    font-weight: 450;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-basis: 100%;
+  }
+}
+
+/* косметика */
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 0 8px;
+}
+
+.label {
+  font-weight: 600;
+  padding: 0 8px 8px 8px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+  margin-top: auto; /* прижимает футер к низу при разной высоте контента */
+}

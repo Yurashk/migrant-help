@@ -1,0 +1,33 @@
+<mat-drawer-container class="app-container">
+  <mat-drawer #drawer mode="over" class="app-drawer">
+    <button
+      mat-icon-button
+      style="margin-left: 5px; margin-top: 10px"
+      (click)="drawer.toggle()"
+      aria-label="Menu"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-divider  style="margin-top: 20px; margin-bottom: 20px;color: rgb(120, 128, 136) !important;" />
+    <div class="drawer-container">
+      <a *ngFor="let item of menuItems" (click)="goToItem(item.link)"
+        >{{`MENU.${item.name}`|translate}}
+        <mat-icon>{{ item.icon }}</mat-icon>
+      </a>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <app-header [drawer]="drawer"></app-header>
+
+    <main class="container">
+      <mat-card class="main-card">
+        <app-bred-crumbs></app-bred-crumbs>
+        <router-outlet></router-outlet>
+        
+      </mat-card>
+    </main>
+    <app-footer></app-footer>
+  </mat-drawer-content>
+</mat-drawer-container>
+<!-- <app-nav-bar></app-nav-bar> -->

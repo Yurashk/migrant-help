@@ -1,0 +1,20 @@
+<div class="bottom-nav mat-elevation-z6">
+      <button matFab  [routerLink]="'/cpas'" routerLinkActive="active" aria-label="CPAS">
+        <mat-icon>apartment</mat-icon>
+        <span>CPAS</span>
+      </button>
+
+      <button matFab  color="primary"
+              [routerLink]="'/'"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLinkActive="active"
+              aria-label="Home"
+              class="home-btn">
+        <mat-icon>home</mat-icon>
+      </button>
+
+      <button matFab  [routerLink]="'/actiris'" routerLinkActive="active" aria-label="Actiris">
+        <mat-icon>work</mat-icon>
+        <span>Actiris</span>
+      </button>
+    </div>

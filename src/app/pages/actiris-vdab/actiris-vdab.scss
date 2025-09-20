@@ -1,0 +1,52 @@
+
+.cpas-container{
+  margin-bottom: 50px;
+  min-height: 100vh;
+  
+}
+.actiris-list {
+  --gap: clamp(12px, 2vw, 20px);
+  --minw: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--minw), 1fr));
+  gap: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #2a2f3c;
+}
+.search-bar-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  .search-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 10px;
+    .search-bar{
+      width: 100%;
+    }
+  }
+
+}
+
+  @media (max-width: 768px) {
+    .search-bar-container{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+    .search-bar{
+      width: 100%;
+    }
+  }
+  
+// --- Card aesthetics ---
+mat-card{
+  background-color: white;
+}
