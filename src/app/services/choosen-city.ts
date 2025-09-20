@@ -81,7 +81,7 @@ export class ChoosenCity {
 
   private readInitial(): string {
     const v = localStorage.getItem(KEY) || '';
-    return this.allowed.has(v) ? v : 'bruxelles';
+    return v ? v : 'bruxelles';
   }
   readonly city$ = new BehaviorSubject<string>(this.readInitial());
 
