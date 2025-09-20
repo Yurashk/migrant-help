@@ -1,0 +1,394 @@
+{
+  "NAV": {
+    "HOME": "Ana Sayfa",
+    "CPAS": "CPAS",
+    "CPAS_DETAIL": "CPAS detayı",
+    "CPAS_INFO": "CPAS bilgisi",
+    "CPAS_LETTER": "CPAS için mektup",
+    "CONTACTS": "Önemli telefonlar",
+    "NEWCOMER": "Yeni geldim",
+    "EMPLOYMENT": "İstihdam",
+    "ACTIRIS_LETTER": "Actiris'e Mektup"
+  },
+  "MAIN_TITLE": "Yalnız değilsiniz",
+  "CHOOSE_CITY": "Şehir seçin",
+  "SEARCH": "Posta kodunuzu veya bölgenizin adını girin",
+  "CPAS": { "KIND": { "CENTER": "Merkez", "ANTENNA": "Şube" } },
+  "CPAS_EXPLAIN": {
+    "centers_title": "Merkezler (belediye CPAS)",
+    "centers_text": "Belediyenizin ana CPAS ofisi. Başvuruları alır, uygunluk kararlarını verir, ödemeleri düzenler, konut/sağlık sigortası desteği sağlar ve resmi belgeler verir. Yasal referans noktasıdır.",
+    "antennas_title": "Şubeler (sosyal şube)",
+    "antennas_text": "Yaşadığınız yere daha yakın CPAS noktaları. İlk başvuru, yönlendirme, belge toplama, sosyal değerlendirme yaparlar. Nihai karar yine belediyenizin CPAS merkezinde verilir.",
+    "check": "Görüntüle"
+  },
+  "WHAT_IS_CPAS": "CPAS (Kamu Sosyal Yardım Merkezi), Belçika’da ihtiyaç sahibi kişilere destek veren belediye hizmetidir. Sosyal, mali, tıbbi veya maddi yardım sağlar. Bu sayfada, posta kodunuzu veya adresinizi kullanarak size bağlı CPAS’ı bulabilirsiniz.",
+  "CPAS_HELP": "Nasıl yardım alabilirsiniz",
+  "BUTTONS": {
+    "Select": "Seç"
+  },
+  "WHAT_IS_ACTIRIS": "Actiris, Brüksel Başkent Bölgesi’nin kamu istihdam kurumudur. İş arayanlara kayıt, iş eşleştirme, eğitim, kariyer danışmanlığı ve işveren programlarıyla destek verir. Bu sayfada, ikamet ettiğiniz ilçe/posta koduna veya sokağa göre size uygun Actiris merkezini bulabilirsiniz.",
+  "WHAT_IS_VDAB": "VDAB (Felemenkçe: Flanders İstihdam ve Mesleki Eğitim Hizmeti), Flandre ve Brüksel’in Felemenkçe konuşan sakinleri için resmi istihdam kurumudur. İş ilanları, eğitimler, kariyer danışmanlığı ve yeniden beceri kazandırma programları sunar. Bu sayfada, bölgeye göre posta kodunuz veya yaşadığınız sokak üzerinden uygun VDAB merkezini bulabilirsiniz.",
+  "CONTACTS_PAGE": {
+    "META_TITLE": "Belçika’daki önemli iletişimler — acil servisler, sosyal yardım, iş, sağlık",
+    "META_DESCRIPTION": "Acil numaralar 112/101/1733, yardım hatları 1712/116000, CPAS, Kızılhaç, Actiris/VDAB/FOREM ve sağlık sigortaları. Aramak veya siteyi açmak için tıklayın.",
+    "H1": "Önemli iletişimler",
+    "LEAD": "Tüm ana telefon numaraları ve resmi siteler tek yerde: acil servisler, sosyal yardım, istihdam ve sağlık. İlgili servisi aramak veya sitesini açmak için tıklayın."
+  },
+  "CONTACTS": {
+    "TITLE": "Önemli telefonlar",
+    "ACTIONS": { "CALL": "Ara", "WEBSITE": "Web sitesi" },
+    "LABELS": {
+      "EMERGENCY_SERVICES": "Acil servisler (polis / itfaiye / ambulans)",
+      "POLICE_DIRECT": "Polis (doğrudan hat)",
+      "ON_CALL_DOCTOR": "Nöbetçi doktor (mesai dışı)",
+      "VIOLENCE_HELPLINE": "Şiddet yardım hattı (Flanders/Brüksel)",
+      "MISSING_CHILDREN": "Kayıp çocuklar (Child Focus)",
+      "IMMIGRATION_OFFICE": "Göçmenlik ofisi (bilgi)",
+      "NEWCOMERS_INFO": "Yeni gelenler için bilgi",
+      "CPAS": "CPAS/OCMW (sosyal yardım)",
+      "RED_CROSS": "Belçika Kızılhaçı",
+      "ACTIRIS": "Actiris (Brüksel)",
+      "VDAB": "VDAB (Flanders)",
+      "FOREM": "FOREM (Valonya)",
+      "MUTUALITIES": "Karşılıklı sağlık sigortaları"
+    }
+  },
+  "MENU": {
+    "HELP": "Yardım",
+    "HOME": "Ana Sayfa",
+    "FAQ": "SSS",
+    "CPAS": "CPAS",
+    "ACTIRIS": "Actiris",
+    "CONTACTS": "Önemli telefonlar",
+    "PRIVACY": "Gizlilik Politikası"
+  },
+  "USEFUL_LINKS": {
+    "TITLE": "Faydalı bağlantılar"
+  },
+  "NEW_INCOMER": {
+    "title": "Belçika’ya Yeni Gelenler İçin Adım Adım Rehber",
+    "description": "Bu rehber, Belçika’ya geldiğinizde neler yapmanız gerektiğini anlamanıza yardımcı olacaktır.",
+    "steps": {
+      "STEP_1": {
+        "icon": "verified_user",
+        "title": "Belçika’da Koruma Alın",
+        "description": "Brüksel’deki kayıt merkezine gidin: Rue Belliard 68, 1000 Bruxelles. Merkez pazartesiden cumaya açıktır ve kayıt işlemleri saat 08:30’da başlar. Kontenjan sınırlıdır, bu nedenle sabah erken gelmeniz tavsiye edilir. Burada geçici koruma veya mülteci statüsü için başvurabilirsiniz."
+      },
+      "STEP_2": {
+        "icon": "home",
+        "title": "Konut Bulun veya Mülteci Kampında Kalın",
+        "description": "Geçici veya kalıcı konut arayın. Eğer konutunuz yoksa, bir mülteci kabul merkezine yönlendirilebilirsiniz."
+      },
+      "STEP_3": {
+        "icon": "how_to_reg",
+        "title": "Belediyeye Kayıt Olun",
+        "description": "Adresinizi kaydetmek, Annex 15 almak ve A kartına başvurmak için belediyenize gidin."
+      },
+      "STEP_4": {
+        "icon": "domain",
+        "title": "CPAS’a Kayıt Olun",
+        "description": "Sosyal yardıma başvurmak için yerel CPAS’ınıza gidin."
+      },
+      "STEP_5": {
+        "icon": "work",
+        "title": "İş Bulma Kurumuna (Actiris/VDAB) Kayıt Olun",
+        "description": "Bölgenize göre Actiris veya VDAB’ye kayıt olun. İş arama veya iş arayan statüsü kazanmak için."
+      },
+      "STEP_6": {
+        "icon": "volunteer_activism",
+        "title": "Sosyal Yardımlara Başvurun",
+        "description": "Belediye ve CPAS’a kayıt olduktan sonra, uygun iseniz sosyal yardımlara başvurabilirsiniz."
+      },
+      "STEP_7": {
+        "icon": "school",
+        "title": "Dil Kurslarına Başlayın",
+        "description": "Birçok bölgede göçmenler için ücretsiz Fransızca veya Hollandaca kursları sunulmaktadır."
+      }
+    }
+  },
+  "HOME": {
+    "APP_INFO": {
+      "TITLE": "Belçika’daki Göçmenler İçin Destek",
+      "DESCRIPTION": "Bu uygulama, Belçika’daki göçmenlerin CPAS, Actiris ve VDAB gibi yerel hizmetlerde yolunu bulmasına yardımcı olur. Çok dilli destek ve yapay zekâ ile yetkililerle iletişimi kolaylaştırır.",
+      "FEATURES_TITLE": "Ana Özellikler",
+      "FEATURES": {
+        "FAQ": "En sık sorulan sorularınıza yanıt veren akıllı SSS.",
+        "CPAS_SEARCH": "Şehir ve bölgeye göre CPAS merkezlerini arayın.",
+        "LETTER_BUILDER": "Kamu kurumlarıyla iletişim için resmi mektuplar oluşturun.",
+        "MULTILANG": "Ukraynaca, Rusça, İngilizce, Fransızca ve Hollandaca dillerinde destek.",
+        "PRIVACY": "Kişisel veriler saklanmaz. Sorularınız güvenli ve anonimdir."
+      }
+    },
+    "SECTIONS": {
+      "NEWCOMER": {
+        "TITLE": "Belçika’ya yeni geldim!",
+        "DESCRIPTION": "Yeni geldiniz ve ne yapacağınızı bilmiyor musunuz? Sizin için adım adım rehber hazırladık.",
+        "BUTTON": "Rehberi aç"
+      },
+      "CONTACTS": {
+        "TITLE": "Önemli telefonlar",
+        "DESCRIPTION": "Acil servisler, sosyal yardım ve faydalı kurumlar",
+        "BUTTON": "Telefonları gör"
+      },
+      "LAWYER": {
+        "TITLE": "Hukuki Yardım",
+        "DESCRIPTION": "Göç, konut ve sosyal davalar için avukat bulun",
+        "BUTTON": "Hukuki yardım al"
+      },
+      "TRANSLATOR": {
+        "TITLE": "Çeviri Yardımı",
+        "DESCRIPTION": "Fransızca veya Hollandaca belgelerde yardıma mı ihtiyacınız var? Çevirmen bulun.",
+        "BUTTON": "Çevirmen bul"
+      },
+      "AGENT": {
+        "TITLE": "Emlak Danışmanı",
+        "DESCRIPTION": "Konut bulmak için emlak danışmanlarıyla bağlantı kurun",
+        "BUTTON": "Danışman bul"
+      },
+      "CPAS": {
+        "TITLE": "CPAS Merkezleri",
+        "DESCRIPTION": "Şehriniz için adres ve iletişim bilgilerini bulun",
+        "BUTTON": "CPAS ara"
+      },
+      "ACTIRIS": {
+        "TITLE": "Actiris / VDAB",
+        "DESCRIPTION": "Şehrinize veya adresinize göre iş merkezi",
+        "BUTTON": "Ajansı bul"
+      },
+      "LETTER": {
+        "TITLE": "Mektup yazmaya yardım",
+        "DESCRIPTION": "Talebinize göre resmi mektuplar oluşturun",
+        "BUTTON": "Yazmaya başla"
+      }
+    }
+  },
+  "HELLO": "Merhaba",
+  "LANGUAGE": "Dil",
+  "cpas_steps_title": "CPAS ile iletişim (adımlar)",
+  "cpas_list_title": "Bu rehber, doğru belgeleri hazırlamanıza, yerel CPAS’ınızı bulmanıza ve ilk randevunuzu almanıza yardımcı olur. Açık ve uygulanabilir adımlar ne getirmeniz gerektiğini, tipik karar sürelerini ve sonrasını açıklar.",
+  "cpas_steps": {
+    "step_1": {
+      "title": "Belgeleri Hazırlayın",
+      "description": "Annex 15, pasaport veya kimlik kartı, adres kanıtı (kira sözleşmesi, kayıt veya ev sahibinin belgesi), banka hesap dökümleri (son 1–3 ay), diğer belgeler (gelir kanıtı, sağlık raporları gerekirse)."
+    },
+    "step_2": {
+      "title": "Yaşadığınız Yer CPAS’ını Seçin",
+      "description": "Belediyenizin CPAS’ını bulun (posta kodu veya adres ile)."
+    },
+    "step_3": {
+      "title": "İlk İletişim",
+      "description": "Telefon edin veya e-posta gönderin. Bazı CPAS’lar çevrimiçi randevu formu sunar."
+    },
+    "step_4": {
+      "title": "Randevu Alın",
+      "description": "Bir sosyal danışman ile görüşme ayarlanacaktır. Ön telefon görüşmesi olabilir."
+    },
+    "step_5": {
+      "title": "Görüşme",
+      "description": "Tüm belgeleri getirin. Durumunuzu açıklayın: konut, gelir, ihtiyaçlar. Dosyanız açılır."
+    },
+    "step_6": {
+      "title": "Kararı Bekleyin",
+      "description": "CPAS dosyanızı inceler (genellikle 7–30 gün). Ek belgeler istenebilir."
+    },
+    "step_7": {
+      "title": "Yardımın Alınması",
+      "description": "Olumlu karar halinde: sosyal yardım, konut desteği, sağlık sigortası veya kurslar. Ret durumunda – itiraz hakkı vardır."
+    }
+  },
+  "LETTER_FORM": {
+    "LETTER_READY": "Mektubunuz kopyalanmaya hazır",
+    "COPY_BUTTON": "Mektubu kopyala",
+    "REQUESTS": {
+      "housing": "Konut desteği",
+      "financialAid": "Mali yardım",
+      "foodAid": "Gıda yardımı",
+      "healthSupport": "Tıbbi destek",
+      "translationSupport": "Çeviri yardımı",
+      "psychologicalSupport": "Psikolojik destek",
+      "other": "Diğer"
+    },
+    "REQUESTS_ACTIRIS": {
+      "registerJobseeker": "İş arayan olarak kayıt",
+      "updateProfile": "Profil/bilgileri güncelle",
+      "findVacancies": "İlan bulma",
+      "employerReferrals": "İşverenlere yönlendirme",
+      "cvReview": "CV inceleme ve iyileştirme",
+      "coverLetter": "Ön yazı desteği",
+      "interviewCoaching": "Mülakat koçluğu",
+      "languageCourses": "Dil kursları (FR/NL/EN)",
+      "languageAssessment": "Dil seviye değerlendirmesi",
+      "trainingCourses": "Eğitimler (BT/mesleki)",
+      "trainingAllowances": "Eğitim destekleri/subvansiyonları",
+      "diplomaRecognition": "Diploma denklik/akreditasyon (NARIC vb.)",
+      "internships": "Staj/yerleştirme",
+      "onTheJobTraining": "İşbaşı eğitim",
+      "careerGuidance": "Kariyer danışmanlığı",
+      "skillsValidation": "Yetenek doğrulama",
+      "inclusiveSupport": "Kapsayıcı destek (engellilik, gençler, uzun süre işsiz)",
+      "other": "Diğer (belirtiniz)"
+    },
+    "NATIONALITIES": {
+      "ukrainian": "Ukraynalı",
+      "russian": "Rus",
+      "belarusian": "Beyaz Rus",
+      "afghan": "Afgan",
+      "syrian": "Suriyeli",
+      "turkish": "Türk",
+      "moroccan": "Faslı",
+      "congolese": "Kongolu",
+      "other": "Diğer"
+    },
+    "STATUSES": {
+      "temporary_protection": "Geçici koruma",
+      "asylum_seeker": "Sığınmacı",
+      "refugee": "Mülteci",
+      "card_a": "A Kartı sahibi",
+      "card_b": "B Kartı sahibi",
+      "without_status": "Statüsüz",
+      "other": "Diğer"
+    },
+    "STEPS": {
+      "PERSONAL": "Kişisel Bilgiler",
+      "STATUS": "Statünüz",
+      "REQUEST": "Talep Detayları",
+      "LOCATION": "Yer & Dil"
+    },
+    "FIELDS": {
+      "NAME": "Ad",
+      "SURNAME": "Soyad",
+      "NATIONALITY": "Uyruk",
+      "STATUS": "Mevcut Statü",
+      "REQUEST_TYPE": "Talep Türü",
+      "NEED_TRANSLATOR": "Çevirmen gerekli",
+      "COMMUNE": "Belediye",
+      "LANGUAGE": "Tercih edilen dil",
+      "FAMILY": "Aile için randevu"
+    },
+    "SUBMIT": "Mektup Oluştur"
+  },
+  "LETTER_STEPPER": {
+    "TITLE": "Mektubunuzu oluşturun",
+    "DESCRIPTION": "Bilgilerinizi pasaportunuzdaki gibi Latin alfabesiyle (A–Z) girin. İşlemi tamamladıktan sonra oluşturulan mektubu kopyalayabilir veya e‑posta uygulamanız kuruluysa tüm alanları önceden doldurulmuş şekilde açabilirsiniz. İpucu: Göndermeden önce son adımda önizlemeyi kontrol edin.",
+    "ACTIONS": {
+      "COPY": "Mektubu kopyala",
+      "OPEN_MAIL": "Postada aç"
+    },
+    "PREVIEW_PLACEHOLDER": "Mektubunuz burada görünecek."
+  },
+  "HOUSE_SEARCH": {
+    "title": "Konut kiralama",
+    "catch_desc": "Belçika’da yasal oturum için konut sahibi olmak zorunludur. Bu, kiralık bir daire, oda veya sosyal konut olabilir.",
+    "websites": "Emlak siteleri",
+    "websites_desc": "Popüler platformları kullanarak daire, stüdyo veya ev bulmak için kendi başınıza konut arayabilirsiniz.",
+    "agencies": "Emlak ajansları",
+    "agencies_desc": "Kiralama sürecinde size yardımcı olacak ve seçenekler sunacak emlak danışmanlarına başvurabilirsiniz.",
+    "intermediaries": "Aracılar",
+    "intermediaries_desc": "Gelir belgeniz yoksa veya yalnızca §24’e göre oturum belgeniz varsa aracılara başvurabilirsiniz.",
+    "HOUSE_SITES": {
+      "websites": {
+        "title": "Emlak siteleri",
+        "description": "Popüler platformları kullanarak daire, stüdyo veya ev bulmak için kendi başınıza konut arayabilirsiniz.",
+        "items": [
+          {
+            "name": "Immoweb",
+            "url": "https://www.immoweb.be",
+            "short_desc": "Belçika’daki en büyük emlak portalı, gelişmiş filtrelerle."
+          },
+          {
+            "name": "Zimmo",
+            "url": "https://www.zimmo.be",
+            "short_desc": "Immoweb’e popüler bir alternatif, güncel ilanlarla."
+          },
+          {
+            "name": "Logic-Immo",
+            "url": "https://www.logic-immo.be",
+            "short_desc": "Geniş ilan yelpazesiyle bilinen bir platform."
+          },
+          {
+            "name": "Immoscoop",
+            "url": "https://www.immoscoop.be",
+            "short_desc": "İlanlar büyük portallarda yayınlanmadan önce ajanslardan gelir."
+          },
+          {
+            "name": "Appartager",
+            "url": "https://www.appartager.be",
+            "short_desc": "Ortak konut (colocation/flatshare) için platform."
+          },
+          {
+            "name": "Facebook Marketplace",
+            "url": "https://www.facebook.com/marketplace/",
+            "short_desc": "Ev sahiplerinin doğrudan ilan verdiği birçok grup."
+          }
+        ]
+      },
+      "agencies": {
+        "title": "Emlak ajansları",
+        "description": "Kiralama sürecinde profesyonel destek almak için emlak ajanslarına başvurabilirsiniz.",
+        "items": [
+          {
+            "name": "ERA",
+            "url": "https://www.era.be",
+            "short_desc": "Geniş veritabanına sahip ulusal emlak ağı."
+          },
+          {
+            "name": "Century21",
+            "url": "https://www.century21.be",
+            "short_desc": "Tüm büyük şehirlerde bulunan uluslararası emlak ağı."
+          },
+          {
+            "name": "Trevi",
+            "url": "https://www.trevi.be",
+            "short_desc": "Belçika genelinde ofisleri olan köklü ajans."
+          },
+          {
+            "name": "We Invest",
+            "url": "https://weinvest.be",
+            "short_desc": "Çevrim içi araçlara sahip modern ajans, Brüksel’de güçlü varlık."
+          },
+          {
+            "name": "Victoire Properties",
+            "url": "https://www.victoire.be",
+            "short_desc": "Brüksel ve premium konutlarda uzmanlaşmış ajans."
+          }
+        ]
+      }
+    }
+  },
+  "PRIVACY": {
+    "LINK": "Gizlilik Politikası",
+    "TITLE": "Gizlilik Politikası",
+    "UPDATED_AT": "Son güncelleme: {{date}}",
+    "SECTIONS": {
+      "INTRO": {
+        "TITLE": "1. Giriş",
+        "TEXT": "{{appName}}, Belçika'ya yeni gelenler için bir bilgi aracıdır. Veriler resmi kamu kaynaklarından derlenmiştir ve değişebilir. Bilgilerin doğruluğunu resmi devlet sitelerinde kontrol etmenizi öneririz."
+      },
+      "INFO_NATURE": {
+        "TITLE": "2. Bilgilendirici nitelik",
+        "TEXT": "Sağlanan bilgiler yalnızca rehberlik amaçlıdır; hukuki veya resmi tavsiye değildir. Karar süreçlerinde yetkili kurumlara (CPAS, Actiris, VDAB, belediyeler vb.) başvurunuz."
+      },
+      "DATA": {
+        "TITLE": "3. Veri toplama ve işleme",
+        "TEXT": "Uygulama, kullanıcıların kişisel verilerini toplamaz, saklamaz veya işlemez. İleride iletişim formları veya analitik eklenirse, bu politika güncellenecek ve gerekli bildirimler yapılacaktır."
+      },
+      "LIABILITY": {
+        "TITLE": "4. Sorumluluk sınırlaması",
+        "TEXT": "Bilgileri güncel tutmaya çalışsak da, tamlık veya doğruluk garantisi vermeyiz. Geliştiriciler, bilgilerin kullanımından veya mevzuat/politika değişikliklerinden kaynaklanan sonuçlardan sorumlu değildir."
+      },
+      "LINKS": {
+        "TITLE": "5. Harici bağlantılar",
+        "TEXT": "Uygulama üçüncü taraf sitelere bağlantılar içerebilir. Bu sitelerin içeriğini kontrol etmeyiz ve bilgilerinin doğruluğu veya güncelliğinden sorumlu değiliz."
+      },
+      "CHANGES": {
+        "TITLE": "6. Politika değişiklikleri",
+        "TEXT": "Bu politika belirli aralıklarla güncellenebilir. Son değişikliklerden haberdar olmak için bu sayfayı ara sıra kontrol etmenizi tavsiye ederiz."
+      }
+    }
+  },
+  "COMMON": {
+    "NEXT": "İleri",
+    "BACK": "Geri",
+    "NO": "Hayır"
+  }
+}

@@ -1,0 +1,326 @@
+[
+
+  {
+    "id": "ocmw-antwerpen-borgerhout",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Borgerhout",
+    "city": "Antwerpen",
+    "commune": "Borgerhout",
+    "address": "Fonteinstraat 33, 2140 Borgerhout",
+    "phone": "+32 3 270 95 27",
+    "email": "sc.borgerhout@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-borgerhout-borgerhout",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Le centre social de Borgerhout fournit une aide sociale et financière dans le district de Borgerhout (Anvers).",
+      "en": "The Borgerhout social center provides social and financial support in the Borgerhout district of Antwerp.",
+      "uk": "Соціальний центр Borgerhout надає соціальну та фінансову допомогу в районі Боргергаут (Антверпен)."
+    },
+    "postalCode": "2140"
+  },
+  {
+    "id": "ocmw-antwerpen-deurne-expo",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Deurne Expo (Deurne-Noord)",
+    "city": "Antwerpen",
+    "commune": "Deurne",
+    "address": "Clara Snellingsstraat 27, 2100 Deurne",
+    "phone": "+32 3 334 07 99",
+    "email": "sc.deurne.expo@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-deurne-expo-deurne-noord",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Deurne Expo pour l’aide sociale et financière (Deurne-Nord).",
+      "en": "Deurne Expo social center for social and financial support (Deurne North).",
+      "uk": "Соціальний центр Deurne Expo для соціальної та фінансової допомоги (Дерне-Північ)."
+    },
+    "postalCode": "2100"
+  },
+  {
+    "id": "ocmw-antwerpen-arena",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Arena (Deurne-Zuid)",
+    "city": "Antwerpen",
+    "commune": "Deurne",
+    "address": "Boekenberglei 128, 2100 Deurne",
+    "phone": "+32 3 292 33 40",
+    "email": "sc.arena@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-arena-deurne-zuid",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Arena pour l’aide sociale et financière (Deurne-Sud).",
+      "en": "Arena social center for social and financial support (Deurne South).",
+      "uk": "Соціальний центр Arena для соціальної та фінансової допомоги (Дерне-Південь)."
+    },
+    "postalCode": "2100"
+  },
+  {
+    "id": "ocmw-antwerpen-merksem",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Merksem",
+    "city": "Antwerpen",
+    "commune": "Merksem",
+    "address": "Lambrechtshoekenlaan 211, 2170 Merksem",
+    "phone": "+32 3 432 30 20",
+    "email": "sc.merksem@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-merksem",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social de Merksem pour le soutien social et financier.",
+      "en": "Merksem social center providing social and financial support.",
+      "uk": "Соціальний центр Merksem надає соціальну та фінансову допомогу."
+    },
+    "postalCode": "2170"
+  },
+  {
+    "id": "ocmw-antwerpen-ekeren",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Ekeren",
+    "city": "Antwerpen",
+    "commune": "Ekeren",
+    "address": "Ferdinand Verbieststraat 10 (ingang via Eduard van Benedenstraat), 2180 Ekeren",
+    "phone": "+32 3 292 81 50",
+    "email": "sc.ekeren@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-ekeren",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social d’Ekeren pour l’aide sociale et financière.",
+      "en": "Ekeren social center for social and financial support.",
+      "uk": "Соціальний центр Ekeren для соціальної та фінансової допомоги."
+    },
+    "postalCode": "2180"
+  },
+  {
+    "id": "ocmw-antwerpen-hoboken-kiel",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Hoboken en Kiel",
+    "city": "Antwerpen",
+    "commune": "Hoboken / Kiel",
+    "address": "Antwerpsesteenweg 167, 2660 Hoboken",
+    "phone": "+32 3 830 70 30",
+    "email": "sc.hobokenkiel@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-hoboken-en-kiel-hoboken",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social pour les districts d’Hoboken et de Kiel.",
+      "en": "Social center serving Hoboken and Kiel districts.",
+      "uk": "Соціальний центр для районів Гобокен і Кіль."
+    },
+    "postalCode": "2660"
+  },
+  {
+    "id": "ocmw-antwerpen-wilrijk",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Wilrijk",
+    "city": "Antwerpen",
+    "commune": "Wilrijk",
+    "address": "Kleinesteenweg 18, 2610 Wilrijk",
+    "phone": "+32 3 820 93 70",
+    "email": "sc.wilrijk@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-wilrijk",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social de Wilrijk pour l’aide sociale et financière.",
+      "en": "Wilrijk social center for social and financial support.",
+      "uk": "Соціальний центр Wilrijk для соціальної та фінансової допомоги."
+    },
+    "postalCode": "2610"
+  },
+  {
+    "id": "ocmw-antwerpen-linkeroever",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Linkeroever",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Linkeroever)",
+    "address": "Halewijnlaan 86A, 2050 Antwerpen",
+    "phone": "+32 3 292 30 20",
+    "email": "sc.linkeroever@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-linkeroever-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social de Linkeroever (rive gauche) à Anvers.",
+      "en": "Linkeroever (Left Bank) social center in Antwerp.",
+      "uk": "Соціальний центр Linkeroever (лівий берег) в Антверпені."
+    },
+    "postalCode": "2050"
+  },
+  {
+    "id": "ocmw-antwerpen-veemarkt",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Veemarkt",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Centrum)",
+    "address": "Zwartzustersstraat 21, 2000 Antwerpen",
+    "phone": "+32 3 292 35 60",
+    "email": "sc.veemarkt@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-veemarkt-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Veemarkt au centre d’Anvers.",
+      "en": "Veemarkt social center in Antwerp city center.",
+      "uk": "Соціальний центр Veemarkt у центрі Антверпена."
+    },
+    "postalCode": "2000"
+  },
+  {
+    "id": "ocmw-antwerpen-plein",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Plein",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Zuid/centraal)",
+    "address": "Lamorinièrestraat 137, 2018 Antwerpen",
+    "phone": "+32 3 292 83 30",
+    "email": "sc.plein@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-plein-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Plein (quartiers sud/centre d’Anvers).",
+      "en": "Plein social center (south/central Antwerp).",
+      "uk": "Соціальний центр Plein (південь/центр Антверпена)."
+    },
+    "postalCode": "2018"
+  },
+  {
+    "id": "ocmw-antwerpen-de-balans",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum De Balans",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Zuid)",
+    "address": "Lange Batterijstraat 16, 2018 Antwerpen",
+    "phone": "+32 3 242 91 20",
+    "email": "sc.balans@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-de-balans-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social De Balans pour l’aide et l’accompagnement.",
+      "en": "De Balans social center for support and assistance.",
+      "uk": "Соціальний центр De Balans для підтримки та допомоги."
+    },
+    "postalCode": "2018"
+  },
+  {
+    "id": "ocmw-antwerpen-dam",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Dam",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Dam/2060)",
+    "address": "Marnixstraat 14, 2060 Antwerpen",
+    "phone": "+32 3 292 35 00",
+    "email": "sc.dam@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-dam-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Dam (quartier 2060 Anvers).",
+      "en": "Dam social center (2060 Antwerp area).",
+      "uk": "Соціальний центр Dam (район 2060 Антверпен)."
+    },
+    "postalCode": "2060"
+  },
+  {
+    "id": "ocmw-antwerpen-seefhoek",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Seefhoek",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Seefhoek/2060)",
+    "address": "Lange Zavelstraat 78, 2060 Antwerpen",
+    "phone": "+32 3 270 38 40",
+    "email": "sc.seefhoek@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-seefhoek-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Seefhoek (quartier 2060).",
+      "en": "Seefhoek social center (2060 district).",
+      "uk": "Соціальний центр Seefhoek (район 2060)."
+    },
+    "postalCode": "2060"
+  },
+  {
+    "id": "ocmw-antwerpen-de-vondel",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum De Vondel",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Noord/2060)",
+    "address": "Boerhaavestraat 20, 2060 Antwerpen",
+    "phone": "+32 3 270 08 60",
+    "email": "sc.vondel@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-de-vondel-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social De Vondel (Anvers-Nord).",
+      "en": "De Vondel social center (Antwerp North).",
+      "uk": "Соціальний центр De Vondel (Північ Антверпена)."
+    },
+    "postalCode": "2060"
+  },
+  {
+    "id": "ocmw-antwerpen-luchtbal",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Luchtbal",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Luchtbal)",
+    "address": "Hondurasstraat 6, 2030 Antwerpen",
+    "phone": "+32 3 292 81 50",
+    "email": "sc.luchtbal@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-luchtbal",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social Luchtbal (nord d’Anvers).",
+      "en": "Luchtbal social center (northern Antwerp).",
+      "uk": "Соціальний центр Luchtbal (північ Антверпена)."
+    },
+    "postalCode": "2030"
+  },
+  {
+    "id": "ocmw-antwerpen-de-reiger-bzl",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum De Reiger (B-Z-L)",
+    "city": "Antwerpen",
+    "commune": "Berendrecht-Zandvliet-Lillo",
+    "address": "Antwerpsebaan 140, 2040 Berendrecht-Zandvliet-Lillo",
+    "phone": "+32 3 432 92 60",
+    "email": "sc.ekeren@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-de-reiger-berendrecht",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social De Reiger au nord du port (B-Z-L).",
+      "en": "De Reiger social center in the northern port area (B-Z-L).",
+      "uk": "Соціальний центр De Reiger в північній портовій зоні (B-Z-L)."
+    },
+    "postalCode": "2040"
+  },
+  {
+    "id": "ocmw-antwerpen-berchem-zurenborg",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum Berchem en Zurenborg",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (Berchem/Zurenborg)",
+    "address": "Steenbokstraat 1, 2018 Antwerpen",
+    "phone": "+32 3 286 42 10",
+    "email": "sc.berchemzurenborg@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-berchem-en-zurenborg",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social pour Berchem et Zurenborg.",
+      "en": "Social center for Berchem and Zurenborg.",
+      "uk": "Соціальний центр для районів Берхем і Зюрнборг."
+    },
+    "postalCode": "2018"
+  },
+  {
+    "id": "ocmw-antwerpen-de-wilg",
+    "kind": "center",
+    "name": "OCMW Antwerpen — Sociaal centrum De Wilg",
+    "city": "Antwerpen",
+    "commune": "Antwerpen (2060)",
+    "address": "Marnixstraat 16, 2060 Antwerpen",
+    "phone": "+32 3 270 08 40",
+    "email": "sc.dewilg@antwerpen.be",
+    "website": "https://www.antwerpen.be/contact/sociaal-centrum-de-wilg-antwerpen",
+    "languages": ["nl", "fr", "en", "uk"],
+    "description": {
+      "fr": "Centre social spécialisé (accès sur orientation) pour un accompagnement psychosocial.",
+      "en": "Specialized social center (referral-based) for psychosocial support.",
+      "uk": "Спеціалізований соціальний центр (за направленням) для психосоціальної підтримки."
+    },
+    "postalCode": "2060"
+  }]
