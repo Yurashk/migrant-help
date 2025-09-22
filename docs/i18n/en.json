@@ -29,6 +29,9 @@
   "WHAT_IS_ACTIRIS": "Actiris is the public employment service for the Brussels‑Capital Region. It supports jobseekers with registration, job matching, training, career guidance and employer programmes. On this page you can find your local Actiris office by commune/postcode or by the street where you live.",
   "WHAT_IS_VDAB": "VDAB (Flemish Service for Employment and Vocational Training) is the official employment service for Flanders and Dutch‑speaking residents of Brussels. It offers jobs, training, career advice and reskilling programmes. On this page you can find the appropriate VDAB office by region using your postcode or the street where you live.",
   "CONTACTS_PAGE": {
+    "CRISIS_SERVICES": "Emergency",
+  "SOCIAL_SUPPORT": "Social Aid",
+  "INTEGRATION_EMPLOYMENT": "Work & Integration",
     "META_TITLE": "Important contacts in Belgium — emergency services, social aid, jobs, healthcare",
     "META_DESCRIPTION": "Emergency numbers 112/101/1733, hotlines 1712/116000, CPAS/OCMW, Red Cross, Actiris/VDAB/FOREM, and mutualities. Click to call or open the website.",
     "H1": "Important contacts",
@@ -264,7 +267,9 @@
       "NEED_TRANSLATOR": "I need a translator",
       "COMMUNE": "Commune (city area)",
       "LANGUAGE": "Preferred language",
-      "FAMILY": "Appointment for the family"
+      "FAMILY": "Appointment for the family",
+      "HAS_WORKER_TOGGLE": "I have a social worker",
+      "WORKER_EMAIL_LABEL": "Social worker's email"
     },
     "SUBMIT": "Generate Letter"
   },
