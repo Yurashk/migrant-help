@@ -1,0 +1,400 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "CPAS": "CPAS/OCMW",
+    "CPAS_DETAIL": "CPAS/OCMW detail",
+    "CPAS_INFO": "CPAS/OCMW info",
+    "CPAS_LETTER": "Letter to CPAS/OCMW",
+    "CONTACTS": "Important contacts",
+    "NEWCOMER": "Just arrived",
+    "EMPLOYMENT": "Employment",
+    "ACTIRIS_LETTER": "Letter to Actiris"
+  },
+  "MAIN_TITLE": "You are not alone",
+  "CHOOSE_CITY": "Choose a city",
+  "SEARCH": "Enter your postal code or the name of your area",
+  "CPAS": { "KIND": { "CENTER": "Center", "ANTENNA": "Antenna" } },
+  "CPAS_EXPLAIN": {
+    "centers_title": "Centers (center / commune CPAS)",
+    "centers_text": "The main CPAS office of a given commune. What it does: receives applications, issues official decisions on eligibility, arranges payments, housing/health-insurance support, and provides certificates. It is the legal point of reference and the primary address for your commune.",
+    "antennas_title": "Antennas (antenna / antenne sociale)",
+    "antennas_text": "Neighborhood intake points of the same CPAS, closer to where you live (local/quarter offices). What they do: first reception, guidance, document collection, social assessment, and follow-up. The formal decision is still taken by your commune’s CPAS center.",
+    "check": "View"
+  },
+  "WHAT_IS_CPAS": "The CPAS/OCMW (Public Center for Social Welfare) is a municipal service in Belgium that supports people in need. It provides social, financial, medical, or material assistance depending on the individual's situation. On this page, you can find the CPAS/OCMW responsible for your area by using the postal code or the street where you live.",
+  "CPAS_HELP": "How to get help",
+  "BUTTONS": {
+    "Select": "Select"
+  },
+  "WHAT_IS_ACTIRIS": "Actiris is the public employment service for the Brussels‑Capital Region. It supports jobseekers with registration, job matching, training, career guidance and employer programmes. On this page you can find your local Actiris office by commune/postcode or by the street where you live.",
+  "WHAT_IS_VDAB": "VDAB (Flemish Service for Employment and Vocational Training) is the official employment service for Flanders and Dutch‑speaking residents of Brussels. It offers jobs, training, career advice and reskilling programmes. On this page you can find the appropriate VDAB office by region using your postcode or the street where you live.",
+  "CONTACTS_PAGE": {
+    "CRISIS_SERVICES": "Emergency",
+  "SOCIAL_SUPPORT": "Social Aid",
+  "INTEGRATION_EMPLOYMENT": "Work & Integration",
+    "META_TITLE": "Important contacts in Belgium — emergency services, social aid, jobs, healthcare",
+    "META_DESCRIPTION": "Emergency numbers 112/101/1733, hotlines 1712/116000, CPAS/OCMW, Red Cross, Actiris/VDAB/FOREM, and mutualities. Click to call or open the website.",
+    "H1": "Important contacts",
+    "LEAD": "All key phone numbers and official websites in one place: emergency services, social aid, employment, and healthcare. Click to call or visit the relevant service’s website."
+  },
+  "CONTACTS": {
+    "TITLE": "Important contacts",
+    "ACTIONS": { "CALL": "Call", "WEBSITE": "Website" },
+    "LABELS": {
+      "EMERGENCY_SERVICES": "Emergency services (police / fire / ambulance)",
+      "POLICE_DIRECT": "Police (direct line)",
+      "ON_CALL_DOCTOR": "On-call doctor (out of hours)",
+      "VIOLENCE_HELPLINE": "Violence help line (Flanders/Brussels)",
+      "MISSING_CHILDREN": "Missing children (Child Focus)",
+      "IMMIGRATION_OFFICE": "Immigration Office (information)",
+      "NEWCOMERS_INFO": "Information for newcomers",
+      "CPAS": "CPAS/OCMW (social assistance)",
+      "RED_CROSS": "Belgian Red Cross",
+      "ACTIRIS": "Actiris (Brussels)",
+      "VDAB": "VDAB (Flanders)",
+      "FOREM": "FOREM (Wallonia)",
+      "MUTUALITIES": "Mutualities (health insurance)"
+    }
+  },
+  "MENU": {
+    "HELP": "Help",
+    "HOME": "Home",
+    "FAQ": "FAQ",
+    "CPAS": "CPAS/OCMW",
+    "ACTIRIS": "Actiris",
+    "CONTACTS": "Important contacts",
+    "PRIVACY": "Privacy Policy"
+  },
+  "USEFUL_LINKS": {
+    "TITLE": "Useful Links"
+  },
+  "NEW_INCOMER": {
+    "title": "Step-by-step Guide for Newcomers in Belgium",
+    "description": "This guide will help you understand what to do when you arrive in Belgium.",
+    "steps": {
+      "STEP_1": {
+        "icon": "verified_user",
+        "title": "Obtain Protection in Belgium",
+        "description": "Go to the registration centre in Brussels at Rue Belliard 68, 1000 Brussels. The centre is open from Monday to Friday, with registration starting at 08:30. The number of places is limited, so it is recommended to arrive early in the morning. Here you can apply for temporary protection or refugee status."
+      },
+      "STEP_2": {
+        "icon": "home",
+        "title": "Find Housing or Stay in Refugee Camp",
+        "description": "Look for temporary or permanent accommodation. If you have no housing, you may be assigned to a refugee reception centre."
+      },
+      "STEP_3": {
+        "icon": "how_to_reg",
+        "title": "Register at the Commune",
+        "description": "Go to your local commune to register your address, get Annex 15, and apply for the A card."
+      },
+      "STEP_4": {
+        "icon": "domain",
+        "title": "Register at CPAS/OCMW",
+        "description": "Visit your local CPAS/OCMW to apply for social assistance."
+      },
+      "STEP_5": {
+        "icon": "work",
+        "title": "Register with Employment Office (Actiris/VDAB)",
+        "description": "Register at Actiris or VDAB depending on your region to look for work or get jobseeker status."
+      },
+      "STEP_6": {
+        "icon": "volunteer_activism",
+        "title": "Apply for Social Benefits",
+        "description": "Once registered at the Commune and CPAS/OCMW, you can apply for social benefits if eligible."
+      },
+      "STEP_7": {
+        "icon": "school",
+        "title": "Start Language Courses",
+        "description": "Many regions offer free French or Dutch language courses for migrants."
+      }
+    }
+  },
+  "HOME": {
+    "APP_INFO": {
+      "TITLE": "Support for Migrants in Belgium",
+      "DESCRIPTION": "This application helps migrants in Belgium navigate local services such as CPAS/OCMW, Actiris, and VDAB. With built-in multilingual support and AI-powered assistance, it simplifies communication with public authorities and provides clear answers to frequently asked questions.",
+      "FEATURES_TITLE": "Key Features",
+      "FEATURES": {
+        "FAQ": "Smart FAQ powered by AI to answer your most common questions.",
+        "CPAS_SEARCH": "Search CPAS/OCMW centers by city and region, with address and contact info.",
+        "LETTER_BUILDER": "Generate official letters for requests and communication with public services.",
+        "MULTILANG": "Multilingual support for Ukrainian, English, Turkish,French, and Dutch.",
+        "PRIVACY": "No personal data is stored. Your queries are secure and anonymous."
+      }
+    },
+    "SECTIONS": {
+      "NEWCOMER": {
+        "TITLE": "I just arrived in Belgium!",
+        "DESCRIPTION": "You’ve just arrived and don’t know what to do? We’ve prepared a step-by-step guide.",
+        "BUTTON": "Open the guide"
+      },
+      "CONTACTS": {
+        "TITLE": "Important contacts",
+        "DESCRIPTION": "Emergency services, social aid, and useful organizations",
+        "BUTTON": "View contacts"
+      },
+      "LAWYER": {
+        "TITLE": "Legal Help",
+        "DESCRIPTION": "Find a lawyer for migration, housing, and social cases",
+        "BUTTON": "Get legal assistance"
+      },
+      "TRANSLATOR": {
+        "TITLE": "Translation Help",
+        "DESCRIPTION": "Need help with French or Dutch documents? Find a translator",
+        "BUTTON": "Find a translator"
+      },
+      "AGENT": {
+        "TITLE": "Housing Agent",
+        "DESCRIPTION": "Connect with real estate agents to find housing",
+        "BUTTON": "Find an agent"
+      },
+      "CPAS": {
+        "TITLE": "CPAS/OCMW Centers",
+        "DESCRIPTION": "Find address and contact info for your city",
+        "BUTTON": "Search CPAS/OCMW"
+      },
+      "ACTIRIS": {
+        "TITLE": "Actiris / VDAB",
+        "DESCRIPTION": "Job center based on your city or registration address",
+        "BUTTON": "Find your agency"
+      },
+      "LETTER": {
+        "TITLE": "Help writing a letter",
+        "DESCRIPTION": "Generate official letters based on your request",
+        "BUTTON": "Start writing"
+      }
+    }
+  },
+
+  "HELLO": "Hello",
+  "LANGUAGE": "Language",
+  "cpas_steps_title": "How to contact CPAS/OCMW (steps)",
+  "cpas_list_title": "This guide helps you prepare the right documents, find your local CPAS/OCMW, and book your first appointment. Clear, actionable steps explain what to bring, how to contact CPAS/OCMW, typical decision timelines, and what happens next. Start here—everything you need is in one place.",
+  "cpas_steps": {
+    "step_1": {
+      "title": "Préparer les documents",
+      "description": "Annexe 15, passeport ou carte d’identité, preuve d’adresse (contrat de bail, inscription ou attestation de l’hébergeur), relevés bancaires (1–3 derniers mois), autres documents (preuve de revenus, certificats médicaux le cas échéant)."
+    },
+    "step_2": {
+      "title": "Choisir le CPAS/OCMW de votre domicile",
+      "description": "Trouvez le CPAS/OCMW de votre commune (par code postal ou adresse)."
+    },
+    "step_3": {
+      "title": "Premier contact",
+      "description": "Téléphonez ou envoyez un e-mail. Certains CPAS/OCMW proposent un formulaire de prise de rendez-vous en ligne."
+    },
+    "step_4": {
+      "title": "Fixer un rendez-vous",
+      "description": "Un rendez-vous avec un(e) assistant(e) social(e) vous sera proposé. Un pré-dépistage téléphonique peut avoir lieu."
+    },
+    "step_5": {
+      "title": "Entretien",
+      "description": "Apportez tous les documents. Décrivez votre situation : logement, revenus, besoins. L’agent ouvre votre dossier."
+    },
+    "step_6": {
+      "title": "Attente de la décision",
+      "description": "Le CPAS/OCMW analyse votre dossier (généralement 7 à 30 jours). Il peut vous convoquer à un entretien supplémentaire ou demander des pièces complémentaires."
+    },
+    "step_7": {
+      "title": "Obtention de l’aide",
+      "description": "Si avis favorable : aide sociale, soutien au logement, assurance maladie ou cours. En cas de refus — possibilité d’introduire un recours."
+    }
+  },
+  "LETTER_FORM": {
+    "LETTER_READY": "Your letter is ready to copy",
+    "COPY_BUTTON": "Copy letter",
+    "REQUESTS": {
+      "housing": "Housing support",
+      "financialAid": "Financial aid",
+      "foodAid": "Food assistance",
+      "healthSupport": "Medical support",
+      "translationSupport": "Translation help",
+      "psychologicalSupport": "Psychological help",
+      "other": "Other"
+    },
+    "REQUESTS_ACTIRIS": {
+      "registerJobseeker": "Register as a jobseeker",
+      "updateProfile": "Update profile/details",
+      "findVacancies": "Find vacancies",
+      "employerReferrals": "Referrals to employers",
+      "cvReview": "CV review & improvement",
+      "coverLetter": "Cover letter support",
+      "interviewCoaching": "Interview coaching",
+      "languageCourses": "Language courses (FR/NL/EN)",
+      "languageAssessment": "Language level assessment",
+      "trainingCourses": "Training courses (IT/digital/vocational)",
+      "trainingAllowances": "Training allowances/subsidies",
+      "diplomaRecognition": "Recognition of diplomas (NARIC etc.)",
+      "internships": "Internships/placements",
+      "onTheJobTraining": "On-the-job training",
+      "careerGuidance": "Career guidance/orientation",
+      "skillsValidation": "Skills validation",
+      "inclusiveSupport": "Inclusion support (disability, youth, long-term unemployed)",
+      "other": "Other (specify)"
+    },
+    "NATIONALITIES": {
+      "ukrainian": "Ukrainian",
+      "russian": "Russian",
+      "belarusian": "Belarusian",
+      "afghan": "Afghan",
+      "syrian": "Syrian",
+      "turkish": "Turkish",
+      "moroccan": "Moroccan",
+      "congolese": "Congolese",
+      "other": "Other"
+    },
+    "STATUSES": {
+      "temporary_protection": "Temporary protection",
+      "asylum_seeker": "Asylum seeker",
+      "refugee": "Refugee",
+      "card_a": "Holder of Card A",
+      "card_b": "Holder of Card B",
+      "without_status": "Without legal status",
+      "other": "Other"
+    },
+    "STEPS": {
+      "PERSONAL": "Personal Information",
+      "STATUS": "Your Status",
+      "REQUEST": "Request Details",
+      "LOCATION": "Location & Language"
+    },
+    "FIELDS": {
+      "NAME": "First Name",
+      "SURNAME": "Last Name",
+      "NATIONALITY": "Nationality",
+      "STATUS": "Current Status",
+      "REQUEST_TYPE": "Type of Request",
+      "NEED_TRANSLATOR": "I need a translator",
+      "COMMUNE": "Commune (city area)",
+      "LANGUAGE": "Preferred language",
+      "FAMILY": "Appointment for the family",
+      "HAS_WORKER_TOGGLE": "I have a social worker",
+      "WORKER_EMAIL_LABEL": "Social worker's email"
+    },
+    "SUBMIT": "Generate Letter"
+  },
+  "LETTER_STEPPER": {
+    "TITLE": "Compose your letter",
+    "DESCRIPTION": "Enter your details using the Latin alphabet—as in your passport (A–Z). When you’re done, you can copy the generated letter or, if your mail app is set up, open it with everything pre‑filled. Tip: review the preview on the last step before sending.",
+    "ACTIONS": {
+      "COPY": "Copy letter",
+      "OPEN_MAIL": "Open in Mail"
+    },
+    "PREVIEW_PLACEHOLDER": "Your letter will appear here."
+  },
+  "HOUSE_SEARCH": {
+    "title": "Housing rental",
+    "catch_desc": "For legalization in Belgium, it is mandatory to have housing. This may be a rented apartment, a room, or social housing.",
+    "websites": "Websites",
+    "websites_desc": "You can independently search for housing using popular platforms to find apartments, studios, or houses.",
+    "agencies": "Agencies",
+    "agencies_desc": "You can contact real estate agents who will help you find options and guide you through the rental process.",
+    "intermediaries": "Intermediaries",
+    "intermediaries_desc": "You can turn to intermediaries if you do not have confirmed income or if you only have a residence permit under §24.",
+    "HOUSE_SITES": {
+      "websites": {
+        "title": "Real estate websites",
+        "description": "You can search for housing independently using popular platforms to find apartments, studios, or houses.",
+        "items": [
+          {
+            "name": "Immoweb",
+            "url": "https://www.immoweb.be",
+            "short_desc": "The largest real estate portal in Belgium with extensive filters."
+          },
+          {
+            "name": "Zimmo",
+            "url": "https://www.zimmo.be",
+            "short_desc": "Popular alternative to Immoweb with fresh listings."
+          },
+          {
+            "name": "Logic-Immo",
+            "url": "https://www.logic-immo.be",
+            "short_desc": "Well-known platform with a wide range of offers."
+          },
+          {
+            "name": "Immoscoop",
+            "url": "https://www.immoscoop.be",
+            "short_desc": "Listings from agencies before they appear on major portals."
+          },
+          {
+            "name": "Appartager",
+            "url": "https://www.appartager.be",
+            "short_desc": "Platform for colocation/flatshare (shared housing)."
+          },
+          {
+            "name": "Facebook Marketplace",
+            "url": "https://www.facebook.com/marketplace/",
+            "short_desc": "Many groups where private landlords post directly."
+          }
+        ]
+      },
+      "agencies": {
+        "title": "Real estate agencies",
+        "description": "You can contact agencies for professional support in renting housing.",
+        "items": [
+          {
+            "name": "ERA",
+            "url": "https://www.era.be",
+            "short_desc": "National network of agencies with a large database."
+          },
+          {
+            "name": "Century21",
+            "url": "https://www.century21.be",
+            "short_desc": "International real estate network present in all major cities."
+          },
+          {
+            "name": "Trevi",
+            "url": "https://www.trevi.be",
+            "short_desc": "Well-established agency with offices across Belgium."
+          },
+          {
+            "name": "We Invest",
+            "url": "https://weinvest.be",
+            "short_desc": "Modern agency with online tools, strong presence in Brussels."
+          },
+          {
+            "name": "Victoire Properties",
+            "url": "https://www.victoire.be",
+            "short_desc": "Agency specialized in Brussels and premium housing."
+          }
+        ]
+      }
+    }
+  },
+  "PRIVACY": {
+    "LINK": "Privacy Policy",
+    "TITLE": "Privacy Policy",
+    "UPDATED_AT": "Last updated: {{date}}",
+    "SECTIONS": {
+      "INTRO": {
+        "TITLE": "1. Introduction",
+        "TEXT": "{{appName}} is an informational tool for newcomers in Belgium. Data is compiled from official public sources and may change. We recommend verifying accuracy on government websites."
+      },
+      "INFO_NATURE": {
+        "TITLE": "2. Informational nature",
+        "TEXT": "The information provided is for guidance only and does not constitute legal or official advice. For decisions, consult competent authorities (CPAS/OCMW, Actiris, VDAB, communes, etc.)."
+      },
+      "DATA": {
+        "TITLE": "3. Data collection and processing",
+        "TEXT": "The app does not collect, store, or process users’ personal data. If contact forms or analytics are added in the future, we will update this policy and provide appropriate notices."
+      },
+      "LIABILITY": {
+        "TITLE": "4. Limitation of liability",
+        "TEXT": "We strive to keep information up to date, but do not guarantee completeness or accuracy. The developers are not liable for any consequences related to the use of the information or changes in laws/policies."
+      },
+      "LINKS": {
+        "TITLE": "5. External links",
+        "TEXT": "The app may include links to third-party resources. We do not control their content and cannot be responsible for the accuracy or timeliness of information on those sites."
+      },
+      "CHANGES": {
+        "TITLE": "6. Changes to this policy",
+        "TEXT": "This policy may be updated periodically. We recommend checking this page from time to time to stay informed about the latest changes."
+      }
+    }
+  },
+  "COMMON": {
+    "NEXT": "Next",
+    "BACK": "Back",
+    "NO": "No"
+  }
+}
