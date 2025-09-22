@@ -28,6 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDivider } from '@angular/material/divider';
 import { ChoosenCity, CITIES_BE } from '../../services/choosen-city';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-cpas-mail-create',
@@ -46,6 +47,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatButtonModule,
     MatCard,
     MatCardModule,
+    MatSlideToggleModule,
     MatDivider,
   ],
   templateUrl: './cpas-mail-create.html',
@@ -53,13 +55,14 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 })
 export class CpasMailCreate implements OnInit {
   cityService = inject(ChoosenCity);
+  isCheckedCepasWorker = false;
   personalForm!: FormGroup;
   statusForm!: FormGroup;
   requestForm!: FormGroup;
   locationForm!: FormGroup;
   private cpasService = inject(Cpas);
-  loadContent:boolean=false;
-  private CITIES_BE=CITIES_BE;
+  loadContent = false;
+  private CITIES_BE = CITIES_BE;
   mailHref: string = '';
   subject: string = 'Demande d’aide';
   isCepas: boolean = true;
@@ -68,6 +71,7 @@ export class CpasMailCreate implements OnInit {
   readonly name = model('');
   readonly dialog = inject(MatDialog);
   currentCpas: CpasCenter | undefined;
+  actirisEmail = 'contact@actiris.brussels'
   statuses = [
     'temporary_protection',
     'asylum_seeker',
@@ -230,11 +234,12 @@ export class CpasMailCreate implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    
     forkJoin([
       this.cpasService.getCenters(this.cityService.value),
       this.rout.queryParamMap.pipe(take(1)),
     ])
-      .pipe(tap(()=>this.loadContent=true))
+      .pipe(tap(() => (this.loadContent = true)))
       .subscribe(([res, res2]) => {
         this.currentCpas = res.find((x) => x.id == res2.get('cpas-name'));
         this.isCepas = res2.get('isActiris') ? false : true;
@@ -257,9 +262,30 @@ export class CpasMailCreate implements OnInit {
 
     this.locationForm = this.fb.group({
       commune: ['', Validators.required],
+      hasWorker: [false],
+      workerEmail: ['', []],
+    });
+
+    this.locationForm.get('hasWorker')!.valueChanges.subscribe((has) => {
+      const emailCtrl = this.locationForm.get('workerEmail')!;
+      if (has) {
+        emailCtrl.addValidators([Validators.required, Validators.email]);
+      } else {
+        emailCtrl.clearValidators();
+        emailCtrl.setValue('', { emitEvent: false }); // опционально очищать
+      }
+      emailCtrl.updateValueAndValidity({ emitEvent: false });
     });
   }
+private getRecipientEmail(): string {
+  const hasWorker = !!this.locationForm.get('hasWorker')?.value;
+  const workerEmail = (this.locationForm.get('workerEmail')?.value || '').trim();
 
+  const defaultEmail =
+    this.isCepas ? (this.currentCpas?.email || this.actirisEmail) : this.actirisEmail;
+
+  return hasWorker && workerEmail ? workerEmail : defaultEmail;
+}
   generateLetter() {
     const rawData = {
       ...this.personalForm.value,
@@ -289,17 +315,19 @@ export class CpasMailCreate implements OnInit {
     const subject = 'Demande d’aide';
     const subj = encodeURIComponent(subject);
     const bod = encodeURIComponent(normalized);
-
-    this.mailHref = `mailto:${this.currentCpas?.email}?subject=${subj}&body=${bod}`;
+const to = this.getRecipientEmail();
+    this.mailHref = `mailto:${to}?subject=${subj}&body=${bod}`;
     this.currentText = letterText;
     this.mail.set(letterText);
     this.openDialog();
   }
 
   genererLettre(data: ActirisLetterForm, t: any): string {
-    const currentCityLang=this.CITIES_BE.find(x=>x.id===this.currentCpas?.city.toLocaleLowerCase())
+    const currentCityLang = this.CITIES_BE.find(
+      (x) => x.id === this.currentCpas?.city.toLocaleLowerCase()
+    );
     const lignes: string[] = [];
-    if (currentCityLang?.languages[0]=='nl') {
+    if (currentCityLang?.languages[0] == 'nl') {
       lignes.push('');
       lignes.push(`Aan wie het aangaat,`);
       lignes.push('');
@@ -422,9 +450,9 @@ export class CpasMailCreate implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(ShowMailDialog, {
       data: {
-        mail:this.mail(),
-        email:this.currentCpas?.email
-      }
+        mail: this.mail(),
+        email: this.currentCpas?.email,
+      },
     });
 
     dialogRef.afterClosed().subscribe((result) => {

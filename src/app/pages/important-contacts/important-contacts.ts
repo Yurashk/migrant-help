@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
@@ -16,7 +17,7 @@ type Contacts = {
 
 @Component({
   selector: 'app-important-contacts',
-  imports: [CommonModule, MatCardModule, MatListModule, MatIconModule, MatButtonModule, TranslateModule],
+  imports: [CommonModule, MatCardModule,MatTabsModule, MatListModule, MatIconModule, MatButtonModule, TranslateModule],
   templateUrl: './important-contacts.html',
   styleUrl: './important-contacts.scss'
 })

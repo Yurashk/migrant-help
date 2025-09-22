@@ -30,6 +30,9 @@
   "WHAT_IS_ACTIRIS": "Actiris est le service public de l’emploi de la Région de Bruxelles‑Capitale. Il accompagne les chercheurs d’emploi pour l’inscription, les offres, les formations, l’orientation et des programmes avec les employeurs. Sur cette page, vous pouvez trouver votre antenne Actiris par commune/code postal ou par la rue où vous habitez.",
   "WHAT_IS_VDAB": "Le VDAB (Service flamand de l’emploi et de la formation professionnelle) est le service officiel pour la Flandre et les résidents néerlandophones de Bruxelles. Il propose des offres d’emploi, des formations, des conseils de carrière et des programmes de reconversion. Sur cette page, vous pouvez trouver le bureau du VDAB approprié selon la région, via votre code postal ou la rue où vous habitez.",
   "CONTACTS_PAGE": {
+    "CRISIS_SERVICES": "Urgence",
+  "SOCIAL_SUPPORT": "Aide sociale",
+  "INTEGRATION_EMPLOYMENT": "Emploi",
     "META_TITLE": "Contacts importants en Belgique — urgences, aide sociale, emploi, santé",
     "META_DESCRIPTION": "Accès rapide aux 112/101/1733, 1712/116000, CPAS, Croix-Rouge, Actiris/VDAB/FOREM et mutualités. Appuyez pour appeler ou ouvrir les sites officiels.",
     "H1": "Contacts importants",
@@ -264,7 +267,9 @@
       "NEED_TRANSLATOR": "J’ai besoin d’un traducteur",
       "COMMUNE": "Commune (quartier)",
       "LANGUAGE": "Langue préférée",
-      "FAMILY": "Rendez-vous pour la famille"
+      "FAMILY": "Rendez-vous pour la famille",
+      "HAS_WORKER_TOGGLE": "J'ai un(e) assistant(e) social(e)",
+      "WORKER_EMAIL_LABEL": "Adresse e-mail de l'assistant(e) social(e)"
     },
     "SUBMIT": "Générer la lettre"
   },

@@ -29,6 +29,9 @@
   "WHAT_IS_ACTIRIS": "Actiris, Brüksel Başkent Bölgesi’nin kamu istihdam kurumudur. İş arayanlara kayıt, iş eşleştirme, eğitim, kariyer danışmanlığı ve işveren programlarıyla destek verir. Bu sayfada, ikamet ettiğiniz ilçe/posta koduna veya sokağa göre size uygun Actiris merkezini bulabilirsiniz.",
   "WHAT_IS_VDAB": "VDAB (Felemenkçe: Flanders İstihdam ve Mesleki Eğitim Hizmeti), Flandre ve Brüksel’in Felemenkçe konuşan sakinleri için resmi istihdam kurumudur. İş ilanları, eğitimler, kariyer danışmanlığı ve yeniden beceri kazandırma programları sunar. Bu sayfada, bölgeye göre posta kodunuz veya yaşadığınız sokak üzerinden uygun VDAB merkezini bulabilirsiniz.",
   "CONTACTS_PAGE": {
+    "CRISIS_SERVICES": "Acil",
+    "SOCIAL_SUPPORT": "Sosyal Destek",
+    "INTEGRATION_EMPLOYMENT": "İstihdam",
     "META_TITLE": "Belçika’daki önemli iletişimler — acil servisler, sosyal yardım, iş, sağlık",
     "META_DESCRIPTION": "Acil numaralar 112/101/1733, yardım hatları 1712/116000, CPAS, Kızılhaç, Actiris/VDAB/FOREM ve sağlık sigortaları. Aramak veya siteyi açmak için tıklayın.",
     "H1": "Önemli iletişimler",
@@ -263,7 +266,9 @@
       "NEED_TRANSLATOR": "Çevirmen gerekli",
       "COMMUNE": "Belediye",
       "LANGUAGE": "Tercih edilen dil",
-      "FAMILY": "Aile için randevu"
+      "FAMILY": "Aile için randevu",
+      "HAS_WORKER_TOGGLE": "Sosyal hizmet uzmanım var",
+      "WORKER_EMAIL_LABEL": "Sosyal hizmet uzmanının e-posta adresi"
     },
     "SUBMIT": "Mektup Oluştur"
   },

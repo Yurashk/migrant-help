@@ -10,9 +10,9 @@ export class Cpas {
   constructor(private http: HttpClient) {}
 
   getCenters(currentCity:string): Observable<CpasCenter[]> {
-    return this.http.get<CpasCenter[]>(`/data/cpas-${currentCity}.mock.json`);
+    return this.http.get<CpasCenter[]>(`assets/data/cpas-${currentCity}.json`);
   }
   getCentersByStreet(): Observable<any[]> {
-    return this.http.get<any[]>('/data/postal_code_to_cpas_id.json');
+    return this.http.get<any[]>('assets/data/postal_code_to_cpas_id.json');
   }
 }

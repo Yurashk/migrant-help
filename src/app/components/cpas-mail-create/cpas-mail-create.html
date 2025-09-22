@@ -94,8 +94,11 @@
               *ngFor="let req of isCepas ? requestTypes : actirisRequestTypes"
               [value]="req"
             >
-          
-              {{ (isCepas ? "LETTER_FORM.REQUESTS.":"LETTER_FORM.REQUESTS_ACTIRIS.") + req | translate }}
+              {{
+                (isCepas
+                  ? "LETTER_FORM.REQUESTS."
+                  : "LETTER_FORM.REQUESTS_ACTIRIS.") + req | translate
+              }}
             </mat-option>
           </mat-select>
         </mat-form-field>
@@ -135,6 +138,29 @@
             required
           />
         </mat-form-field>
+        <mat-slide-toggle formControlName="hasWorker" style="margin-bottom: 20px;">{{"LETTER_FORM.FIELDS.HAS_WORKER_TOGGLE" | translate}} </mat-slide-toggle>
+
+        <ng-container *ngIf="locationForm.get('hasWorker')?.value">
+          <mat-form-field appearance="outline" style="margin-bottom: 20px;">
+            <mat-label>{{"LETTER_FORM.FIELDS.WORKER_EMAIL_LABEL" | translate}}</mat-label>
+            <input
+              matInput
+              type="email"
+              formControlName="workerEmail"
+              required
+            />
+            <mat-error
+              *ngIf="locationForm.get('workerEmail')?.hasError('required')"
+            >
+              email
+            </mat-error>
+            <mat-error
+              *ngIf="locationForm.get('workerEmail')?.hasError('email')"
+            >
+              email format failed
+            </mat-error>
+          </mat-form-field>
+        </ng-container>
 
         <!-- <mat-form-field appearance="outline">
           <mat-label>{{ "LETTER_FORM.FIELDS.LANGUAGE" | translate }}</mat-label>
@@ -163,11 +189,15 @@
   <mat-divider></mat-divider>
   <mat-card style="min-height: auto">
     <mat-card-content *ngIf="!currentText">
-      <p>{{isCepas ? "CPAS" : "ACTIRIS"}} Email:{{ currentCpas?.email }}</p>
+      <p>{{ isCepas ? "CPAS" : "ACTIRIS" }} Email:{{ currentCpas?.email }}</p>
       <p>Your email could be here</p>
     </mat-card-content>
     <mat-card-content *ngIf="currentText">
-      <p>CPAS Email: {{ currentCpas?.email }}</p>
+      @if (locationForm.get('hasWorker')?.value && locationForm.get('workerEmail')?.value) {
+  <p>Соцработник: {{ locationForm.get('workerEmail')?.value }}</p>
+} @else {
+  <p>CPAS Email: {{ currentCpas?.email || actirisEmail }}</p>
+}
       <p>{{ currentText }}</p>
       <a matButton="elevated" [attr.href]="mailHref" target="_blank">{{
         "LETTER_STEPPER.ACTIONS.OPEN_MAIL" | translate
