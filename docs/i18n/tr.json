@@ -275,6 +275,7 @@
   "LETTER_STEPPER": {
     "TITLE": "Mektubunuzu oluşturun",
     "DESCRIPTION": "Bilgilerinizi pasaportunuzdaki gibi Latin alfabesiyle (A–Z) girin. İşlemi tamamladıktan sonra oluşturulan mektubu kopyalayabilir veya e‑posta uygulamanız kuruluysa tüm alanları önceden doldurulmuş şekilde açabilirsiniz. İpucu: Göndermeden önce son adımda önizlemeyi kontrol edin.",
+    "ACTIRIS_TAB_EXPLANATION": "İlk temas: lütfen Actiris web sitesi üzerinden (kayıt/yeniden kayıt) randevu talep edin veya bir ofise şahsen gidin. Bu sayfada, halihazırda bir sosyal hizmet uzmanınız/danışmanınız varsa bir mektup oluşturabilirsiniz. Değilse, aşağıdaki bağlantıyı kullanın.",
     "ACTIONS": {
       "COPY": "Mektubu kopyala",
       "OPEN_MAIL": "Postada aç"

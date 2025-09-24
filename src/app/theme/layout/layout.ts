@@ -27,7 +27,7 @@ export class Layout {
     {name:'CPAS',link:'/cpas',icon:"location_city"},
     {name:'ACTIRIS',link:'/labor-exchange',icon:"work"},
     {name:'HELP',link:'/help',icon:"help"},
-    {name:'PRIVACY',link:'/privacy-policy',icon:"help"},
+    {name:'PRIVACY',link:'/privacy-policy',icon:""},
   ]
   constructor(private router: Router) {}
   goToItem(link: string ) {

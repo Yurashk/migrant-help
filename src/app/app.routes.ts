@@ -11,6 +11,7 @@ import { ImportantContacts } from './pages/important-contacts/important-contacts
 import { ActirisMailPage } from './pages/actiris-mail-page/actiris-mail-page';
 import { FindHouse } from './pages/find-house/find-house';
 import { PrivacyPolicy } from './pages/privacy-policy';
+import { TranslatorHelp } from './pages/translator-help/translator-help';
 
 export const routes: Routes = [
   {
@@ -75,6 +76,11 @@ export const routes: Routes = [
       {
         path: 'find-apartaments',
         component: FindHouse,
+        data: { breadcrumbKey: 'NAV.EMPLOYMENT' },
+      },
+       {
+        path: 'find-translate',
+        component: TranslatorHelp,
         data: { breadcrumbKey: 'NAV.EMPLOYMENT' },
       },
       { path: 'privacy-policy', component: PrivacyPolicy },

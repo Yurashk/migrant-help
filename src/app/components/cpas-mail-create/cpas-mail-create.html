@@ -4,7 +4,35 @@
   </mat-card-title>
   <mat-card-subtitle>
     {{ "LETTER_STEPPER.DESCRIPTION" | translate }}
+    <p *ngIf="!isCepas" style="color:brown">*{{ "LETTER_STEPPER.ACTIRIS_TAB_EXPLANATION" | translate }}</p>
+    <div style="display: flex; gap: 15px;justify-content: space-between;">
+    <a
+      *ngIf="!isCepas"
+      style="margin-bottom: 15px"
+      matButton="elevated"
+      href="https://www.actiris.brussels/fr/citoyens/erdv-meet-us/"
+      target="_blank"
+      >ACTIRIS</a
+    >
+    <a
+      *ngIf="!isCepas"
+      style="margin-bottom: 15px"
+      matButton="elevated"
+      href="https://www.leforem.be/citoyens/inscription-demandeur-emploi.html"
+      target="_blank"
+      >FOREM</a
+    >
+    <a
+      *ngIf="!isCepas"
+      style="margin-bottom: 15px"
+      matButton="elevated"
+      href="https://www.vdab.be/registratie/?registratieType=INSCHRIJVING"
+      target="_blank"
+      >VDAB</a
+    >
+    </div>
   </mat-card-subtitle>
+
   <mat-spinner *ngIf="!loadContent" diameter="22"></mat-spinner>
   <mat-divider></mat-divider>
   <mat-vertical-stepper [linear]="true" #stepper>
@@ -138,11 +166,18 @@
             required
           />
         </mat-form-field>
-        <mat-slide-toggle formControlName="hasWorker" style="margin-bottom: 20px;">{{"LETTER_FORM.FIELDS.HAS_WORKER_TOGGLE" | translate}} </mat-slide-toggle>
+        <mat-slide-toggle
+          formControlName="hasWorker"
+          [disabled]="!isCepas"
+          style="margin-bottom: 20px"
+          >{{ "LETTER_FORM.FIELDS.HAS_WORKER_TOGGLE" | translate }}
+        </mat-slide-toggle>
 
         <ng-container *ngIf="locationForm.get('hasWorker')?.value">
-          <mat-form-field appearance="outline" style="margin-bottom: 20px;">
-            <mat-label>{{"LETTER_FORM.FIELDS.WORKER_EMAIL_LABEL" | translate}}</mat-label>
+          <mat-form-field appearance="outline" style="margin-bottom: 20px">
+            <mat-label>{{
+              "LETTER_FORM.FIELDS.WORKER_EMAIL_LABEL" | translate
+            }}</mat-label>
             <input
               matInput
               type="email"
@@ -193,11 +228,12 @@
       <p>Your email could be here</p>
     </mat-card-content>
     <mat-card-content *ngIf="currentText">
-      @if (locationForm.get('hasWorker')?.value && locationForm.get('workerEmail')?.value) {
-  <p>Соцработник: {{ locationForm.get('workerEmail')?.value }}</p>
-} @else {
-  <p>CPAS Email: {{ currentCpas?.email || actirisEmail }}</p>
-}
+      @if (locationForm.get('hasWorker')?.value &&
+      locationForm.get('workerEmail')?.value) {
+      <p>to: {{ locationForm.get("workerEmail")?.value }}</p>
+      } @else {
+      <p>CPAS Email: {{ currentCpas?.email || actirisEmail }}</p>
+      }
       <p>{{ currentText }}</p>
       <a matButton="elevated" [attr.href]="mailHref" target="_blank">{{
         "LETTER_STEPPER.ACTIONS.OPEN_MAIL" | translate

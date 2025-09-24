@@ -276,6 +276,7 @@
   "LETTER_STEPPER": {
     "TITLE": "Rédigez votre lettre",
     "DESCRIPTION": "Renseignez vos informations en lettres latines, comme dans votre passeport (A–Z). Une fois terminé, vous pouvez copier la lettre générée ou, si votre messagerie est configurée, l’ouvrir avec vos données déjà préremplies. Astuce : vérifiez l’aperçu à la dernière étape avant l’envoi.",
+    "ACTIRIS_TAB_EXPLANATION": "Premier contact : veuillez demander un rendez-vous via le site d’Actiris (inscription/réinscription) ou vous présenter en agence. Sur cette page, vous pouvez générer une lettre si vous avez déjà un travailleur social/référent. Sinon, utilisez le lien ci-dessous.",
     "ACTIONS": {
       "COPY": "Copier la lettre",
       "OPEN_MAIL": "Ouvrir dans la messagerie"

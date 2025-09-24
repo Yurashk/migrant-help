@@ -30,8 +30,8 @@
   "WHAT_IS_VDAB": "VDAB (Flemish Service for Employment and Vocational Training) is the official employment service for Flanders and Dutch‑speaking residents of Brussels. It offers jobs, training, career advice and reskilling programmes. On this page you can find the appropriate VDAB office by region using your postcode or the street where you live.",
   "CONTACTS_PAGE": {
     "CRISIS_SERVICES": "Emergency",
-  "SOCIAL_SUPPORT": "Social Aid",
-  "INTEGRATION_EMPLOYMENT": "Work & Integration",
+    "SOCIAL_SUPPORT": "Social Aid",
+    "INTEGRATION_EMPLOYMENT": "Work & Integration",
     "META_TITLE": "Important contacts in Belgium — emergency services, social aid, jobs, healthcare",
     "META_DESCRIPTION": "Emergency numbers 112/101/1733, hotlines 1712/116000, CPAS/OCMW, Red Cross, Actiris/VDAB/FOREM, and mutualities. Click to call or open the website.",
     "H1": "Important contacts",
@@ -276,6 +276,7 @@
   "LETTER_STEPPER": {
     "TITLE": "Compose your letter",
     "DESCRIPTION": "Enter your details using the Latin alphabet—as in your passport (A–Z). When you’re done, you can copy the generated letter or, if your mail app is set up, open it with everything pre‑filled. Tip: review the preview on the last step before sending.",
+    "ACTIRIS_TAB_EXPLANATION": "First contact: please request an appointment via the Actiris website (registration/re-registration) or visit a local office in person. On this page, you can generate a letter if you already have a social worker/case manager. If not, please use the link below.",
     "ACTIONS": {
       "COPY": "Copy letter",
       "OPEN_MAIL": "Open in Mail"

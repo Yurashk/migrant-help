@@ -262,8 +262,8 @@ export class CpasMailCreate implements OnInit {
 
     this.locationForm = this.fb.group({
       commune: ['', Validators.required],
-      hasWorker: [false],
-      workerEmail: ['', []],
+      hasWorker: [this.isCepas?true : false],
+      workerEmail: ['',[Validators.email] ],
     });
 
     this.locationForm.get('hasWorker')!.valueChanges.subscribe((has) => {
@@ -309,13 +309,13 @@ private getRecipientEmail(): string {
     const currentLang = this.translate.currentLang || 'fr';
     const translations = this.translations['fr'];
 
-    const letterText = this.genererLettre(data, translations);
+    const letterText = this.isCepas?this.genererLettre(data, translations):this.genererLettreActiris(data, translations);
 
     const normalized = letterText.replace(/\r?\n/g, '\r\n');
     const subject = 'Demande d’aide';
     const subj = encodeURIComponent(subject);
     const bod = encodeURIComponent(normalized);
-const to = this.getRecipientEmail();
+    const to = this.getRecipientEmail();
     this.mailHref = `mailto:${to}?subject=${subj}&body=${bod}`;
     this.currentText = letterText;
     this.mail.set(letterText);
@@ -342,7 +342,7 @@ const to = this.getRecipientEmail();
       lignes.push(
         `Ik heb de status van ${
           t.STATUSES[data.status]
-        } en ik vraag hulp met betrekking tot: ${t.REQUESTS[data.requestType]}.`
+        } en ik vraag hulp met betrekking tot: ${this.isCepas ? t.REQUESTS[data.requestType] :t.REQUESTS_ACTIRIS[data.requestType] }.`
       );
 
       if (data.family) {
