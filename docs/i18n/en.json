@@ -41,19 +41,26 @@
     "TITLE": "Important contacts",
     "ACTIONS": { "CALL": "Call", "WEBSITE": "Website" },
     "LABELS": {
+      "EMERGENCY": "Emergency Services",
+      "POLICE": "Police",
+      "DOCTOR": "On-call Doctor",
+      "VIOLENCE": "Violence Helpline",
+      "CHILDREN": "Missing Children",
+      "IMMIGRATION": "Immigration Office",
+      "INFO": "Information for Newcomers",
+      "CPAS": "CPAS/OCMW",
+      "RED_CROSS": "Belgian Red Cross",
+      "ACTIRIS": "Actiris",
+      "VDAB": "VDAB",
+      "FOREM": "FOREM",
+      "MUTUALITIES": "Health Insurance",
       "EMERGENCY_SERVICES": "Emergency services (police / fire / ambulance)",
       "POLICE_DIRECT": "Police (direct line)",
       "ON_CALL_DOCTOR": "On-call doctor (out of hours)",
       "VIOLENCE_HELPLINE": "Violence help line (Flanders/Brussels)",
       "MISSING_CHILDREN": "Missing children (Child Focus)",
       "IMMIGRATION_OFFICE": "Immigration Office (information)",
-      "NEWCOMERS_INFO": "Information for newcomers",
-      "CPAS": "CPAS/OCMW (social assistance)",
-      "RED_CROSS": "Belgian Red Cross",
-      "ACTIRIS": "Actiris (Brussels)",
-      "VDAB": "VDAB (Flanders)",
-      "FOREM": "FOREM (Wallonia)",
-      "MUTUALITIES": "Mutualities (health insurance)"
+      "NEWCOMERS_INFO": "Information for newcomers"
     }
   },
   "MENU": {
@@ -66,7 +73,41 @@
     "PRIVACY": "Privacy Policy"
   },
   "USEFUL_LINKS": {
-    "TITLE": "Useful Links"
+    "TITLE": "Useful Links",
+    "ITEMS": {
+      "CITY_HALL": {
+        "LABEL": "City Hall Registration",
+        "DESCRIPTION": "Your first step to legal residency"
+      },
+      "HEALTH_INSURANCE": {
+        "LABEL": "Health Insurance (Mutuelle)",
+        "DESCRIPTION": "Access to healthcare in Belgium"
+      },
+      "PUBLIC_TRANSPORT": {
+        "LABEL": "Public Transport (STIB/SNCB)",
+        "DESCRIPTION": "Explore with bus, tram, and train"
+      },
+      "FIND_GP": {
+        "LABEL": "Find a GP (Doctolib)",
+        "DESCRIPTION": "Book a doctor's appointment"
+      },
+      "EMERGENCY": {
+        "LABEL": "Emergency Numbers",
+        "DESCRIPTION": "Immediate help, 24/7"
+      },
+      "WASTE_MANAGEMENT": {
+        "LABEL": "Waste Management",
+        "DESCRIPTION": "Recycle and keep the city clean"
+      },
+      "SOCIAL_SERVICES": {
+        "LABEL": "Social Services",
+        "DESCRIPTION": "CPAS/OCMW support and assistance"
+      },
+      "JOB_CENTER": {
+        "LABEL": "Job Center",
+        "DESCRIPTION": "Find employment opportunities"
+      }
+    }
   },
   "NEW_INCOMER": {
     "title": "Step-by-step Guide for Newcomers in Belgium",
@@ -396,6 +437,7 @@
   "COMMON": {
     "NEXT": "Next",
     "BACK": "Back",
-    "NO": "No"
+    "NO": "No",
+    "COMING_SOON": "Coming soon"
   }
 }

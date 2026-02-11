@@ -42,19 +42,26 @@
     "TITLE": "Contacts importants",
     "ACTIONS": { "CALL": "Appeler", "WEBSITE": "Site web" },
     "LABELS": {
+      "EMERGENCY": "Services d'urgence",
+      "POLICE": "Police",
+      "DOCTOR": "Médecin de garde",
+      "VIOLENCE": "Ligne d'aide violence",
+      "CHILDREN": "Enfants disparus",
+      "IMMIGRATION": "Office des Étrangers",
+      "INFO": "Infos nouveaux arrivants",
+      "CPAS": "CPAS/OCMW",
+      "RED_CROSS": "Croix-Rouge",
+      "ACTIRIS": "Actiris",
+      "VDAB": "VDAB",
+      "FOREM": "FOREM",
+      "MUTUALITIES": "Assurance maladie",
       "EMERGENCY_SERVICES": "Services d'urgence (police / pompiers / ambulance)",
       "POLICE_DIRECT": "Police (ligne directe)",
       "ON_CALL_DOCTOR": "Médecin de garde (hors heures ouvrables)",
       "VIOLENCE_HELPLINE": "Ligne d'aide en cas de violence (Flandre/Bruxelles)",
       "MISSING_CHILDREN": "Enfants disparus (Child Focus)",
       "IMMIGRATION_OFFICE": "Office des Étrangers (informations)",
-      "NEWCOMERS_INFO": "Informations pour les nouveaux arrivants",
-      "CPAS": "CPAS/OCMW (aide sociale)",
-      "RED_CROSS": "Croix-Rouge de Belgique",
-      "ACTIRIS": "Actiris (Bruxelles)",
-      "VDAB": "VDAB (Flandre)",
-      "FOREM": "FOREM (Wallonie)",
-      "MUTUALITIES": "Mutualités (assurance maladie)"
+      "NEWCOMERS_INFO": "Informations pour les nouveaux arrivants"
     }
   },
   "NEW_INCOMER": {
@@ -108,7 +115,41 @@
     "PRIVACY": "Politique de confidentialité"
   },
   "USEFUL_LINKS": {
-    "TITLE": "Liens utiles"
+    "TITLE": "Liens utiles",
+    "ITEMS": {
+      "CITY_HALL": {
+        "LABEL": "Inscription à la mairie",
+        "DESCRIPTION": "Votre première étape vers la résidence légale"
+      },
+      "HEALTH_INSURANCE": {
+        "LABEL": "Assurance santé (Mutuelle)",
+        "DESCRIPTION": "Accès aux soins de santé en Belgique"
+      },
+      "PUBLIC_TRANSPORT": {
+        "LABEL": "Transports en commun (STIB/SNCB)",
+        "DESCRIPTION": "Explorez en bus, tram et train"
+      },
+      "FIND_GP": {
+        "LABEL": "Trouver un médecin (Doctolib)",
+        "DESCRIPTION": "Prenez rendez-vous chez le médecin"
+      },
+      "EMERGENCY": {
+        "LABEL": "Numéros d'urgence",
+        "DESCRIPTION": "Aide immédiate, 24h/24 et 7j/7"
+      },
+      "WASTE_MANAGEMENT": {
+        "LABEL": "Gestion des déchets",
+        "DESCRIPTION": "Recyclez et gardez la ville propre"
+      },
+      "SOCIAL_SERVICES": {
+        "LABEL": "Services sociaux",
+        "DESCRIPTION": "Soutien et assistance CPAS/OCMW"
+      },
+      "JOB_CENTER": {
+        "LABEL": "Pôle emploi",
+        "DESCRIPTION": "Trouvez des opportunités d'emploi"
+      }
+    }
   },
   "HOME": {
     "APP_INFO": {
@@ -396,6 +437,7 @@
   "COMMON": {
     "NEXT": "Suivant",
     "BACK": "Retour",
-    "NO": "Non"
+    "NO": "Non",
+    "COMING_SOON": "Bientôt disponible"
   }
 }
