@@ -1,35 +1,24 @@
-<mat-card>
-  <mat-card-title>{{ "HOME.APP_INFO.TITLE" | translate }}</mat-card-title>
-  <mat-card-content>
-    <p>{{ "HOME.APP_INFO.DESCRIPTION" | translate }}</p>
-    <h4>{{ "HOME.APP_INFO.FEATURES_TITLE" | translate }}</h4>
-    <ul class="feature-list">
-      <li>
-        <div class="icon-holder">
-          <mat-icon color="primary">location_on</mat-icon>
+<mat-card class="about-card">
+  <mat-card-content class="card-content">
+    <h3 class="about-title">{{ "HOME.APP_INFO.TITLE" | translate }}</h3>
+    
+    <p class="about-description">{{ "HOME.APP_INFO.DESCRIPTION" | translate }}</p>
+    
+    <h4 class="features-title">{{ "HOME.APP_INFO.FEATURES_TITLE" | translate }}</h4>
+    
+    <div class="features-list-container">
+      <div class="divider"></div>
+      
+      <div class="features-list">
+        <div *ngFor="let feature of features" class="feature-item">
+          <div class="icon-circle" [style.background-color]="feature.color">
+            <mat-icon>{{ feature.icon }}</mat-icon>
+          </div>
+          <span class="feature-text">{{ "HOME.APP_INFO.FEATURES." + feature.id | translate }}</span>
         </div>
-        <span>{{ "HOME.APP_INFO.FEATURES.CPAS_SEARCH" | translate }}</span>
-      </li>
-      <li>
-        <div class="icon-holder"><mat-icon color="primary">language</mat-icon></div>
-        <span>{{ "HOME.APP_INFO.FEATURES.MULTILANG" | translate }}</span>
-      </li>
-      <li>
-        <div class="icon-holder"><mat-icon color="primary">gavel</mat-icon></div>
-        <span>{{ "HOME.SECTIONS.LAWYER.DESCRIPTION" | translate }}</span>
-      </li>
-      <li>
-        <div class="icon-holder"><mat-icon color="primary">translate</mat-icon></div>
-        <span>{{ "HOME.SECTIONS.TRANSLATOR.DESCRIPTION" | translate }}</span>
-      </li>
-      <li>
-        <div class="icon-holder"><mat-icon color="primary">home_work</mat-icon></div>
-        <span>{{ "HOME.SECTIONS.AGENT.DESCRIPTION" | translate }}</span>
-      </li>
-      <li>
-        <div class="icon-holder"><mat-icon color="primary">security</mat-icon></div>
-        <span>{{ "HOME.APP_INFO.FEATURES.PRIVACY" | translate }}</span>
-      </li>
-    </ul>
+      </div>
+      
+      <div class="divider"></div>
+    </div>
   </mat-card-content>
 </mat-card>

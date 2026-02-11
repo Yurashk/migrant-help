@@ -1,141 +1,31 @@
 <div class="sections-grid">
-  <!-- Я только приехал -->
-  <mat-card class="section-card section-newcomer">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">emoji_people</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.NEWCOMER.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.NEWCOMER.DESCRIPTION" | translate }}
-        </p>
+  <mat-card 
+    *ngFor="let section of sections" 
+    class="section-card"
+    [routerLink]="section.route !== '#' ? section.route : null"
+    [class.clickable]="section.route !== '#'">
+    
+    <div class="card-content">
+      <div class="icon-circle" [style.background-color]="section.color">
+        <mat-icon>{{ section.icon }}</mat-icon>
+      </div>
+      
+      <div class="section-info">
+        <h3 class="section-title">{{ 'HOME.SECTIONS.' + section.id + '.TITLE' | translate }}</h3>
+        <p class="section-description">{{ 'HOME.SECTIONS.' + section.id + '.DESCRIPTION' | translate }}</p>
       </div>
     </div>
-    <div class="card-actions">
-      <button mat-raised-button routerLink="/just-arrived" matButton="tonal">
-        {{ "HOME.SECTIONS.NEWCOMER.BUTTON" | translate }}
+    
+    <div class="card-actions" *ngIf="section.route !== '#'">
+      <button mat-stroked-button [routerLink]="section.route">
+        {{ 'HOME.SECTIONS.' + section.id + '.BUTTON' | translate }}
       </button>
     </div>
+    
+    <div class="card-actions" *ngIf="section.route === '#'">
+      <span class="coming-soon">{{ 'COMMON.COMING_SOON' | translate }}</span>
+    </div>
+    
+    <mat-icon class="arrow-icon" *ngIf="section.route !== '#'">arrow_forward</mat-icon>
   </mat-card>
-
-   <mat-card class="section-card section-newcomer">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">add_alert</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.CONTACTS.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.CONTACTS.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button routerLink="/important-contacts" matButton="tonal">
-        {{ "HOME.SECTIONS.CONTACTS.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-
-  <!-- CPAS -->
-  <mat-card class="section-card section-cpas">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">location_city</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.CPAS.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.CPAS.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button routerLink="/cpas" matButton="tonal">
-        {{ "HOME.SECTIONS.CPAS.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-
-  <!-- Actiris / VDAB -->
-  <mat-card class="section-card section-actiris">
-    <div class="card-header">
-      <mat-icon class="section-icon" >work</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.ACTIRIS.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.ACTIRIS.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button matButton="tonal" routerLink="/labor-exchange">
-        {{ "HOME.SECTIONS.ACTIRIS.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-  <mat-card class="section-card section-lawyer">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">gavel</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.LAWYER.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.LAWYER.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button matButton="tonal">
-        {{ "HOME.SECTIONS.LAWYER.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-  
-  <!-- Переводчик -->
-  <mat-card class="section-card section-translator">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">translate</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.TRANSLATOR.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.TRANSLATOR.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button matButton="tonal">
-        {{ "HOME.SECTIONS.TRANSLATOR.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-  
-  <!-- Риелтор -->
-  <mat-card class="section-card section-agent">
-    <div class="card-header">
-      <mat-icon class="section-icon" color="primary">home_work</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.AGENT.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.AGENT.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button matButton="tonal" routerLink="/find-apartaments">
-        {{ "HOME.SECTIONS.AGENT.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card>
-  <!-- Составить письмо -->
-  <!-- <mat-card class="section-card section-letter">
-    <div class="card-header">
-      <mat-icon class="section-icon">edit_note</mat-icon>
-      <div>
-        <h3>{{ "HOME.SECTIONS.LETTER.TITLE" | translate }}</h3>
-        <p class="section-description">
-          {{ "HOME.SECTIONS.LETTER.DESCRIPTION" | translate }}
-        </p>
-      </div>
-    </div>
-    <div class="card-actions">
-      <button mat-raised-button matButton="tonal">
-        {{ "HOME.SECTIONS.LETTER.BUTTON" | translate }}
-      </button>
-    </div>
-  </mat-card> -->
 </div>

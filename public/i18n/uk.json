@@ -41,19 +41,26 @@
     "TITLE": "Важливі контакти",
     "ACTIONS": { "CALL": "Подзвонити", "WEBSITE": "Вебсайт" },
     "LABELS": {
+      "EMERGENCY": "Екстрені служби",
+      "POLICE": "Поліція",
+      "DOCTOR": "Лікар черговий",
+      "VIOLENCE": "Допомога при насильстві",
+      "CHILDREN": "Зниклі діти",
+      "IMMIGRATION": "Міграційна служба",
+      "INFO": "Інформація для новоприбулих",
+      "CPAS": "CPAS/OCMW",
+      "RED_CROSS": "Червоний Хрест",
+      "ACTIRIS": "Actiris",
+      "VDAB": "VDAB",
+      "FOREM": "FOREM",
+      "MUTUALITIES": "Медичне страхування",
       "EMERGENCY_SERVICES": "Екстрені служби (поліція / пожежні / швидка)",
       "POLICE_DIRECT": "Поліція (прямий номер)",
       "ON_CALL_DOCTOR": "Лікар черговий (поза робочим часом)",
       "VIOLENCE_HELPLINE": "Допомога при насильстві (Фландрія/Брюссель)",
       "MISSING_CHILDREN": "Зниклі діти (Child Focus)",
       "IMMIGRATION_OFFICE": "Міграційна служба (інформація)",
-      "NEWCOMERS_INFO": "Інформація для новоприбулих",
-      "CPAS": "CPAS/OCMW (соціальна допомога)",
-      "RED_CROSS": "Червоний Хрест Бельгії",
-      "ACTIRIS": "Actiris (Брюссель)",
-      "VDAB": "VDAB (Фландрія)",
-      "FOREM": "FOREM (Валлонія)",
-      "MUTUALITIES": "Мутуалітети (медичне страхування)"
+      "NEWCOMERS_INFO": "Інформація для новоприбулих"
     }
   },
   "MENU": {
@@ -66,7 +73,41 @@
     "PRIVACY": "Політика конфіденційності"
   },
   "USEFUL_LINKS": {
-    "TITLE": "Корисні посилання"
+    "TITLE": "Корисні посилання",
+    "ITEMS": {
+      "CITY_HALL": {
+        "LABEL": "Реєстрація в міській раді",
+        "DESCRIPTION": "Ваш перший крок до легального проживання"
+      },
+      "HEALTH_INSURANCE": {
+        "LABEL": "Медичне страхування (Мутуель)",
+        "DESCRIPTION": "Доступ до медичної допомоги в Бельгії"
+      },
+      "PUBLIC_TRANSPORT": {
+        "LABEL": "Громадський транспорт (STIB/SNCB)",
+        "DESCRIPTION": "Подорожуйте автобусом, трамваєм та поїздом"
+      },
+      "FIND_GP": {
+        "LABEL": "Знайти лікаря (Doctolib)",
+        "DESCRIPTION": "Записатися на прийом до лікаря"
+      },
+      "EMERGENCY": {
+        "LABEL": "Номери екстрених служб",
+        "DESCRIPTION": "Негайна допомога, 24/7"
+      },
+      "WASTE_MANAGEMENT": {
+        "LABEL": "Управління відходами",
+        "DESCRIPTION": "Сортуйте сміття та зберігайте чистоту"
+      },
+      "SOCIAL_SERVICES": {
+        "LABEL": "Соціальні служби",
+        "DESCRIPTION": "Підтримка та допомога CPAS/OCMW"
+      },
+      "JOB_CENTER": {
+        "LABEL": "Центр зайнятості",
+        "DESCRIPTION": "Знайдіть можливості працевлаштування"
+      }
+    }
   },
 
   "NEW_INCOMER": {
@@ -396,6 +437,7 @@
   "COMMON": {
     "NEXT": "Далі",
     "BACK": "Назад",
-    "NO": "Ні"
+    "NO": "Ні",
+    "COMING_SOON": "Скоро буде"
   }
 }

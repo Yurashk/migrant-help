@@ -41,19 +41,26 @@
     "TITLE": "Önemli telefonlar",
     "ACTIONS": { "CALL": "Ara", "WEBSITE": "Web sitesi" },
     "LABELS": {
+      "EMERGENCY": "Acil servisler",
+      "POLICE": "Polis",
+      "DOCTOR": "Nöbetçi doktor",
+      "VIOLENCE": "Şiddet yardım hattı",
+      "CHILDREN": "Kayıp çocuklar",
+      "IMMIGRATION": "Göçmenlik ofisi",
+      "INFO": "Yeni gelenler için bilgi",
+      "CPAS": "CPAS/OCMW",
+      "RED_CROSS": "Kızılhaç",
+      "ACTIRIS": "Actiris",
+      "VDAB": "VDAB",
+      "FOREM": "FOREM",
+      "MUTUALITIES": "Sağlık sigortası",
       "EMERGENCY_SERVICES": "Acil servisler (polis / itfaiye / ambulans)",
       "POLICE_DIRECT": "Polis (doğrudan hat)",
       "ON_CALL_DOCTOR": "Nöbetçi doktor (mesai dışı)",
       "VIOLENCE_HELPLINE": "Şiddet yardım hattı (Flanders/Brüksel)",
       "MISSING_CHILDREN": "Kayıp çocuklar (Child Focus)",
       "IMMIGRATION_OFFICE": "Göçmenlik ofisi (bilgi)",
-      "NEWCOMERS_INFO": "Yeni gelenler için bilgi",
-      "CPAS": "CPAS/OCMW (sosyal yardım)",
-      "RED_CROSS": "Belçika Kızılhaçı",
-      "ACTIRIS": "Actiris (Brüksel)",
-      "VDAB": "VDAB (Flanders)",
-      "FOREM": "FOREM (Valonya)",
-      "MUTUALITIES": "Karşılıklı sağlık sigortaları"
+      "NEWCOMERS_INFO": "Yeni gelenler için bilgi"
     }
   },
   "MENU": {
@@ -66,7 +73,41 @@
     "PRIVACY": "Gizlilik Politikası"
   },
   "USEFUL_LINKS": {
-    "TITLE": "Faydalı bağlantılar"
+    "TITLE": "Faydalı bağlantılar",
+    "ITEMS": {
+      "CITY_HALL": {
+        "LABEL": "Belediye Kaydı",
+        "DESCRIPTION": "Yasal ikametinizin ilk adımı"
+      },
+      "HEALTH_INSURANCE": {
+        "LABEL": "Sağlık Sigortası (Mutuelle)",
+        "DESCRIPTION": "Belçika'da sağlık hizmetlerine erişim"
+      },
+      "PUBLIC_TRANSPORT": {
+        "LABEL": "Toplu Taşıma (STIB/SNCB)",
+        "DESCRIPTION": "Otobüs, tramvay ve trenle keşfedin"
+      },
+      "FIND_GP": {
+        "LABEL": "Doktor Bul (Doctolib)",
+        "DESCRIPTION": "Doktor randevusu alın"
+      },
+      "EMERGENCY": {
+        "LABEL": "Acil Durum Numaraları",
+        "DESCRIPTION": "7/24 acil yardım"
+      },
+      "WASTE_MANAGEMENT": {
+        "LABEL": "Atık Yönetimi",
+        "DESCRIPTION": "Geri dönüşüm yapın ve şehri temiz tutun"
+      },
+      "SOCIAL_SERVICES": {
+        "LABEL": "Sosyal Hizmetler",
+        "DESCRIPTION": "CPAS/OCMW destek ve yardım"
+      },
+      "JOB_CENTER": {
+        "LABEL": "İş Merkezi",
+        "DESCRIPTION": "İstihdam fırsatları bulun"
+      }
+    }
   },
   "NEW_INCOMER": {
     "title": "Belçika’ya Yeni Gelenler İçin Adım Adım Rehber",
@@ -395,6 +436,7 @@
   "COMMON": {
     "NEXT": "İleri",
     "BACK": "Geri",
-    "NO": "Hayır"
+    "NO": "Hayır",
+    "COMING_SOON": "Yakında"
   }
 }

@@ -1,46 +1,95 @@
-mat-card {
-  background-color: #fefefe;
-  mat-card-title {
-    color: #2a2f3c;
-    text-align: center;
-    margin-top: 10px;
-  }
-  mat-card-content {
-    color: #2a2f3c;
-    p{
-        text-align: justify;
-    }
-    h4 {
-      letter-spacing: 1px;
-      color: #2a2f3c;
-    }
-    .feature-list {
-      list-style: none;
-      font-weight: 500;
-      padding: 0;
-      margin: 0;
-    }
+.about-card {
+  padding: 0;
+  margin: 0;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-    .feature-list li {
-      display: flex;
-      font-size: 18px;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-      span {
-        font-size: 12px;
-      }
-    }
-    .feature-list .icon-holder {
-      width: 30px;
-      display: flex;
-      align-items: center;
-    }
-    .feature-list li .icon-holder mat-icon {
-      vertical-align: middle;
-      font-size: 24px;
+.card-content {
+  padding: 20px;
+}
 
-      color: #0288d1;
-    }
-  }
+.about-title {
+  color: #2a2f3c;
+  text-align: center;
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-description {
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+}
+
+.features-title {
+  color: #2a2f3c;
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.features-list-container {
+  padding: 0;
+  margin: 0;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  width: 100%;
+  margin: 0;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 8px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  pointer-events: none;
+  user-select: none;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.feature-item:last-child {
+  border-bottom: none;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-circle mat-icon {
+  color: white;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+  font-weight: 500;
 }

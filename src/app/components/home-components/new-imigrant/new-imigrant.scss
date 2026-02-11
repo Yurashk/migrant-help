@@ -1,60 +1,174 @@
 .sections-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-card.clickable {
+  cursor: pointer;
+}
+
+.section-card.clickable:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.section-card.clickable:hover .arrow-icon {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-circle mat-icon {
+  color: white;
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+.section-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-title {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2f3c;
+  line-height: 1.3;
+}
+
+.section-description {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.card-actions {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-actions button {
+  width: 100%;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.coming-soon {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Section-specific accent colors on hover */
+.section-card:nth-child(1):hover { border-color: rgba(76, 175, 80, 0.3); }
+.section-card:nth-child(2):hover { border-color: rgba(244, 67, 54, 0.3); }
+.section-card:nth-child(3):hover { border-color: rgba(33, 150, 243, 0.3); }
+.section-card:nth-child(4):hover { border-color: rgba(255, 152, 0, 0.3); }
+.section-card:nth-child(5):hover { border-color: rgba(156, 39, 176, 0.3); }
+.section-card:nth-child(6):hover { border-color: rgba(0, 188, 212, 0.3); }
+.section-card:nth-child(7):hover { border-color: rgba(121, 85, 72, 0.3); }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .sections-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   
   .section-card {
     padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-    background-color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color:#2a2f3c
-   
   }
   
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 100px;
-    width: 100%;
-    gap: 6px;
-    mat-icon{
-        font-size: 40px;
-        width: 50px;
-        height: 50px;
-        color: rgba(187, 45, 45, 0.5);
-        background-color: #fefefe;
-    }
-    div{
-        width: calc(100% - 56px);
-    }
+  .icon-circle {
+    width: 48px;
+    height: 48px;
   }
   
-  .section-icon {
-    font-size: 40px;
-    background: white;
-    border-radius: 50%;
-    padding: 8px;
+  .icon-circle mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .section-title {
+    font-size: 15px;
   }
   
   .section-description {
-    color: #444;
-    margin: 4px 0 0;
-    font-size: 14px;
+    font-size: 12px;
   }
-  
-  .card-actions {
-    margin-top: 16px;
-    
-    button{
-        width: 200px;
-    }
+}
+
+/* Tablet - 2 columns */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sections-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+}
+
+/* Desktop - 3 or 4 columns depending on space */
+@media (min-width: 1025px) {
+  .sections-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1400px) {
+  .sections-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

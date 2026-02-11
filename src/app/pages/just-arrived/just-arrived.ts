@@ -7,10 +7,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MarkdownPipe } from "../../services/markdown.pipe";
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { UsefulLinks } from "../useful-links/useful-links";
 
 @Component({
   selector: 'app-just-arrived',
-  imports: [CommonModule, TranslateModule, MatCard, MatCardTitle, MatCardContent, MatIcon, MarkdownPipe,MatDividerModule, MatButtonModule],
+  imports: [CommonModule, TranslateModule, MatCard, MatCardTitle, MatCardContent, MatIcon, MarkdownPipe, MatDividerModule, MatButtonModule, UsefulLinks],
   templateUrl: './just-arrived.html',
   styleUrl: './just-arrived.scss'
 })
