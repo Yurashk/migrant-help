@@ -1,32 +1,51 @@
-<mat-card class="title-card">
-  <mat-card-title>{{ "NEW_INCOMER.title" | translate }}</mat-card-title>
-  <mat-card-content style="text-align: center">{{
-    "NEW_INCOMER.description" | translate
-  }}</mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <div *ngFor="let stepKey of stepKeys" class="guide-step">
-      <div class="icon-holder">
-        <mat-icon class="step-icon" color="primary">{{
-          stepIcons[stepKey] || "info"
-        }}</mat-icon>
+<div class="just-arrived-container">
+  <!-- Header Card -->
+  <mat-card class="header-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar">
+        <mat-icon>flight_land</mat-icon>
       </div>
-      <div class="guide-step-info">
-        <h4>{{ "NEW_INCOMER.steps." + stepKey + ".title" | translate }}</h4>
-        <p
-          [innerHTML]="
-            'NEW_INCOMER.steps.' + stepKey + '.description'
-              | translate
-              | markdown
-          "
-        ></p>
+      <mat-card-title>{{ "NEW_INCOMER.title" | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ "NEW_INCOMER.description" | translate }}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+  <!-- Steps Card -->
+  <mat-card class="steps-card">
+    <mat-card-content>
+      <div class="steps-list">
+        <div
+          *ngFor="let stepKey of stepKeys; let i = index"
+          [attr.data-index]="i"
+          class="step-item"
+        >
+          <div class="step-number">{{ i + 1 }}</div>
+          
+          <div class="step-content">
+            <div class="step-header">
+              <mat-icon class="step-icon">{{ stepIcons[stepKey] || "info" }}</mat-icon>
+              <h3 class="step-title">{{ "NEW_INCOMER.steps." + stepKey + ".title" | translate }}</h3>
+            </div>
+            
+            <div class="step-description" [innerHTML]="'NEW_INCOMER.steps.' + stepKey + '.description' | translate | markdown"></div>
+          </div>
+          
+          <mat-divider class="step-divider" *ngIf="i < stepKeys.length - 1"></mat-divider>
+        </div>
       </div>
-      <mat-divider />
-    </div>
-  </mat-card-content>
-</mat-card>
-<mat-card style="margin-top: 5px">
-  <mat-card-title>{{ "USEFUL_LINKS.TITLE" | translate }}</mat-card-title>
-  <app-useful-links></app-useful-links>
-</mat-card>
+    </mat-card-content>
+  </mat-card>
+
+  <!-- Useful Links Card -->
+  <mat-card class="links-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar small">
+        <mat-icon>link</mat-icon>
+      </div>
+      <mat-card-title>{{ "USEFUL_LINKS.TITLE" | translate }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <app-useful-links></app-useful-links>
+    </mat-card-content>
+  </mat-card>
+</div>

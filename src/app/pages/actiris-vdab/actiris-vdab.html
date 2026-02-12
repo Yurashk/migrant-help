@@ -1,17 +1,85 @@
-<div class="cpas-container">
-  <mat-card>
-    <mat-card-content> {{ "WHAT_IS_ACTIRIS" | translate }}</mat-card-content>
+<div class="actiris-container">
+  <!-- Information Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-icon-wrapper">
+        <mat-icon class="hero-icon">work</mat-icon>
+      </div>
+      
+      <h1 class="hero-title">{{ 'ACTIRIS_HERO.TITLE' | translate }}</h1>
+      
+      <p class="hero-description">
+        {{ 'WHAT_IS_ACTIRIS' | translate }}
+      </p>
+      
+      <div class="services-grid">
+        <div class="service-item">
+          <mat-icon>search</mat-icon>
+          <span>{{ 'ACTIRIS_HERO.SERVICES.JOB_SEARCH' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>school</mat-icon>
+          <span>{{ 'ACTIRIS_HERO.SERVICES.TRAINING' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>badge</mat-icon>
+          <span>{{ 'ACTIRIS_HERO.SERVICES.CV_HELP' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>record_voice_over</mat-icon>
+          <span>{{ 'ACTIRIS_HERO.SERVICES.INTERVIEW' | translate }}</span>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <p class="cta-text">{{ 'ACTIRIS_HERO.CTA_TEXT' | translate }}</p>
+        <div class="cta-buttons">
+          <a 
+            mat-stroked-button 
+            href="https://www.actiris.brussels" 
+            target="_blank" 
+            rel="noopener"
+            class="cta-button primary"
+          >
+            <mat-icon>language</mat-icon>
+            {{ 'ACTIRIS_HERO.BUTTONS.ACTIRIS_SITE' | translate }}
+          </a>
+          <a 
+            mat-stroked-button 
+            href="https://www.vdab.be" 
+            target="_blank" 
+            rel="noopener"
+            class="cta-button secondary"
+          >
+            <mat-icon>language</mat-icon>
+            {{ 'ACTIRIS_HERO.BUTTONS.VDAB_SITE' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Card Section -->
+  <mat-card class="info-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar">
+        <mat-icon>info</mat-icon>
+      </div>
+      <mat-card-title>{{ 'ACTIRIS_HERO.INFO_TITLE' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'ACTIRIS_HERO.INFO_SUBTITLE' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ 'WHAT_IS_VDAB' | translate }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button 
+        mat-button 
+        routerLink="/labor-exchange"
+        color="primary"
+      >
+        {{ 'NAV.ACTIRIS' | translate }}
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </mat-card-actions>
   </mat-card>
-  <div class="search-bar-container">
-    <div class="search-container">
-      <app-search-bar
-        class="search-bar"
-        (searchChanged)="getSearchTerm($event)"
-      ></app-search-bar>
-    </div>
-    <div class="search-container">
-      <app-choose-city class="search-bar"></app-choose-city>
-    </div>
-  </div>
-  <app-actiris-list [searchTerm]="searchTerm()"></app-actiris-list>
 </div>

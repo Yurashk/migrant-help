@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatCard, MatCardContent, MatCardTitle } from "@angular/material/card";
+import { MatCard, MatCardContent, MatCardTitle, MatCardHeader, MatCardSubtitle } from "@angular/material/card";
 
 import { MatIcon } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
@@ -11,7 +11,7 @@ import { UsefulLinks } from "../useful-links/useful-links";
 
 @Component({
   selector: 'app-just-arrived',
-  imports: [CommonModule, TranslateModule, MatCard, MatCardTitle, MatCardContent, MatIcon, MarkdownPipe, MatDividerModule, MatButtonModule, UsefulLinks],
+  imports: [CommonModule, TranslateModule, MatCard, MatCardTitle, MatCardContent, MatCardHeader, MatCardSubtitle, MatIcon, MarkdownPipe, MatDividerModule, MatButtonModule, UsefulLinks],
   templateUrl: './just-arrived.html',
   styleUrl: './just-arrived.scss'
 })

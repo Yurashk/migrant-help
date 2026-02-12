@@ -1,28 +1,38 @@
-<mat-card style="margin-bottom: 20px">
-  <mat-card-title>{{ "cpas_steps_title" | translate }}</mat-card-title>
-  <mat-card-content style="text-align: justify; margin-top: 10px;">
-    {{ "cpas_list_title" | translate }}
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <div
-      *ngFor="let stepKey of stepArray; let i = index"
-      [attr.data-index]="i"
-      class="guide-step"
-    >
-      <div class="icon-holder">
-        <mat-icon class="step-icon" color="primary">{{
-          stepIcons[i] || "info"
-        }}</mat-icon>
+<div class="cpas-info-container">
+  <!-- Header Card -->
+  <mat-card class="header-card">
+    <mat-card-header>
+      <div class="header-icon" mat-card-avatar>
+        <mat-icon>help_outline</mat-icon>
       </div>
-      <div class="guide-step-info">
-        <h4>{{ "cpas_steps." + stepKey + ".title" | translate }}</h4>
-        <p
-          [innerHTML]="'cpas_steps.' + stepKey + '.description' | translate"
-        ></p>
+      <mat-card-title>{{ "cpas_steps_title" | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ "cpas_list_title" | translate }}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+  <!-- Steps Card -->
+  <mat-card class="steps-card">
+    <mat-card-content>
+      <div class="steps-list">
+        <div
+          *ngFor="let stepKey of stepArray; let i = index"
+          [attr.data-index]="i"
+          class="step-item"
+        >
+          <div class="step-number">{{ i + 1 }}</div>
+          
+          <div class="step-content">
+            <div class="step-header">
+              <mat-icon class="step-icon">{{ stepIcons[i] || "info" }}</mat-icon>
+              <h3 class="step-title">{{ "cpas_steps." + stepKey + ".title" | translate }}</h3>
+            </div>
+            
+            <p class="step-description" [innerHTML]="'cpas_steps.' + stepKey + '.description' | translate"></p>
+          </div>
+          
+          <mat-divider class="step-divider" *ngIf="i < stepArray.length - 1"></mat-divider>
+        </div>
       </div>
-      <mat-divider />
-    </div>
-  </mat-card-content>
-</mat-card>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,34 +1,29 @@
-import { Component, signal } from '@angular/core';
-import { ActirisList } from '../../components/actiris-list/actiris-list';
-import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
-import { debounceTime, Subject } from 'rxjs';
-import { MatCard, MatCardContent } from '@angular/material/card';
+import { Component } from '@angular/core';
+import { MatCard, MatCardContent, MatCardHeader, MatCardTitle, MatCardSubtitle, MatCardActions } from '@angular/material/card';
+import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { ChooseCity } from "../../components/choose-city/choose-city";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-actiris-vdab',
+  standalone: true,
   imports: [
-    ActirisList,
-    SearchBarComponent,
+    CommonModule,
+    RouterModule,
+    TranslateModule,
     MatCard,
     MatCardContent,
-    TranslateModule,
-    ChooseCity
-],
+    MatCardHeader,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatCardActions,
+    MatButton,
+    MatIcon
+  ],
   templateUrl: './actiris-vdab.html',
   styleUrl: './actiris-vdab.scss',
 })
 export class ActirisVdab {
-  private searchSubject = new Subject<string>();
-  searchTerm = signal('');
-  constructor() {
-    this.searchSubject.pipe(debounceTime(500)).subscribe((value) => {
-      this.searchTerm.set(value);
-    });
-  }
-  getSearchTerm(event: string) {
-    console.log(event);
-    this.searchSubject.next(event);
-  }
 }

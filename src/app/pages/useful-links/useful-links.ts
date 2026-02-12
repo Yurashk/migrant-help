@@ -46,7 +46,7 @@ export const USEFUL_LINKS: UsefulLink[] = [
     id: 'WASTE_MANAGEMENT',
     icon: 'delete',
     color: '#F44336',
-    url: 'https://www.belgium.be/en/environment/waste'
+    url: 'https://www.belgium.be/en/environment/sorting_and_recycling_household_waste'
   },
   {
     id: 'SOCIAL_SERVICES',

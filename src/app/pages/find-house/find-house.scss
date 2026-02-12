@@ -1,7 +1,238 @@
-mat-card{
-    background-color: white;
-    min-height: 75vh;
+:host {
+  --fh-primary: #3b82f6;
+  --fh-primary-light: #dbeafe;
+  --fh-text-primary: #0f172a;
+  --fh-text-secondary: #64748b;
+  --fh-bg: #f8fafc;
+  --fh-white: #ffffff;
+  --fh-border: #e2e8f0;
+  --fh-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --fh-radius: 16px;
 }
-.description-card{
-    padding: 15px;
+
+.find-house-card {
+  background-color: var(--fh-white);
+  border-radius: var(--fh-radius);
+  box-shadow: var(--fh-shadow);
+  min-height: 75vh;
+  overflow: hidden;
+  
+  mat-card-content {
+    padding: 0;
+  }
+}
+
+// Tab Group Styles
+::ng-deep .mat-mdc-tab-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+::ng-deep .mat-mdc-tab-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-bottom: 1px solid var(--fh-border);
+}
+
+::ng-deep .mat-mdc-tab-label-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::ng-deep .mat-mdc-tab-label-container::-webkit-scrollbar {
+  display: none;
+}
+
+::ng-deep .mat-mdc-tab-label {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding: 16px 20px;
+  color: var(--fh-text-secondary);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: auto;
+}
+
+::ng-deep .mat-mdc-tab-label.mat-mdc-tab-label-active {
+  color: var(--fh-primary);
+  font-weight: 600;
+}
+
+::ng-deep .mat-mdc-ink-bar {
+  height: 3px;
+  border-radius: 2px 2px 0 0;
+  background: linear-gradient(90deg, var(--fh-primary), #60a5fa);
+}
+
+::ng-deep .mat-mdc-tab-body-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+// Tab Content
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+// Tab Description
+.tab-description {
+  padding: 24px 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--fh-text-secondary);
+  background-color: var(--fh-bg);
+  border-bottom: 1px solid var(--fh-border);
+  word-wrap: break-word;
+}
+
+// Sites List
+.sites-list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+}
+
+// Site Card
+.site-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px;
+  background: var(--fh-white);
+  border-radius: 12px;
+  border: 1px solid var(--fh-border);
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #fafafa;
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    
+    .site-link-icon {
+      color: var(--fh-primary);
+      transform: translate(2px, -2px);
+    }
+  }
+}
+
+// Site Header
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--fh-text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.site-link-icon {
+  color: var(--fh-text-secondary);
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+// Site Description
+.site-description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--fh-text-secondary);
+  margin: 0;
+  word-wrap: break-word;
+}
+
+// Empty State
+.empty-state {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--fh-text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.empty-state-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  color: #cbd5e1;
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+  .find-house-card {
+    border-radius: 0;
+    box-shadow: none;
+    min-height: auto;
+  }
+  
+  ::ng-deep .mat-mdc-tab-label {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .tab-description {
+    padding: 20px;
+    font-size: 0.9375rem;
+  }
+  
+  .sites-list {
+    padding: 12px;
+    gap: 10px;
+  }
+  
+  .site-card {
+    padding: 16px 20px;
+  }
+  
+  .site-name {
+    font-size: 1rem;
+  }
+  
+  .site-description {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-description {
+    padding: 16px;
+  }
+  
+  .sites-list {
+    padding: 10px;
+  }
+  
+  .site-card {
+    padding: 14px 16px;
+  }
+  
+  .site-header {
+    gap: 8px;
+  }
+  
+  .site-name {
+    font-size: 0.9375rem;
+  }
+  
+  .site-description {
+    font-size: 0.8125rem;
+  }
 }

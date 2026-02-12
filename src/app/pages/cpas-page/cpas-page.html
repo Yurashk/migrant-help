@@ -1,28 +1,83 @@
 <div class="cpas-container">
-  <mat-card>
-    <mat-card-title><mat-icon>location_city</mat-icon>CPAS/OCMW</mat-card-title>
+  <!-- Information Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-icon-wrapper">
+        <mat-icon class="hero-icon">account_balance</mat-icon>
+      </div>
+      
+      <h1 class="hero-title">{{ 'CPAS_HERO.TITLE' | translate }}</h1>
+      
+      <p class="hero-description">
+        {{ 'WHAT_IS_CPAS' | translate }}
+      </p>
+      
+      <div class="services-grid">
+        <div class="service-item">
+          <mat-icon>volunteer_activism</mat-icon>
+          <span>{{ 'CPAS_HERO.SERVICES.SOCIAL_AID' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>attach_money</mat-icon>
+          <span>{{ 'CPAS_HERO.SERVICES.FINANCIAL' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>groups</mat-icon>
+          <span>{{ 'CPAS_HERO.SERVICES.INTEGRATION' | translate }}</span>
+        </div>
+        <div class="service-item">
+          <mat-icon>health_and_safety</mat-icon>
+          <span>{{ 'CPAS_HERO.SERVICES.HEALTH' | translate }}</span>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <p class="cta-text">{{ 'CPAS_HERO.CTA_TEXT' | translate }}</p>
+        <div class="cta-buttons">
+          <a 
+            mat-stroked-button 
+            href="https://www.cpasonline.be/" 
+            target="_blank" 
+            rel="noopener"
+            class="cta-button primary"
+          >
+            <mat-icon>language</mat-icon>
+            {{ 'CPAS_HERO.BUTTONS.OFFICIAL_SITE' | translate }}
+          </a>
+          <a 
+            mat-stroked-button 
+            routerLink="/cpas-info"
+            class="cta-button secondary"
+          >
+            <mat-icon>article</mat-icon>
+            {{ 'CPAS_HERO.BUTTONS.GUIDE' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Card Section -->
+  <mat-card class="info-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar">
+        <mat-icon>info</mat-icon>
+      </div>
+      <mat-card-title>{{ 'CPAS_HERO.INFO_TITLE' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'CPAS_HERO.INFO_SUBTITLE' | translate }}</mat-card-subtitle>
+    </mat-card-header>
     <mat-card-content>
-      <span>{{ "WHAT_IS_CPAS" | translate }}</span>
-      <button
-        style="width: 200px; margin-top: 20px"
+      <p>{{ 'CPAS_EXPLAIN.centers_text' | translate }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button 
+        mat-button 
         routerLink="/cpas-info"
-        matButton="elevated"
+        color="primary"
       >
-        {{ "CPAS_HELP" | translate }}?
-      </button></mat-card-content
-    >
+        {{ 'CPAS_HELP' | translate }}
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+    </mat-card-actions>
   </mat-card>
-  <div class="search-bar-container">
-    <div class="search-container">
-      <app-search-bar
-        class="search-bar"
-        (searchChanged)="getSearchTerm($event)"
-      ></app-search-bar>
-    </div>
-    <div class="search-container">
-      <app-choose-city class="search-bar"></app-choose-city>
-    </div>
-  </div>
-  
-  <app-cpas-centers [searchTerm]="searchTerm()"></app-cpas-centers>
 </div>

@@ -1,13 +1,11 @@
 <mat-card class="intro-card">
   <mat-card-header>
-    <mat-card-title>
-      <mat-icon aria-hidden="true">contacts</mat-icon>
-      <b>{{ "CONTACTS_PAGE.H1" | translate }}</b>
-    </mat-card-title>
+    <div mat-card-avatar class="header-avatar">
+      <mat-icon>contacts</mat-icon>
+    </div>
+    <mat-card-title>{{ "CONTACTS_PAGE.H1" | translate }}</mat-card-title>
+    <mat-card-subtitle>{{ "CONTACTS_PAGE.LEAD" | translate }}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content class="lead">
-    {{ "CONTACTS_PAGE.LEAD" | translate }}
-  </mat-card-content>
 </mat-card>
 
 <mat-tab-group>

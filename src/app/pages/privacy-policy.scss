@@ -1,0 +1,26 @@
+/* Privacy policy page styling */
+.pp-card {
+  max-width: 860px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.pp-card-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 8px 0 16px;
+}
+
+.pp-card-content { padding: 0 8px; }
+.pp-card-content h3 { font-size: 1.25rem; margin-top: 18px; border-top: 1px solid #e5e7eb; padding-top: 14px; }
+.pp-card-content p { line-height: 1.6; margin: 8px 0 14px; color: #374151; }
+.pp-card-content .muted { color: #6b7280; font-size: 0.95rem; }
+
+@media (max-width: 600px) {
+  .pp-card { margin: 12px; padding: 16px; }
+  .pp-card-title { font-size: 1.75rem; }
+}

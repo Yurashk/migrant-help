@@ -1,57 +1,77 @@
-<mat-card>
+<mat-card class="find-house-card">
   <mat-card-content>
     <mat-tab-group animationDuration="500ms">
-      ><mat-tab
-        ><ng-template mat-tab-label>{{
-          "HOUSE_SEARCH.websites" | translate
-        }}</ng-template>
-        <div style="padding: 15px">
-          {{ "HOUSE_SEARCH.websites_desc" | translate }}
-        </div>
-        <mat-list>
-          <mat-list-item
-            lines="2"
-            *ngFor="
-              let site of 'HOUSE_SEARCH.HOUSE_SITES.websites.items' | translate
-            "
-          >
-            <span matListItemTitle
-              ><a
-                style="text-decoration: none"
-                [href]="site.url"
-                target="_blank"
-                >{{ site.name }}</a
-              ></span
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ "HOUSE_SEARCH.websites" | translate }}
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="tab-description">
+            {{ "HOUSE_SEARCH.websites_desc" | translate }}
+          </div>
+          
+          <div class="sites-list">
+            <a 
+              *ngFor="let site of 'HOUSE_SEARCH.HOUSE_SITES.websites.items' | translate"
+              [href]="site.url" 
+              target="_blank" 
+              rel="noopener"
+              class="site-card"
             >
-            {{ site.short_desc }}
-          </mat-list-item>
-        </mat-list>
+              <div class="site-header">
+                <span class="site-name">{{ site.name }}</span>
+                <mat-icon class="site-link-icon">open_in_new</mat-icon>
+              </div>
+              <p class="site-description">{{ site.short_desc }}</p>
+            </a>
+          </div>
+        </div>
       </mat-tab>
 
-      <mat-tab
-        ><ng-template mat-tab-label>{{
-          "HOUSE_SEARCH.agencies" | translate
-        }}</ng-template>
-         <div style="padding: 15px">{{ "HOUSE_SEARCH.agencies_desc" | translate }}</div>
-        <mat-list>
-          <mat-list-item
-            lines="2"
-            *ngFor="
-              let site of 'HOUSE_SEARCH.HOUSE_SITES.agencies.items' | translate
-            "
-          >
-            <span matListItemTitle
-              ><a [href]="site.url" target="_blank">{{ site.name }}</a></span
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ "HOUSE_SEARCH.agencies" | translate }}
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="tab-description">
+            {{ "HOUSE_SEARCH.agencies_desc" | translate }}
+          </div>
+          
+          <div class="sites-list">
+            <a 
+              *ngFor="let site of 'HOUSE_SEARCH.HOUSE_SITES.agencies.items' | translate"
+              [href]="site.url" 
+              target="_blank" 
+              rel="noopener"
+              class="site-card"
             >
-            {{ site.short_desc }}
-          </mat-list-item>
-        </mat-list>
+              <div class="site-header">
+                <span class="site-name">{{ site.name }}</span>
+                <mat-icon class="site-link-icon">open_in_new</mat-icon>
+              </div>
+              <p class="site-description">{{ site.short_desc }}</p>
+            </a>
+          </div>
+        </div>
       </mat-tab>
-      <mat-tab
-        ><ng-template mat-tab-label>{{
-          "HOUSE_SEARCH.intermediaries" | translate
-        }}</ng-template>
-        <div style="padding: 15px">{{ "HOUSE_SEARCH.intermediaries_desc" | translate }}</div>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          {{ "HOUSE_SEARCH.intermediaries" | translate }}
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="tab-description">
+            {{ "HOUSE_SEARCH.intermediaries_desc" | translate }}
+          </div>
+          
+          <div class="empty-state">
+            <mat-icon class="empty-state-icon">construction</mat-icon>
+            <p>{{ "COMMON.COMING_SOON" | translate }}</p>
+          </div>
+        </div>
       </mat-tab>
     </mat-tab-group>
   </mat-card-content>

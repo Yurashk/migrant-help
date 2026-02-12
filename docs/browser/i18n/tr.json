@@ -8,6 +8,7 @@
     "CONTACTS": "Önemli telefonlar",
     "NEWCOMER": "Yeni geldim",
     "EMPLOYMENT": "İstihdam",
+    "CARRIERS": "Taşımacılar",
     "ACTIRIS_LETTER": "Actiris'e Mektup"
   },
   "MAIN_TITLE": "Yalnız değilsiniz",
@@ -198,6 +199,11 @@
         "TITLE": "Actiris / VDAB",
         "DESCRIPTION": "Şehrinize veya adresinize göre iş merkezi",
         "BUTTON": "Ajansı bul"
+      },
+      "CARRIERS": {
+        "TITLE": "Nakliyat ve Lojistik",
+        "DESCRIPTION": "Ukrayna ile Belçika arasında taşınma için taşıyıcılar bulun",
+        "BUTTON": "Taşıyıcı bul"
       },
       "LETTER": {
         "TITLE": "Mektup yazmaya yardım",
@@ -402,6 +408,59 @@
       }
     }
   },
+  "CPAS_HERO": {
+    "TITLE": "CPAS/OCMW Desteği",
+    "SERVICES": {
+      "SOCIAL_AID": "Sosyal Yardım",
+      "FINANCIAL": "Finansal Destek",
+      "INTEGRATION": "Entegrasyon Yardımı",
+      "HEALTH": "Sağlık Desteği"
+    },
+    "CTA_TEXT": "CPAS/OCMW'den yardıma mı ihtiyacınız var? Aşağıdaki resmi kaynakları ziyaret edin.",
+    "BUTTONS": {
+      "OFFICIAL_SITE": "Resmi CPAS Sitesi",
+      "GUIDE": "Sosyal Güvenlik Rehberi"
+    },
+    "INFO_TITLE": "CPAS/OCMW Hakkında",
+    "INFO_SUBTITLE": "Yerel sosyal yardım merkeziniz"
+  },
+  "ACTIRIS_HERO": {
+    "TITLE": "İstihdam Desteği",
+    "SERVICES": {
+      "JOB_SEARCH": "İş Arama",
+      "TRAINING": "Eğitim ve Kurslar",
+      "CV_HELP": "CV ve Belgeler",
+      "INTERVIEW": "Mülakat Hazırlığı"
+    },
+    "CTA_TEXT": "Belçika'da iş mi arıyorsunuz? Resmi istihdam hizmetlerini ziyaret edin.",
+    "BUTTONS": {
+      "ACTIRIS_SITE": "Actiris Web Sitesi",
+      "VDAB_SITE": "VDAB Web Sitesi"
+    },
+    "INFO_TITLE": "Actiris / VDAB Hakkında",
+    "INFO_SUBTITLE": "Bölgesel istihdam hizmetiniz"
+  },
+  "CARRIERS_HERO": {
+    "TITLE": "Nakliyat ve Lojistik",
+    "DESCRIPTION": "Ukrayna ile Belçika arasında eşya ve insan taşımacılığı için güvenilir taşıyıcılar bulun. Sizi güvenli ve uygun fiyatlı hizmetler sunan doğrulanmış nakliyat şirketleriyle bağlantı kuruyoruz.",
+    "FEATURES": {
+      "ROUTES": "UA-BE Rotaları",
+      "SCHEDULE": "Düzenli Seferler",
+      "VERIFIED": "Doğrulanmış Taşıyıcılar",
+      "PRICE": "Adil Fiyatlar"
+    },
+    "SOON_SUBTITLE": "Hizmet yakında başlıyor",
+    "SOON_TEXT": "Göçmenleri güvenilir taşıyıcılarla buluşturmak için bir platform üzerinde çalışıyoruz. Yakında Ukrayna ile Belçika arasında nakliyat hizmetleri bulup rezervasyon yapabileceksiniz.",
+    "PREVIEW": {
+      "BELGIUM_UKRAINE": "Belçika → Ukrayna",
+      "UKRAINE_BELGIUM": "Ukrayna → Belçika",
+      "CARGO": "Kargo Taşımacılığı",
+      "PASSENGERS": "Yolcu Taşımacılığı"
+    },
+    "NOTIFY_BUTTON": "Hazır olduğunda bildir",
+    "INFO_TITLE": "Nakliyat Hizmeti Hakkında",
+    "INFO_TEXT": "Nakliyat hizmetimiz, Ukrayna ile Belçika arasında taşınmak için kişisel eşyalarınızı, mallarızı taşımanız veya kendiniz seyahat etmeniz gerekip gerekmediğine bakılmaksızın güvenilir taşıyıcılar bulmanıza yardımcı olacaktır."
+  },
   "PRIVACY": {
     "LINK": "Gizlilik Politikası",
     "TITLE": "Gizlilik Politikası",
@@ -429,7 +488,19 @@
       },
       "CHANGES": {
         "TITLE": "6. Politika değişiklikleri",
-        "TEXT": "Bu politika belirli aralıklarla güncellenebilir. Son değişikliklerden haberdar olmak için bu sayfayı ara sıra kontrol etmenizi tavsiye ederiz."
+        "TEXT": "Bu politika belirli aralıklarla güncellenebilir. Son değişikliklerden haberdar olmak için bu sayfayı ara sıra kontrol edin."
+      },
+      "RIGHTS": {
+        "TITLE": "7. Haklarınız",
+        "TEXT": "Kişisel veri koruma yasalarına göre, erişim, düzeltme, silme, işleme kısıtlaması, işleme itirazı ve verilerin iletilmesi haklarına sahipsiniz. Bu hakları kullanmak için gizlilik ekibiyle uygulama içindeki form veya resmi iletişim kanalları aracılığıyla iletişime geçin."
+      },
+      "COOKIES": {
+        "TITLE": "8. Çerezler ve izleme",
+        "TEXT": "Kullanıcı deneyimini geliştirmek için çerezler kullanıyoruz. Bazı çerezler sitenin işlevselliği için gerekir. Tarayıcı ayarlarınıza giderek gereksiz çerezleri yönetebilirsiniz."
+      },
+      "UPDATES": {
+        "TITLE": "9. Gizlilik politikası güncellemeleri",
+        "TEXT": "Bu politika zaman zaman güncellenebilir. Değişiklikler bu sayfada görülecektir. Lütfen zaman zaman kontrol edin."
       }
     }
   },

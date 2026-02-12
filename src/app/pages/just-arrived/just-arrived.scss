@@ -1,48 +1,372 @@
-.title-card {
-  align-content: center;
-  margin-bottom: 20px;
-}
-mat-card {
-   color:  #2a2f3c;
-  padding-top: 10px;
-  background-color: white;
-  mat-card-title {
-    text-align: center;
-  }
+:host {
+  --ja-primary: #3b82f6;
+  --ja-primary-light: #dbeafe;
+  --ja-primary-dark: #1d4ed8;
+  --ja-text-primary: #0f172a;
+  --ja-text-secondary: #64748b;
+  --ja-bg: #f8fafc;
+  --ja-white: #ffffff;
+  --ja-border: #e2e8f0;
+  --ja-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ja-radius: 16px;
+  --ja-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.guide-description {
-  font-style: italic;
+.just-arrived-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: var(--ja-bg);
+  min-height: 100vh;
+}
+
+// Header Card
+.header-card {
   margin-bottom: 1.5rem;
-}
-
-.guide-step {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-  .icon-holder {
-    padding: 3px;
-    width: 30px;
+  border-radius: var(--ja-radius);
+  box-shadow: var(--ja-shadow);
+  background: linear-gradient(135deg, var(--ja-white) 0%, #f1f5f9 100%);
+  border: 1px solid var(--ja-border);
+  overflow: hidden;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ja-primary) 0%, #60a5fa 100%);
+  }
+  
+  mat-card-header {
+    padding: 24px 24px 20px;
+  }
+  
+  .header-avatar {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--ja-primary) 0%, var(--ja-primary-dark) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+    
     mat-icon {
-      color: #3e74adc8;
-      font-size: 26px;
-      margin-top: 4px;
+      color: white;
+      font-size: 28px;
+      width: 28px;
+      height: 28px;
+    }
+    
+    &.small {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      
+      mat-icon {
+        font-size: 22px;
+        width: 22px;
+        height: 22px;
+      }
     }
   }
-
-  h4 {
-    margin: 0 0 6px 0;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+  
+  mat-card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--ja-text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.025em;
   }
-
-  p {
-    margin: 0;
+  
+  mat-card-subtitle {
+    font-size: 1.0625rem;
+    color: var(--ja-text-secondary);
+    line-height: 1.7;
+    font-weight: 400;
   }
+}
 
-  a {
-    color: #3f51b5;
-    text-decoration: underline;
+// Steps Card
+.steps-card {
+  border-radius: var(--ja-radius);
+  box-shadow: var(--ja-shadow);
+  background: var(--ja-white);
+  border: 1px solid var(--ja-border);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  
+  mat-card-content {
+    padding: 0;
+  }
+}
+
+// Steps List
+.steps-list {
+  display: flex;
+  flex-direction: column;
+}
+
+// Step Item
+.step-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem 2rem;
+  position: relative;
+  transition: var(--ja-transition);
+  
+  &:hover {
+    background-color: #fafafa;
+  }
+  
+  &:last-child {
+    padding-bottom: 2rem;
+  }
+}
+
+// Step Number Badge
+.step-number {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--ja-primary-light) 0%, #bfdbfe 100%);
+  color: var(--ja-primary-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+// Step Content
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+// Step Header
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.step-icon {
+  color: var(--ja-primary);
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ja-text-primary);
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ja-primary) 0%, transparent 100%);
+    border-radius: 2px;
+  }
+}
+
+// Step Description
+.step-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ja-text-secondary);
+  margin: 0;
+  padding-top: 0.5rem;
+  
+  ::ng-deep {
+    p {
+      margin: 0 0 0.75rem 0;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    a {
+      color: var(--ja-primary);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        border-bottom-color: var(--ja-primary);
+        color: var(--ja-primary-dark);
+      }
+    }
+    
+    strong, b {
+      color: var(--ja-text-primary);
+      font-weight: 600;
+    }
+    
+    ul, ol {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+    }
+    
+    li {
+      margin-bottom: 0.375rem;
+    }
+  }
+}
+
+// Step Divider
+.step-divider {
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 2rem;
+  border-top-color: var(--ja-border);
+}
+
+// Links Card
+.links-card {
+  border-radius: var(--ja-radius);
+  box-shadow: var(--ja-shadow);
+  background: linear-gradient(135deg, var(--ja-white) 0%, #f8fafc 100%);
+  border: 1px solid var(--ja-border);
+  overflow: hidden;
+  
+  mat-card-header {
+    padding: 20px 24px 16px;
+    border-bottom: 1px solid var(--ja-border);
+  }
+  
+  mat-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ja-text-primary);
+    letter-spacing: -0.01em;
+  }
+  
+  mat-card-content {
+    padding: 0;
+  }
+}
+
+// Mobile Responsive
+@media (max-width: 768px) {
+  .just-arrived-container {
+    padding: 1rem;
+  }
+  
+  .header-card {
+    margin-bottom: 1rem;
+    
+    mat-card-header {
+      padding: 20px 20px 16px;
+    }
+    
+    .header-avatar {
+      width: 48px;
+      height: 48px;
+      
+      mat-icon {
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+    mat-card-title {
+      font-size: 1.5rem;
+    }
+    
+    mat-card-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  .step-item {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.8125rem;
+  }
+  
+  .step-title {
+    font-size: 1.125rem;
+    
+    &::after {
+      width: 24px;
+      height: 2px;
+    }
+  }
+  
+  .step-description {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+  
+  .step-divider {
+    left: 1.25rem;
+    right: 1.25rem;
+  }
+  
+  .links-card {
+    mat-card-header {
+      padding: 16px 20px 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .just-arrived-container {
+    padding: 0.75rem;
+  }
+  
+  .step-item {
+    padding: 1rem;
+    gap: 0.875rem;
+  }
+  
+  .step-header {
+    flex-wrap: wrap;
+  }
+  
+  .step-icon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .step-title {
+    font-size: 1.0625rem;
+    letter-spacing: -0.01em;
+    
+    &::after {
+      width: 20px;
+    }
+  }
+  
+  .step-description {
+    font-size: 0.9375rem;
+    line-height: 1.7;
   }
 }

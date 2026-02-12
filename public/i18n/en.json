@@ -8,6 +8,7 @@
     "CONTACTS": "Important contacts",
     "NEWCOMER": "Just arrived",
     "EMPLOYMENT": "Employment",
+    "CARRIERS": "Carriers",
     "ACTIRIS_LETTER": "Letter to Actiris"
   },
   "MAIN_TITLE": "You are not alone",
@@ -198,6 +199,11 @@
         "TITLE": "Actiris / VDAB",
         "DESCRIPTION": "Job center based on your city or registration address",
         "BUTTON": "Find your agency"
+      },
+      "CARRIERS": {
+        "TITLE": "Transport & Carriers",
+        "DESCRIPTION": "Find carriers for moving between Ukraine and Belgium",
+        "BUTTON": "Find carriers"
       },
       "LETTER": {
         "TITLE": "Help writing a letter",
@@ -403,6 +409,59 @@
       }
     }
   },
+  "CPAS_HERO": {
+    "TITLE": "CPAS/OCMW Support",
+    "SERVICES": {
+      "SOCIAL_AID": "Social Aid",
+      "FINANCIAL": "Financial Support",
+      "INTEGRATION": "Integration Help",
+      "HEALTH": "Health Support"
+    },
+    "CTA_TEXT": "Need help from CPAS/OCMW? Visit the official resources below.",
+    "BUTTONS": {
+      "OFFICIAL_SITE": "Official CPAS Website",
+      "GUIDE": "Social Security Guide"
+    },
+    "INFO_TITLE": "About CPAS/OCMW",
+    "INFO_SUBTITLE": "Your local social welfare center"
+  },
+  "ACTIRIS_HERO": {
+    "TITLE": "Employment Support",
+    "SERVICES": {
+      "JOB_SEARCH": "Job Search",
+      "TRAINING": "Training & Courses",
+      "CV_HELP": "CV & Documents",
+      "INTERVIEW": "Interview Prep"
+    },
+    "CTA_TEXT": "Looking for work in Belgium? Visit official employment services.",
+    "BUTTONS": {
+      "ACTIRIS_SITE": "Actiris Website",
+      "VDAB_SITE": "VDAB Website"
+    },
+    "INFO_TITLE": "About Actiris / VDAB",
+    "INFO_SUBTITLE": "Your regional employment service"
+  },
+  "CARRIERS_HERO": {
+    "TITLE": "Transport & Logistics",
+    "DESCRIPTION": "Find reliable carriers for transporting goods and people between Ukraine and Belgium. We connect you with verified transport companies offering safe and affordable services.",
+    "FEATURES": {
+      "ROUTES": "Routes UA-BE",
+      "SCHEDULE": "Regular Schedule",
+      "VERIFIED": "Verified Carriers",
+      "PRICE": "Fair Prices"
+    },
+    "SOON_SUBTITLE": "Service launching soon",
+    "SOON_TEXT": "We are working on a platform to connect migrants with trusted carriers. Soon you will be able to find and book transport services between Ukraine and Belgium.",
+    "PREVIEW": {
+      "BELGIUM_UKRAINE": "Belgium → Ukraine",
+      "UKRAINE_BELGIUM": "Ukraine → Belgium",
+      "CARGO": "Cargo Transport",
+      "PASSENGERS": "Passenger Transport"
+    },
+    "NOTIFY_BUTTON": "Notify me when ready",
+    "INFO_TITLE": "About Transport Service",
+    "INFO_TEXT": "Our transport service will help you find reliable carriers for moving between Ukraine and Belgium, whether you need to transport personal belongings, goods, or travel yourself."
+  },
   "PRIVACY": {
     "LINK": "Privacy Policy",
     "TITLE": "Privacy Policy",
@@ -431,6 +490,18 @@
       "CHANGES": {
         "TITLE": "6. Changes to this policy",
         "TEXT": "This policy may be updated periodically. We recommend checking this page from time to time to stay informed about the latest changes."
+      },
+      "RIGHTS": {
+        "TITLE": "7. Your rights",
+        "TEXT": "You have rights under applicable data protection law to access, rectify, erase, restrict processing, object to processing, and data portability. To exercise these rights, contact the privacy team via the in-app form or the official contact channels."
+      },
+      "COOKIES": {
+        "TITLE": "8. Cookies and tracking",
+        "TEXT": "We use cookies to improve your experience. Some cookies are essential for site functionality. You can manage non-essential cookies in your browser settings."
+      },
+      "UPDATES": {
+        "TITLE": "9. Updates to this policy",
+        "TEXT": "We may update this privacy policy from time to time. Changes will be reflected on this page. Check back periodically."
       }
     }
   },

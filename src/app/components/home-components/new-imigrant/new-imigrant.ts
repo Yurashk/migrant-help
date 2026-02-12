@@ -25,8 +25,9 @@ export class NewImigrant {
     { id: 'CONTACTS', icon: 'add_alert', color: '#F44336', route: '/important-contacts' },
     { id: 'CPAS', icon: 'location_city', color: '#2196F3', route: '/cpas' },
     { id: 'ACTIRIS', icon: 'work', color: '#FF9800', route: '/labor-exchange' },
+    { id: 'AGENT', icon: 'home_work', color: '#795548', route: '/find-apartaments' },
+    { id: 'CARRIERS', icon: 'local_shipping', color: '#f59e0b', route: '/carriers' },
     { id: 'LAWYER', icon: 'gavel', color: '#9C27B0', route: '#' },
     { id: 'TRANSLATOR', icon: 'translate', color: '#00BCD4', route: '#' },
-    { id: 'AGENT', icon: 'home_work', color: '#795548', route: '/find-apartaments' }
   ];
 }

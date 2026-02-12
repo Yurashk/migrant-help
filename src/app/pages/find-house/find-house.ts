@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TranslateModule } from '@ngx-translate/core';
-import { MatCard, MatCardContent, MatCardTitle } from "@angular/material/card";
+import { MatCard, MatCardContent } from "@angular/material/card";
 import { CommonModule } from '@angular/common';
-import { MatList, MatListModule } from "@angular/material/list";
-
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-find-house',
-  imports: [CommonModule, MatTabsModule, TranslateModule, MatCard, MatCardContent, MatList, MatListModule],
+  imports: [CommonModule, MatTabsModule, TranslateModule, MatCard, MatCardContent, MatIconModule],
   templateUrl: './find-house.html',
   styleUrl: './find-house.scss'
 })

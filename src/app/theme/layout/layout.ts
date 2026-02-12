@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Header } from "../header/header";
-import { Router, RouterModule } from '@angular/router';
+import { Router, RouterModule, NavigationEnd } from '@angular/router';
 import { Footer } from "../footer/footer";
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
@@ -12,6 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
 import { BredCrumbs } from "../../pages/bred-crumbs/bred-crumbs";
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-layout',
@@ -21,16 +22,33 @@ import { BredCrumbs } from "../../pages/bred-crumbs/bred-crumbs";
 })
 export class Layout {
   @ViewChild('drawer') drawer!: MatDrawer;
+  currentUrl: string = '';
+  
   menuItems=[
     {name:'HOME',link:'/',icon:"home"},
     {name:'CONTACTS',link:'/important-contacts',icon:"phone"},
     {name:'CPAS',link:'/cpas',icon:"location_city"},
     {name:'ACTIRIS',link:'/labor-exchange',icon:"work"},
     {name:'HELP',link:'/help',icon:"help"},
-    {name:'PRIVACY',link:'/privacy-policy',icon:""},
+    {name:'PRIVACY',link:'/privacy-policy',icon:"shield"},
   ]
-  constructor(private router: Router) {}
+  
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: any) => {
+      this.currentUrl = event.url;
+    });
+  }
+  
   goToItem(link: string ) {
     this.router.navigate([link]).then(()=>this.drawer.toggle());
+  }
+  
+  isActive(link: string): boolean {
+    if (link === '/') {
+      return this.currentUrl === '/';
+    }
+    return this.currentUrl.startsWith(link);
   }
 }

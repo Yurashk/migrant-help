@@ -1,0 +1,90 @@
+<div class="carriers-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-icon-wrapper">
+        <mat-icon class="hero-icon">local_shipping</mat-icon>
+      </div>
+      
+      <h1 class="hero-title">{{ 'CARRIERS_HERO.TITLE' | translate }}</h1>
+      
+      <p class="hero-description">
+        {{ 'CARRIERS_HERO.DESCRIPTION' | translate }}
+      </p>
+      
+      <div class="features-grid">
+        <div class="feature-item">
+          <mat-icon>route</mat-icon>
+          <span>{{ 'CARRIERS_HERO.FEATURES.ROUTES' | translate }}</span>
+        </div>
+        <div class="feature-item">
+          <mat-icon>schedule</mat-icon>
+          <span>{{ 'CARRIERS_HERO.FEATURES.SCHEDULE' | translate }}</span>
+        </div>
+        <div class="feature-item">
+          <mat-icon>verified</mat-icon>
+          <span>{{ 'CARRIERS_HERO.FEATURES.VERIFIED' | translate }}</span>
+        </div>
+        <div class="feature-item">
+          <mat-icon>attach_money</mat-icon>
+          <span>{{ 'CARRIERS_HERO.FEATURES.PRICE' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coming Soon Card -->
+  <mat-card class="coming-soon-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar">
+        <mat-icon>construction</mat-icon>
+      </div>
+      <mat-card-title>{{ 'COMMON.COMING_SOON' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'CARRIERS_HERO.SOON_SUBTITLE' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="coming-soon-content">
+        <mat-icon class="coming-soon-icon">rocket_launch</mat-icon>
+        <p class="coming-soon-text">{{ 'CARRIERS_HERO.SOON_TEXT' | translate }}</p>
+        
+        <div class="features-preview">
+          <div class="preview-item">
+            <mat-icon color="primary">check_circle</mat-icon>
+            <span>{{ 'CARRIERS_HERO.PREVIEW.BELGIUM_UKRAINE' | translate }}</span>
+          </div>
+          <div class="preview-item">
+            <mat-icon color="primary">check_circle</mat-icon>
+            <span>{{ 'CARRIERS_HERO.PREVIEW.UKRAINE_BELGIUM' | translate }}</span>
+          </div>
+          <div class="preview-item">
+            <mat-icon color="primary">check_circle</mat-icon>
+            <span>{{ 'CARRIERS_HERO.PREVIEW.CARGO' | translate }}</span>
+          </div>
+          <div class="preview-item">
+            <mat-icon color="primary">check_circle</mat-icon>
+            <span>{{ 'CARRIERS_HERO.PREVIEW.PASSENGERS' | translate }}</span>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="centered-actions">
+      <button mat-stroked-button disabled>
+        <mat-icon>notifications</mat-icon>
+        {{ 'CARRIERS_HERO.NOTIFY_BUTTON' | translate }}
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <!-- Info Card -->
+  <mat-card class="info-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-avatar small">
+        <mat-icon>info</mat-icon>
+      </div>
+      <mat-card-title>{{ 'CARRIERS_HERO.INFO_TITLE' | translate }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ 'CARRIERS_HERO.INFO_TEXT' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

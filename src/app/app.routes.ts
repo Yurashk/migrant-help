@@ -12,6 +12,7 @@ import { ActirisMailPage } from './pages/actiris-mail-page/actiris-mail-page';
 import { FindHouse } from './pages/find-house/find-house';
 import { PrivacyPolicy } from './pages/privacy-policy';
 import { TranslatorHelp } from './pages/translator-help/translator-help';
+import { CarriersPage } from './pages/carriers-page/carriers-page';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
     data: { breadcrumbKey: 'NAV.ROOT', hideBreadcrumb: true },
     children: [
       { path: '', component: Home, data: { breadcrumbKey: 'NAV.HOME' } },
+      { path: '', redirectTo: 'just-arrived', pathMatch: 'full' },
       {
         path: 'cpas',
         component: CpasPage,
@@ -82,6 +84,11 @@ export const routes: Routes = [
         path: 'find-translate',
         component: TranslatorHelp,
         data: { breadcrumbKey: 'NAV.EMPLOYMENT' },
+      },
+      {
+        path: 'carriers',
+        component: CarriersPage,
+        data: { breadcrumbKey: 'NAV.CARRIERS' },
       },
       { path: 'privacy-policy', component: PrivacyPolicy },
     ],

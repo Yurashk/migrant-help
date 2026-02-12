@@ -8,6 +8,7 @@
     "CONTACTS": "Contacts importants",
     "NEWCOMER": "Je viens d’arriver",
     "EMPLOYMENT": "Emploi",
+    "CARRIERS": "Transporteurs",
     "ACTIRIS_LETTER": "Lettre à Actiris"
   },
   "MAIN_TITLE": "Tu n'es pas seul",
@@ -197,8 +198,13 @@
       },
       "ACTIRIS": {
         "TITLE": "Actiris / VDAB",
-        "DESCRIPTION": "Centre d’emploi basé sur votre commune ou adresse d’enregistrement",
+        "DESCRIPTION": "Centre d'emploi basé sur votre commune ou adresse d'enregistrement",
         "BUTTON": "Trouver votre agence"
+      },
+      "CARRIERS": {
+        "TITLE": "Transport & Logistique",
+        "DESCRIPTION": "Trouvez des transporteurs pour vos déménagements entre l'Ukraine et la Belgique",
+        "BUTTON": "Trouver un transporteur"
       },
       "LETTER": {
         "TITLE": "Aide à la rédaction de lettres",
@@ -403,6 +409,59 @@
       }
     }
   },
+  "CPAS_HERO": {
+    "TITLE": "Aide CPAS/OCMW",
+    "SERVICES": {
+      "SOCIAL_AID": "Aide Sociale",
+      "FINANCIAL": "Soutien Financier",
+      "INTEGRATION": "Aide à l'Intégration",
+      "HEALTH": "Soutien Santé"
+    },
+    "CTA_TEXT": "Besoin d'aide du CPAS/OCMW ? Consultez les ressources officielles ci-dessous.",
+    "BUTTONS": {
+      "OFFICIAL_SITE": "Site Officiel CPAS",
+      "GUIDE": "Guide de Sécurité Sociale"
+    },
+    "INFO_TITLE": "À propos du CPAS/OCMW",
+    "INFO_SUBTITLE": "Votre centre d'action sociale local"
+  },
+  "ACTIRIS_HERO": {
+    "TITLE": "Aide à l'Emploi",
+    "SERVICES": {
+      "JOB_SEARCH": "Recherche d'Emploi",
+      "TRAINING": "Formations",
+      "CV_HELP": "CV et Documents",
+      "INTERVIEW": "Préparation Entretien"
+    },
+    "CTA_TEXT": "Vous cherchez du travail en Belgique ? Consultez les services officiels.",
+    "BUTTONS": {
+      "ACTIRIS_SITE": "Site Actiris",
+      "VDAB_SITE": "Site VDAB"
+    },
+    "INFO_TITLE": "À propos d'Actiris / VDAB",
+    "INFO_SUBTITLE": "Votre service régional de l'emploi"
+  },
+  "CARRIERS_HERO": {
+    "TITLE": "Transport & Logistique",
+    "DESCRIPTION": "Trouvez des transporteurs fiables pour transporter des marchandises et des personnes entre l'Ukraine et la Belgique. Nous vous mettons en relation avec des entreprises de transport vérifiées offrant des services sûrs et abordables.",
+    "FEATURES": {
+      "ROUTES": "Routes UA-BE",
+      "SCHEDULE": "Horaires réguliers",
+      "VERIFIED": "Transporteurs vérifiés",
+      "PRICE": "Prix équitables"
+    },
+    "SOON_SUBTITLE": "Service bientôt disponible",
+    "SOON_TEXT": "Nous travaillons sur une plateforme pour connecter les migrants avec des transporteurs de confiance. Bientôt, vous pourrez trouver et réserver des services de transport entre l'Ukraine et la Belgique.",
+    "PREVIEW": {
+      "BELGIUM_UKRAINE": "Belgique → Ukraine",
+      "UKRAINE_BELGIUM": "Ukraine → Belgique",
+      "CARGO": "Transport de marchandises",
+      "PASSENGERS": "Transport de passagers"
+    },
+    "NOTIFY_BUTTON": "M'avertir quand c'est prêt",
+    "INFO_TITLE": "À propos du service de transport",
+    "INFO_TEXT": "Notre service de transport vous aidera à trouver des transporteurs fiables pour vos déplacements entre l'Ukraine et la Belgique, que vous ayez besoin de transporter des effets personnels, des marchandises ou de voyager vous-même."
+  },
   "PRIVACY": {
     "LINK": "Politique de confidentialité",
     "TITLE": "Politique de confidentialité",
@@ -428,10 +487,22 @@
         "TITLE": "5. Liens externes",
         "TEXT": "L’application peut contenir des liens vers des sites tiers. Nous n’en contrôlons pas le contenu et ne pouvons garantir l’exactitude ou l’actualité des informations qui y figurent."
       },
-      "CHANGES": {
-        "TITLE": "6. Modifications de la politique",
-        "TEXT": "Cette politique peut être mise à jour périodiquement. Nous vous invitons à consulter régulièrement cette page pour prendre connaissance des dernières modifications."
-      }
+    "CHANGES": {
+      "TITLE": "6. Modifications de la politique",
+      "TEXT": "Cette politique peut être mise à jour périodiquement. Nous vous invitons à consulter régulièrement cette page pour prendre connaissance des dernières modifications."
+    },
+    "RIGHTS": {
+      "TITLE": "7. Vos droits",
+      "TEXT": "Vous disposez des droits prévus par la loi applicable sur la protection des données : accès, rectification, suppression, limitation du traitement, opposition au traitement et portabilité des données. Pour exercer ces droits, contactez l’équipe de confidentialité via le formulaire dans l’application ou les canaux officiels de contact."
+    },
+    "COOKIES": {
+      "TITLE": "8. Cookies et suivi",
+      "TEXT": "Nous utilisons des cookies pour améliorer votre expérience. Certains cookies sont essentiels au fonctionnement du site. Vous pouvez gérer les cookies non essentiels dans les paramètres de votre navigateur."
+    },
+    "UPDATES": {
+      "TITLE": "9. Mise à jour de la politique",
+      "TEXT": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Les changements seront reflétés sur cette page. Vérifiez-la périodiquement."
+    }
     }
   },
   "COMMON": {
