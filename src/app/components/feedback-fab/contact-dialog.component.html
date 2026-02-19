@@ -1,0 +1,107 @@
+<div class="dialog-header">
+  <div class="header-icon">
+    <mat-icon>contact_mail</mat-icon>
+  </div>
+  <h2 mat-dialog-title>{{ 'FEEDBACK.DIALOG_TITLE' | translate }}</h2>
+  <p class="dialog-subtitle">{{ 'FEEDBACK.DIALOG_SUBTITLE' | translate }}</p>
+</div>
+
+<mat-dialog-content>
+  <form [formGroup]="contactForm" class="contact-form">
+    <!-- Inquiry Type Select -->
+    <mat-form-field appearance="outline" class="full-width inquiry-type-field">
+      <mat-label>{{ 'FEEDBACK.INQUIRY_TYPE_LABEL' | translate }}</mat-label>
+      <mat-select formControlName="inquiryType">
+        <mat-option value="carrier">
+          <mat-icon>local_shipping</mat-icon>
+          {{ 'FEEDBACK.INQUIRY_TYPES.CARRIER' | translate }}
+        </mat-option>
+        <mat-option value="tutor">
+          <mat-icon>school</mat-icon>
+          {{ 'FEEDBACK.INQUIRY_TYPES.TUTOR' | translate }}
+        </mat-option>
+        <mat-option value="realtor">
+          <mat-icon>home_work</mat-icon>
+          {{ 'FEEDBACK.INQUIRY_TYPES.REALTOR' | translate }}
+        </mat-option>
+        <mat-option value="translator">
+          <mat-icon>translate</mat-icon>
+          {{ 'FEEDBACK.INQUIRY_TYPES.TRANSLATOR' | translate }}
+        </mat-option>
+        <mat-option value="other">
+          <mat-icon>help_outline</mat-icon>
+          {{ 'FEEDBACK.INQUIRY_TYPES.OTHER' | translate }}
+        </mat-option>
+      </mat-select>
+      <mat-icon matPrefix>category</mat-icon>
+      <mat-error *ngIf="inquiryType?.hasError('required')">
+        {{ 'FEEDBACK.INQUIRY_TYPE_REQUIRED' | translate }}
+      </mat-error>
+    </mat-form-field>
+
+    <div class="form-row">
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>{{ 'FEEDBACK.NAME_LABEL' | translate }}</mat-label>
+        <input
+          matInput
+          formControlName="name"
+          [placeholder]="'FEEDBACK.NAME_PLACEHOLDER' | translate">
+        <mat-icon matPrefix>person</mat-icon>
+        <mat-error *ngIf="name?.hasError('required')">
+          {{ 'FEEDBACK.NAME_REQUIRED' | translate }}
+        </mat-error>
+        <mat-error *ngIf="name?.hasError('minlength')">
+          {{ 'FEEDBACK.NAME_MINLENGTH' | translate }}
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>{{ 'FEEDBACK.EMAIL_LABEL' | translate }}</mat-label>
+        <input
+          matInput
+          type="email"
+          formControlName="email"
+          [placeholder]="'FEEDBACK.EMAIL_PLACEHOLDER' | translate">
+        <mat-icon matPrefix>email</mat-icon>
+        <mat-error *ngIf="email?.hasError('required')">
+          {{ 'FEEDBACK.EMAIL_REQUIRED' | translate }}
+        </mat-error>
+        <mat-error *ngIf="email?.hasError('email')">
+          {{ 'FEEDBACK.EMAIL_INVALID' | translate }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>{{ 'FEEDBACK.MESSAGE_LABEL' | translate }}</mat-label>
+      <textarea
+        matInput
+        formControlName="message"
+        [placeholder]="'FEEDBACK.MESSAGE_PLACEHOLDER' | translate"
+        rows="4">
+      </textarea>
+      <mat-icon matPrefix>message</mat-icon>
+      <mat-error *ngIf="message?.hasError('required')">
+        {{ 'FEEDBACK.MESSAGE_REQUIRED' | translate }}
+      </mat-error>
+      <mat-error *ngIf="message?.hasError('minlength')">
+        {{ 'FEEDBACK.MESSAGE_MINLENGTH' | translate }}
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button (click)="onCancel()" class="cancel-btn">
+    {{ 'FEEDBACK.CANCEL_BUTTON' | translate }}
+  </button>
+  <button
+    mat-raised-button
+    color="primary"
+    class="submit-btn"
+    (click)="onSubmit()"
+    [disabled]="!contactForm.valid">
+    <mat-icon>send</mat-icon>
+    {{ 'FEEDBACK.SEND_BUTTON' | translate }}
+  </button>
+</mat-dialog-actions>

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { MatToolbar } from "@angular/material/toolbar";
+import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [MatToolbar],
+  imports: [RouterModule, TranslateModule],
   templateUrl: './footer.html',
   styleUrl: './footer.scss'
 })

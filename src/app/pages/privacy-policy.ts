@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { TranslateModule } from '@ngx-translate/core';
+import { SeoService } from '../services/seo.service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,6 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './privacy-policy.scss'
 })
 export class PrivacyPolicy implements OnInit {
+  private seoService = inject(SeoService);
   updatedAt: string = '';
 
   ngOnInit(): void {
@@ -17,5 +19,13 @@ export class PrivacyPolicy implements OnInit {
     const month = String(d.getMonth() + 1).padStart(2, '0');
     const year = d.getFullYear();
     this.updatedAt = `${day}.${month}.${year}`;
+
+    this.seoService.updateMetaTags({
+      title: 'Privacy Policy - Rooted',
+      description: 'Privacy Policy for Migrant Helper - Information about data collection, processing, and your rights.',
+      keywords: 'privacy policy, GDPR, data protection, Rooted',
+      ogTitle: 'Privacy Policy - Rooted',
+      ogDescription: 'Learn about how Rooted handles your data and protects your privacy.'
+    });
   }
 }

@@ -1,4 +1,7 @@
 {
+  "APP": {
+    "NAME": "Rooted"
+  },
   "NAV": {
     "HOME": "Accueil",
     "CPAS": "CPAS/OCMW",
@@ -6,9 +9,11 @@
     "CPAS_INFO": "Infos CPAS/OCMW",
     "CPAS_LETTER": "Lettre au CPAS/OCMW",
     "CONTACTS": "Contacts importants",
-    "NEWCOMER": "Je viens d’arriver",
+    "NEWCOMER": "Je viens d'arriver",
     "EMPLOYMENT": "Emploi",
     "CARRIERS": "Transporteurs",
+    "LANGUAGE_TUTORS": "Cours de Langue",
+    "UKRAINIAN_CHANNELS": "🇺🇦 Canaux Ukrainiens",
     "ACTIRIS_LETTER": "Lettre à Actiris"
   },
   "MAIN_TITLE": "Tu n'es pas seul",
@@ -106,6 +111,49 @@
       }
     }
   },
+  "TEMP_PROTECTION": {
+    "TITLE": "Protection Temporaire (PT) en Belgique : Guide Rapide",
+    "CLICK_TO_EXPAND": "Cliquez pour déplier",
+    "REGISTRATION": {
+      "WHERE": "Où a lieu l'enregistrement ?",
+      "TEXT": "Toutes les démarches se font au centre d'enregistrement unique IBZ à Bruxelles.",
+      "ADDRESS": "Adresse : Rue Belliard 68, 1040 Bruxelles.",
+      "TIME": "Horaire : Il est recommandé d'arriver avant 08h00. Il existe une file d'attente séparée pour les Ukrainiens."
+    },
+    "DOCUMENTS": {
+      "TITLE": "Quels documents préparer ?",
+      "GOAL": "L'objectif principal est de prouver que vous viviez en Ukraine au 24.02.2022.",
+      "REQUIRED": "Obligatoire : Passeports international et interne.",
+      "PROOF": "Preuves de résidence : Relevés bancaires, certificats de travail/médicaux, documents de « Diia », décisions judiciaires.",
+      "IMPORTANT": "Important : Un certificat de la Police des Frontières concernant le franchissement de la frontière (peut être commandé en ligne) simplifie considérablement la procédure."
+    },
+    "PROCESS": {
+      "TITLE": "Étapes de l'enregistrement",
+      "BIOMETRY": {
+        "TITLE": "Biométrie",
+        "TEXT": "Prise d'empreintes digitales et photographie."
+      },
+      "INTERVIEW": {
+        "TITLE": "Entretien",
+        "TEXT": "Communication avec l'inspecteur via un interprète (vous pouvez choisir l'ukrainien ou le russe)."
+      },
+      "WAITING": {
+        "TITLE": "Attente",
+        "TEXT": "La décision peut être donnée immédiatement (document avec photo) ou envoyée par courrier dans les 30 jours à l'adresse que vous avez fournie."
+      }
+    },
+    "HOUSING": {
+      "TITLE": "Logement et finances",
+      "BUDGET": "Budget : Prévoyez des fonds pour les 2-3 premiers mois (nourriture, transport), car le traitement des allocations sociales peut prendre du temps.",
+      "ADDRESS": "Adresse : Pour recevoir la Carte A, une adresse physique est obligatoire (chez des amis ou en logement social) où la police peut vous vérifier."
+    },
+    "RESULT": {
+      "TITLE": "Résultat",
+      "ANNEX15": "Document temporaire que vous recevez après approbation. Avec celui-ci, vous vous rendez à la commune locale (mairie) de votre futur lieu de résidence.",
+      "CARD_A_TITLE": "Carte A",
+      "CARD_A": "Titre de séjour en plastique qui donne le droit de travailler et d'accéder au système social."
+    }
+  },
   "MENU": {
     "HELP": "Help",
     "HOME": "Home",
@@ -155,21 +203,27 @@
   "HOME": {
     "APP_INFO": {
       "TITLE": "Soutien aux migrants en Belgique",
-      "DESCRIPTION": "Cette application aide les migrants en Belgique à naviguer dans les services locaux tels que CPAS/OCMW, Actiris et VDAB. Avec une prise en charge multilingue intégrée et une assistance basée sur l’IA, elle facilite la communication avec les autorités et fournit des réponses claires aux questions fréquentes.",
+      "DESCRIPTION": "Cette application aide les migrants en Belgique à naviguer dans les services locaux tels que CPAS/OCMW, Actiris et VDAB. Grâce au support multilingue, elle facilite la communication avec les autorités et aide à comprendre les procédures officielles.",
       "FEATURES_TITLE": "Fonctionnalités clés",
       "FEATURES": {
-        "FAQ": "FAQ intelligente propulsée par l'IA pour répondre à vos questions fréquentes.",
         "CPAS_SEARCH": "Recherchez les centres CPAS/OCMW par ville et région, avec adresses et contacts.",
-        "LETTER_BUILDER": "Générez des lettres officielles pour vos demandes et communications avec les services publics.",
-        "MULTILANG": "Support multilingue : ukrainien, turkish, anglais, français et néerlandais.",
-        "PRIVACY": "Aucune donnée personnelle n’est stockée. Vos requêtes sont sécurisées et anonymes."
+        "MULTILANG": "Support multilingue : ukrainien, turc, anglais, français et néerlandais.",
+        "CARRIERS": "Trouvez des transporteurs fiables pour vos déménagements entre l'Ukraine et la Belgique.",
+        "TRANSLATORS": "Connectez-vous avec des traducteurs professionnels pour vos documents et démarches officielles.",
+        "LANGUAGE_TUTORS": "Trouvez des professeurs de français ou néerlandais pour vous intégrer plus rapidement.",
+        "PRIVACY": "Aucune donnée personnelle n'est stockée. Vos requêtes sont sécurisées et anonymes."
       }
     },
     "SECTIONS": {
       "NEWCOMER": {
-        "TITLE": "Je viens d’arriver en Belgique !",
-        "DESCRIPTION": "Vous venez d’arriver et vous ne savez pas quoi faire ? Nous avons préparé un guide pas à pas.",
+        "TITLE": "Je viens d'arriver en Belgique !",
+        "DESCRIPTION": "Vous venez d'arriver et vous ne savez pas quoi faire ? Nous avons préparé un guide pas à pas.",
         "BUTTON": "Ouvrir le guide"
+      },
+      "UKRAINIAN_CHANNELS": {
+        "TITLE": "🇺🇦 Canaux Ukrainiens en Belgique",
+        "DESCRIPTION": "Trouvez des communautés ukrainiennes, des chats et des canaux pour communiquer et obtenir du soutien",
+        "BUTTON": "Voir les canaux"
       },
       "CONTACTS": {
         "TITLE": "Contacts importants",
@@ -205,6 +259,11 @@
         "TITLE": "Transport & Logistique",
         "DESCRIPTION": "Trouvez des transporteurs pour vos déménagements entre l'Ukraine et la Belgique",
         "BUTTON": "Trouver un transporteur"
+      },
+      "LANGUAGE_TUTORS": {
+        "TITLE": "Cours de Langue",
+        "DESCRIPTION": "Trouvez des professeurs pour apprendre le français ou le néerlandais",
+        "BUTTON": "Trouver un professeur"
       },
       "LETTER": {
         "TITLE": "Aide à la rédaction de lettres",
@@ -462,6 +521,48 @@
     "INFO_TITLE": "À propos du service de transport",
     "INFO_TEXT": "Notre service de transport vous aidera à trouver des transporteurs fiables pour vos déplacements entre l'Ukraine et la Belgique, que vous ayez besoin de transporter des effets personnels, des marchandises ou de voyager vous-même."
   },
+  "TUTORS_HERO": {
+    "TITLE": "Apprentissage des Langues",
+    "DESCRIPTION": "Trouvez des professeurs de langue professionnels pour apprendre le français ou le néerlandais. Améliorez vos compétences linguistiques pour mieux vous intégrer dans la société belge et accéder à plus d'opportunités.",
+    "FEATURES": {
+      "FRENCH": "Cours de Français",
+      "DUTCH": "Cours de Néerlandais",
+      "INDIVIDUAL": "Cours Particuliers",
+      "GROUP": "Cours en Groupe"
+    },
+    "SOON_SUBTITLE": "Service bientôt disponible",
+    "SOON_TEXT": "Nous construisons une plateforme pour vous connecter avec des professeurs de langue expérimentés. Bientôt, vous pourrez trouver des enseignants pour des cours de français et de néerlandais, en ligne et en présentiel.",
+    "PREVIEW": {
+      "FRENCH_TUTORS": "Professeurs de Français",
+      "DUTCH_TUTORS": "Professeurs de Néerlandais",
+      "INTEGRATION": "Soutien à l'Intégration",
+      "OFFICIAL": "Préparation aux Examens Officiels"
+    },
+    "NOTIFY_BUTTON": "M'avertir quand c'est prêt",
+    "INFO_TITLE": "À propos des Cours de Langue",
+    "INFO_TEXT": "Notre service d'apprentissage des langues vous aidera à trouver des tuteurs qualifiés pour le français et le néerlandais, permettant une intégration plus rapide et un meilleur accès aux opportunités en Belgique."
+  },
+  "UKR_CHANNELS_HERO": {
+    "TITLE": "🇺🇦 Canaux de Communication Ukrainiens en Belgique",
+    "DESCRIPTION": "Trouvez des communautés ukrainiennes, des chats et des canaux sur Telegram, Facebook, WhatsApp et Viber. Connectez-vous avec d'autres Ukrainiens, obtenez du soutien et des informations à jour sur la vie en Belgique.",
+    "FEATURES": {
+      "TELEGRAM": "Canaux Telegram",
+      "COMMUNITY": "Communautés",
+      "SUPPORT": "Soutien",
+      "INFO": "Informations actuelles"
+    },
+    "SOON_SUBTITLE": "Service bientôt disponible",
+    "SOON_TEXT": "Nous collectons les canaux et communautés ukrainiens actifs en Belgique. Bientôt, vous pourrez trouver des chats pour communiquer, obtenir de l'aide et partager des informations avec d'autres Ukrainiens.",
+    "PREVIEW": {
+      "TELEGRAM": "Canaux Telegram",
+      "FACEBOOK": "Groupes Facebook",
+      "WHATSAPP": "Chats WhatsApp",
+      "VIBER": "Communautés Viber"
+    },
+    "NOTIFY_BUTTON": "M'avertir quand c'est prêt",
+    "INFO_TITLE": "À propos des canaux ukrainiens",
+    "INFO_TEXT": "Notre service vous aidera à trouver des communautés ukrainiennes en Belgique pour communiquer, obtenir du soutien et partager des informations utiles sur la vie dans le pays."
+  },
   "PRIVACY": {
     "LINK": "Politique de confidentialité",
     "TITLE": "Politique de confidentialité",
@@ -510,5 +611,37 @@
     "BACK": "Retour",
     "NO": "Non",
     "COMING_SOON": "Bientôt disponible"
+  },
+  "FEEDBACK": {
+    "BUTTON_ARIA": "Envoyer un commentaire",
+    "BUTTON_TOOLTIP": "Contactez-nous",
+    "DIALOG_TITLE": "Contactez-nous",
+    "DIALOG_SUBTITLE": "Nous serions ravis de vous entendre. Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+    "INQUIRY_TYPE_LABEL": "Je suis",
+    "INQUIRY_TYPE_REQUIRED": "Veuillez sélectionner une option",
+    "INQUIRY_TYPES": {
+      "CARRIER": "Transporteur",
+      "TUTOR": "Professeur de langue",
+      "REALTOR": "Agent immobilier",
+      "TRANSLATOR": "Traducteur",
+      "OTHER": "Autre"
+    },
+    "NAME_LABEL": "Nom",
+    "NAME_PLACEHOLDER": "Entrez votre nom",
+    "NAME_REQUIRED": "Le nom est requis",
+    "NAME_MINLENGTH": "Le nom doit contenir au moins 2 caractères",
+    "EMAIL_LABEL": "Email",
+    "EMAIL_PLACEHOLDER": "Entrez votre email",
+    "EMAIL_REQUIRED": "L'email est requis",
+    "EMAIL_INVALID": "Veuillez entrer un email valide",
+    "MESSAGE_LABEL": "Message",
+    "MESSAGE_PLACEHOLDER": "Parlez-nous de vos services ou de la façon dont nous pouvons vous aider...",
+    "MESSAGE_REQUIRED": "Le message est requis",
+    "MESSAGE_MINLENGTH": "Le message doit contenir au moins 10 caractères",
+    "SEND_BUTTON": "Envoyer le message",
+    "CANCEL_BUTTON": "Annuler",
+    "SUCCESS_MESSAGE": "Votre message a été envoyé avec succès ! Nous vous contacterons bientôt.",
+    "ERROR_MESSAGE": "Échec de l'envoi du message. Veuillez réessayer plus tard.",
+    "CLOSE_BUTTON": "Fermer"
   }
 }

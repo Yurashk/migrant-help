@@ -2,12 +2,153 @@
   <!-- Header Card -->
   <mat-card class="header-card">
     <mat-card-header>
-      <div mat-card-avatar class="header-avatar">
+      <!-- <div mat-card-avatar class="header-avatar">
         <mat-icon>flight_land</mat-icon>
-      </div>
+      </div> -->
       <mat-card-title>{{ "NEW_INCOMER.title" | translate }}</mat-card-title>
       <mat-card-subtitle>{{ "NEW_INCOMER.description" | translate }}</mat-card-subtitle>
     </mat-card-header>
+  </mat-card>
+
+  <!-- Temporary Protection Guide Accordion -->
+  <mat-card class="accordion-card">
+    <mat-card-content>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header [attr.aria-label]="'Click to expand'">
+            <mat-panel-title class="accordion-title">
+              {{ "TEMP_PROTECTION.TITLE" | translate }}
+            </mat-panel-title>
+            <mat-panel-description class="accordion-hint">
+              <mat-icon>expand_more</mat-icon>
+              <span>{{ "TEMP_PROTECTION.CLICK_TO_EXPAND" | translate }}</span>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          
+          <div class="accordion-content">
+            <section class="guide-section">
+              <h3 class="section-title">
+                <span class="section-number">1</span>
+                {{ "TEMP_PROTECTION.REGISTRATION.WHERE" | translate }}
+              </h3>
+              <p class="section-text">{{ "TEMP_PROTECTION.REGISTRATION.TEXT" | translate }}</p>
+              <div class="info-box">
+                <mat-icon>location_on</mat-icon>
+                <span>{{ "TEMP_PROTECTION.REGISTRATION.ADDRESS" | translate }}</span>
+              </div>
+              <div class="info-box">
+                <mat-icon>schedule</mat-icon>
+                <span>{{ "TEMP_PROTECTION.REGISTRATION.TIME" | translate }}</span>
+              </div>
+            </section>
+
+            <mat-divider class="section-divider"></mat-divider>
+
+            <section class="guide-section">
+              <h3 class="section-title">
+                <span class="section-number">2</span>
+                {{ "TEMP_PROTECTION.DOCUMENTS.TITLE" | translate }}
+              </h3>
+              <p class="section-text">{{ "TEMP_PROTECTION.DOCUMENTS.GOAL" | translate }}</p>
+              <div class="document-list">
+                <div class="doc-item required">
+                  <mat-icon>assignment_turned_in</mat-icon>
+                  <span>{{ "TEMP_PROTECTION.DOCUMENTS.REQUIRED" | translate }}</span>
+                </div>
+                <div class="doc-item">
+                  <mat-icon>folder_open</mat-icon>
+                  <span>{{ "TEMP_PROTECTION.DOCUMENTS.PROOF" | translate }}</span>
+                </div>
+                <div class="doc-item important">
+                  <mat-icon>star</mat-icon>
+                  <span>{{ "TEMP_PROTECTION.DOCUMENTS.IMPORTANT" | translate }}</span>
+                </div>
+              </div>
+            </section>
+
+            <mat-divider class="section-divider"></mat-divider>
+
+            <section class="guide-section">
+              <h3 class="section-title">
+                <span class="section-number">3</span>
+                {{ "TEMP_PROTECTION.PROCESS.TITLE" | translate }}
+              </h3>
+              <div class="process-steps">
+                <div class="process-step">
+                  <div class="step-icon-wrapper">
+                    <mat-icon>fingerprint</mat-icon>
+                  </div>
+                  <div class="step-content">
+                    <h4>{{ "TEMP_PROTECTION.PROCESS.BIOMETRY.TITLE" | translate }}</h4>
+                    <p>{{ "TEMP_PROTECTION.PROCESS.BIOMETRY.TEXT" | translate }}</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-icon-wrapper">
+                    <mat-icon>chat</mat-icon>
+                  </div>
+                  <div class="step-content">
+                    <h4>{{ "TEMP_PROTECTION.PROCESS.INTERVIEW.TITLE" | translate }}</h4>
+                    <p>{{ "TEMP_PROTECTION.PROCESS.INTERVIEW.TEXT" | translate }}</p>
+                  </div>
+                </div>
+                <div class="process-step">
+                  <div class="step-icon-wrapper">
+                    <mat-icon>hourglass_empty</mat-icon>
+                  </div>
+                  <div class="step-content">
+                    <h4>{{ "TEMP_PROTECTION.PROCESS.WAITING.TITLE" | translate }}</h4>
+                    <p>{{ "TEMP_PROTECTION.PROCESS.WAITING.TEXT" | translate }}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <mat-divider class="section-divider"></mat-divider>
+
+            <section class="guide-section">
+              <h3 class="section-title">
+                <span class="section-number">4</span>
+                {{ "TEMP_PROTECTION.HOUSING.TITLE" | translate }}
+              </h3>
+              <div class="info-box budget">
+                <mat-icon>account_balance_wallet</mat-icon>
+                <span>{{ "TEMP_PROTECTION.HOUSING.BUDGET" | translate }}</span>
+              </div>
+              <div class="info-box address">
+                <mat-icon>home</mat-icon>
+                <span>{{ "TEMP_PROTECTION.HOUSING.ADDRESS" | translate }}</span>
+              </div>
+            </section>
+
+            <mat-divider class="section-divider"></mat-divider>
+
+            <section class="guide-section">
+              <h3 class="section-title">
+                <span class="section-number">5</span>
+                {{ "TEMP_PROTECTION.RESULT.TITLE" | translate }}
+              </h3>
+              <div class="result-cards">
+                <div class="result-card">
+                  <div class="result-icon">
+                    <mat-icon>description</mat-icon>
+                  </div>
+                  <h4>Annex 15</h4>
+                  <p>{{ "TEMP_PROTECTION.RESULT.ANNEX15" | translate }}</p>
+                </div>
+                <div class="result-card">
+                  <div class="result-icon">
+                    <mat-icon>credit_card</mat-icon>
+                  </div>
+                  <h4>{{ "TEMP_PROTECTION.RESULT.CARD_A_TITLE" | translate }}</h4>
+                  <p>{{ "TEMP_PROTECTION.RESULT.CARD_A" | translate }}</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
   </mat-card>
 
   <!-- Steps Card -->

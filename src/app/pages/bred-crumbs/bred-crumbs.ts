@@ -40,6 +40,9 @@ private router = inject(Router);
         const cfg = child.routeConfig;
         if (!cfg) continue;
 
+        // Check if snapshot exists (SSR safety)
+        if (!child.snapshot) continue;
+
         const data = child.snapshot.data ?? {};
         if (data['hideBreadcrumb']) { walk(child, url); continue; }
 

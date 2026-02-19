@@ -1,4 +1,7 @@
 {
+  "APP": {
+    "NAME": "Rooted"
+  },
   "NAV": {
     "HOME": "Home",
     "CPAS": "CPAS/OCMW",
@@ -9,6 +12,8 @@
     "NEWCOMER": "Just arrived",
     "EMPLOYMENT": "Employment",
     "CARRIERS": "Carriers",
+    "LANGUAGE_TUTORS": "Language Tutors",
+    "UKRAINIAN_CHANNELS": "🇺🇦 Ukrainian Channels",
     "ACTIRIS_LETTER": "Letter to Actiris"
   },
   "MAIN_TITLE": "You are not alone",
@@ -151,24 +156,73 @@
       }
     }
   },
+  "TEMP_PROTECTION": {
+    "TITLE": "Temporary Protection (TP) in Belgium: Quick Guide",
+    "CLICK_TO_EXPAND": "Click to expand",
+    "REGISTRATION": {
+      "WHERE": "Where does registration take place?",
+      "TEXT": "All matters are handled at the single registration center IBZ in Brussels.",
+      "ADDRESS": "Address: Rue Belliard 68, 1040 Bruxelles.",
+      "TIME": "Time: It is recommended to arrive before 08:00. There is a separate queue for Ukrainians."
+    },
+    "DOCUMENTS": {
+      "TITLE": "What documents should you prepare?",
+      "GOAL": "The main goal is to prove that you were living in Ukraine as of 24.02.2022.",
+      "REQUIRED": "Required: International and internal passports.",
+      "PROOF": "Proof of residence: Bank statements, work/medical certificates, documents from 'Diia', court decisions.",
+      "IMPORTANT": "Important: A certificate from the State Border Guard Service about crossing the border (can be ordered online) significantly simplifies the procedure."
+    },
+    "PROCESS": {
+      "TITLE": "Registration stages",
+      "BIOMETRY": {
+        "TITLE": "Biometrics",
+        "TEXT": "Taking fingerprints and photographing."
+      },
+      "INTERVIEW": {
+        "TITLE": "Interview",
+        "TEXT": "Communication with the inspector through an interpreter (you can choose Ukrainian or Russian)."
+      },
+      "WAITING": {
+        "TITLE": "Waiting",
+        "TEXT": "The decision can be given immediately (document with photo) or sent by mail within 30 days to the address you provided."
+      }
+    },
+    "HOUSING": {
+      "TITLE": "Housing and finances",
+      "BUDGET": "Budget: Have a reserve of funds for the first 2-3 months of living (food, transport), as the processing of social benefits may take time.",
+      "ADDRESS": "Address: To receive Card A, a physical address is mandatory (with friends or in social housing) where the police can check you."
+    },
+    "RESULT": {
+      "TITLE": "Result",
+      "ANNEX15": "Temporary document that you receive after approval. With it, you go to the local commune (city hall) at your future place of residence.",
+      "CARD_A_TITLE": "Card A",
+      "CARD_A": "Plastic residence permit that gives the right to work and access to the social system."
+    }
+  },
   "HOME": {
     "APP_INFO": {
       "TITLE": "Support for Migrants in Belgium",
-      "DESCRIPTION": "This application helps migrants in Belgium navigate local services such as CPAS/OCMW, Actiris, and VDAB. With built-in multilingual support and AI-powered assistance, it simplifies communication with public authorities and provides clear answers to frequently asked questions.",
+      "DESCRIPTION": "This application helps migrants in Belgium navigate local services such as CPAS/OCMW, Actiris, and VDAB. Thanks to multilingual support, it simplifies communication with public authorities and helps understand official procedures.",
       "FEATURES_TITLE": "Key Features",
       "FEATURES": {
-        "FAQ": "Smart FAQ powered by AI to answer your most common questions.",
         "CPAS_SEARCH": "Search CPAS/OCMW centers by city and region, with address and contact info.",
-        "LETTER_BUILDER": "Generate official letters for requests and communication with public services.",
-        "MULTILANG": "Multilingual support for Ukrainian, English, Turkish,French, and Dutch.",
+        "MULTILANG": "Multilingual support for Ukrainian, English, Turkish, French, and Dutch.",
+        "CARRIERS": "Find reliable carriers for transporting goods between Ukraine and Belgium.",
+        "TRANSLATORS": "Connect with professional translators for documents and official procedures.",
+        "LANGUAGE_TUTORS": "Find language tutors to learn French or Dutch and integrate faster.",
         "PRIVACY": "No personal data is stored. Your queries are secure and anonymous."
       }
     },
     "SECTIONS": {
       "NEWCOMER": {
         "TITLE": "I just arrived in Belgium!",
-        "DESCRIPTION": "You’ve just arrived and don’t know what to do? We’ve prepared a step-by-step guide.",
+        "DESCRIPTION": "You've just arrived and don't know what to do? We've prepared a step-by-step guide.",
         "BUTTON": "Open the guide"
+      },
+      "UKRAINIAN_CHANNELS": {
+        "TITLE": "🇺🇦 Ukrainian Channels in Belgium",
+        "DESCRIPTION": "Find Ukrainian communities, chats and channels for communication and support",
+        "BUTTON": "View channels"
       },
       "CONTACTS": {
         "TITLE": "Important contacts",
@@ -204,6 +258,11 @@
         "TITLE": "Transport & Carriers",
         "DESCRIPTION": "Find carriers for moving between Ukraine and Belgium",
         "BUTTON": "Find carriers"
+      },
+      "LANGUAGE_TUTORS": {
+        "TITLE": "Language Tutors",
+        "DESCRIPTION": "Find tutors to learn French or Dutch and integrate faster",
+        "BUTTON": "Find tutors"
       },
       "LETTER": {
         "TITLE": "Help writing a letter",
@@ -462,6 +521,48 @@
     "INFO_TITLE": "About Transport Service",
     "INFO_TEXT": "Our transport service will help you find reliable carriers for moving between Ukraine and Belgium, whether you need to transport personal belongings, goods, or travel yourself."
   },
+  "TUTORS_HERO": {
+    "TITLE": "Language Learning",
+    "DESCRIPTION": "Find professional language tutors to learn French or Dutch. Improve your language skills to better integrate into Belgian society and access more opportunities.",
+    "FEATURES": {
+      "FRENCH": "French Courses",
+      "DUTCH": "Dutch Courses",
+      "INDIVIDUAL": "Individual Lessons",
+      "GROUP": "Group Classes"
+    },
+    "SOON_SUBTITLE": "Service launching soon",
+    "SOON_TEXT": "We are building a platform to connect you with experienced language tutors. Soon you will be able to find teachers for French and Dutch lessons, both online and in-person.",
+    "PREVIEW": {
+      "FRENCH_TUTORS": "French Language Tutors",
+      "DUTCH_TUTORS": "Dutch Language Tutors",
+      "INTEGRATION": "Integration Support",
+      "OFFICIAL": "Official Exam Prep"
+    },
+    "NOTIFY_BUTTON": "Notify me when ready",
+    "INFO_TITLE": "About Language Learning",
+    "INFO_TEXT": "Our language learning service will help you find qualified tutors for French and Dutch, enabling faster integration and better access to opportunities in Belgium."
+  },
+  "UKR_CHANNELS_HERO": {
+    "TITLE": "🇺🇦 Ukrainian Communication Channels in Belgium",
+    "DESCRIPTION": "Find Ukrainian communities, chats and channels on Telegram, Facebook, WhatsApp and Viber. Connect with fellow Ukrainians, get support and up-to-date information about life in Belgium.",
+    "FEATURES": {
+      "TELEGRAM": "Telegram channels",
+      "COMMUNITY": "Communities",
+      "SUPPORT": "Support",
+      "INFO": "Current information"
+    },
+    "SOON_SUBTITLE": "Service launching soon",
+    "SOON_TEXT": "We are collecting active Ukrainian channels and communities in Belgium. Soon you will be able to find chats for communication, getting help and sharing information with other Ukrainians.",
+    "PREVIEW": {
+      "TELEGRAM": "Telegram channels",
+      "FACEBOOK": "Facebook groups",
+      "WHATSAPP": "WhatsApp chats",
+      "VIBER": "Viber communities"
+    },
+    "NOTIFY_BUTTON": "Notify me when ready",
+    "INFO_TITLE": "About Ukrainian channels",
+    "INFO_TEXT": "Our service will help you find Ukrainian communities in Belgium for communication, getting support and sharing useful information about life in the country."
+  },
   "PRIVACY": {
     "LINK": "Privacy Policy",
     "TITLE": "Privacy Policy",
@@ -510,5 +611,37 @@
     "BACK": "Back",
     "NO": "No",
     "COMING_SOON": "Coming soon"
+  },
+  "FEEDBACK": {
+    "BUTTON_ARIA": "Send feedback",
+    "BUTTON_TOOLTIP": "Contact us",
+    "DIALOG_TITLE": "Contact Us",
+    "DIALOG_SUBTITLE": "We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.",
+    "INQUIRY_TYPE_LABEL": "I am a",
+    "INQUIRY_TYPE_REQUIRED": "Please select an option",
+    "INQUIRY_TYPES": {
+      "CARRIER": "Carrier/Transport",
+      "TUTOR": "Language Tutor",
+      "REALTOR": "Real Estate Agent",
+      "TRANSLATOR": "Translator",
+      "OTHER": "Other"
+    },
+    "NAME_LABEL": "Name",
+    "NAME_PLACEHOLDER": "Enter your name",
+    "NAME_REQUIRED": "Name is required",
+    "NAME_MINLENGTH": "Name must be at least 2 characters",
+    "EMAIL_LABEL": "Email",
+    "EMAIL_PLACEHOLDER": "Enter your email",
+    "EMAIL_REQUIRED": "Email is required",
+    "EMAIL_INVALID": "Please enter a valid email",
+    "MESSAGE_LABEL": "Message",
+    "MESSAGE_PLACEHOLDER": "Tell us more about your services or how we can help you...",
+    "MESSAGE_REQUIRED": "Message is required",
+    "MESSAGE_MINLENGTH": "Message must be at least 10 characters",
+    "SEND_BUTTON": "Send Message",
+    "CANCEL_BUTTON": "Cancel",
+    "SUCCESS_MESSAGE": "Your message has been sent successfully! We will contact you soon.",
+    "ERROR_MESSAGE": "Failed to send message. Please try again later.",
+    "CLOSE_BUTTON": "Close"
   }
 }

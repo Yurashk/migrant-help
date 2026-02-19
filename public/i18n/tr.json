@@ -1,4 +1,7 @@
 {
+  "APP": {
+    "NAME": "Rooted"
+  },
   "NAV": {
     "HOME": "Ana Sayfa",
     "CPAS": "CPAS",
@@ -9,6 +12,8 @@
     "NEWCOMER": "Yeni geldim",
     "EMPLOYMENT": "İstihdam",
     "CARRIERS": "Taşımacılar",
+    "LANGUAGE_TUTORS": "Dil Öğretmenleri",
+    "UKRAINIAN_CHANNELS": "🇺🇦 Ukrayna Kanalları",
     "ACTIRIS_LETTER": "Actiris'e Mektup"
   },
   "MAIN_TITLE": "Yalnız değilsiniz",
@@ -151,24 +156,73 @@
       }
     }
   },
+  "TEMP_PROTECTION": {
+    "TITLE": "Belçika'da Geçici Koruma (GK): Hızlı Kılavuz",
+    "CLICK_TO_EXPAND": "Genişletmek için tıklayın",
+    "REGISTRATION": {
+      "WHERE": "Kayıt nerede yapılır?",
+      "TEXT": "Tüm işlemler Brüksel'deki tek kayıt merkezi IBZ'de yapılır.",
+      "ADDRESS": "Adres: Rue Belliard 68, 1040 Bruxelles.",
+      "TIME": "Saat: 08:00'den önce gelmeniz önerilir. Ukraynalılar için ayrı bir sıra vardır."
+    },
+    "DOCUMENTS": {
+      "TITLE": "Hangi belgeleri hazırlamalısınız?",
+      "GOAL": "Ana amaç, 24.02.2022 tarihinde Ukrayna'da yaşadığınızı kanıtlamaktır.",
+      "REQUIRED": "Zorunlu: Uluslararası ve iç pasaportlar.",
+      "PROOF": "İkamet kanıtları: Banka ekstreleri, iş/sağlık belgeleri, «Diya» belgeleri, mahkeme kararları.",
+      "IMPORTANT": "Önemli: Sınır geçiş belgesi (çevrimiçi sipariş edilebilir) prosedürü önemli ölçüde kolaylaştırır."
+    },
+    "PROCESS": {
+      "TITLE": "Kayıt aşamaları",
+      "BIOMETRY": {
+        "TITLE": "Biyometri",
+        "TEXT": "Parmak izi alma ve fotoğraf çekimi."
+      },
+      "INTERVIEW": {
+        "TITLE": "Mülakat",
+        "TEXT": "Tercüman aracılığıyla müfettişle iletişim (Ukraynaca veya Rusça seçebilirsiniz)."
+      },
+      "WAITING": {
+        "TITLE": "Bekleme",
+        "TEXT": "Karar hemen verilebilir (fotoğraflı belge) veya verdiğiniz adrese 30 gün içinde postayla gönderilebilir."
+      }
+    },
+    "HOUSING": {
+      "TITLE": "Konut ve finans",
+      "BUDGET": "Bütçe: İlk 2-3 ay için (yemek, ulaşım) yedek para bulundurun, çünkü sosyal yardımların işlenmesi zaman alabilir.",
+      "ADDRESS": "Adres: A Kartı almak için, polisin sizi kontrol edebileceği fiziksel bir adres (arkadaşlarda veya sosyal konutta) zorunludur."
+    },
+    "RESULT": {
+      "TITLE": "Sonuç",
+      "ANNEX15": "Onaylandıktan sonra aldığınız geçici belge. Bununla gelecekteki ikamet yerinizdeki yerel belediyeye (belediye binasına) gidiyorsunuz.",
+      "CARD_A_TITLE": "A Kartı",
+      "CARD_A": "Çalışma hakkı ve sosyal sisteme erişim veren plastik ikamet izni."
+    }
+  },
   "HOME": {
     "APP_INFO": {
-      "TITLE": "Belçika’daki Göçmenler İçin Destek",
-      "DESCRIPTION": "Bu uygulama, Belçika’daki göçmenlerin CPAS, Actiris ve VDAB gibi yerel hizmetlerde yolunu bulmasına yardımcı olur. Çok dilli destek ve yapay zekâ ile yetkililerle iletişimi kolaylaştırır.",
+      "TITLE": "Belçika'daki Göçmenler İçin Destek",
+      "DESCRIPTION": "Bu uygulama, Belçika'daki göçmenlerin CPAS, Actiris ve VDAB gibi yerel hizmetlerde yolunu bulmasına yardımcı olur. Çok dilli destek sayesinde yetkililerle iletişimi kolaylaştırır ve resmi prosedürleri anlamanıza yardımcı olur.",
       "FEATURES_TITLE": "Ana Özellikler",
       "FEATURES": {
-        "FAQ": "En sık sorulan sorularınıza yanıt veren akıllı SSS.",
         "CPAS_SEARCH": "Şehir ve bölgeye göre CPAS merkezlerini arayın.",
-        "LETTER_BUILDER": "Kamu kurumlarıyla iletişim için resmi mektuplar oluşturun.",
         "MULTILANG": "Ukraynaca, Rusça, İngilizce, Fransızca ve Hollandaca dillerinde destek.",
+        "CARRIERS": "Ukrayna ile Belçika arasında eşya taşımak için güvenilir nakliyeciler bulun.",
+        "TRANSLATORS": "Belgeler ve resmi işlemler için profesyonel çevirmenlerle bağlantı kurun.",
+        "LANGUAGE_TUTORS": "Daha hızlı entegre olmak için Fransızca veya Hollandaca öğretmenleri bulun.",
         "PRIVACY": "Kişisel veriler saklanmaz. Sorularınız güvenli ve anonimdir."
       }
     },
     "SECTIONS": {
       "NEWCOMER": {
-        "TITLE": "Belçika’ya yeni geldim!",
+        "TITLE": "Belçika'ya yeni geldim!",
         "DESCRIPTION": "Yeni geldiniz ve ne yapacağınızı bilmiyor musunuz? Sizin için adım adım rehber hazırladık.",
         "BUTTON": "Rehberi aç"
+      },
+      "UKRAINIAN_CHANNELS": {
+        "TITLE": "🇺🇦 Belçika'daki Ukrayna Kanalları",
+        "DESCRIPTION": "İletişim ve destek için Ukrayna topluluklarını, sohbetleri ve kanalları bulun",
+        "BUTTON": "Kanalları gör"
       },
       "CONTACTS": {
         "TITLE": "Önemli telefonlar",
@@ -204,6 +258,11 @@
         "TITLE": "Nakliyat ve Lojistik",
         "DESCRIPTION": "Ukrayna ile Belçika arasında taşınma için taşıyıcılar bulun",
         "BUTTON": "Taşıyıcı bul"
+      },
+      "LANGUAGE_TUTORS": {
+        "TITLE": "Dil Öğretmenleri",
+        "DESCRIPTION": "Fransızca veya Felemenkçe öğrenmek için öğretmenler bulun",
+        "BUTTON": "Öğretmen bul"
       },
       "LETTER": {
         "TITLE": "Mektup yazmaya yardım",
@@ -461,6 +520,48 @@
     "INFO_TITLE": "Nakliyat Hizmeti Hakkında",
     "INFO_TEXT": "Nakliyat hizmetimiz, Ukrayna ile Belçika arasında taşınmak için kişisel eşyalarınızı, mallarızı taşımanız veya kendiniz seyahat etmeniz gerekip gerekmediğine bakılmaksızın güvenilir taşıyıcılar bulmanıza yardımcı olacaktır."
   },
+  "TUTORS_HERO": {
+    "TITLE": "Dil Öğrenme",
+    "DESCRIPTION": "Fransızca veya Felemenkçe öğrenmek için profesyonel dil öğretmenleri bulun. Belçika toplumuna daha iyi entegre olmak ve daha fazla fırsata erişmek için dil becerilerinizi geliştirin.",
+    "FEATURES": {
+      "FRENCH": "Fransızca Kursları",
+      "DUTCH": "Felemenkçe Kursları",
+      "INDIVIDUAL": "Birebir Dersler",
+      "GROUP": "Grup Dersleri"
+    },
+    "SOON_SUBTITLE": "Hizmet yakında başlıyor",
+    "SOON_TEXT": "Deneyimli dil öğretmenleriyle sizi buluşturacak bir platform oluşturuyoruz. Yakında çevrimiçi veya yüz yüze Fransızca ve Felemenkçe dersleri için öğretmenler bulabileceksiniz.",
+    "PREVIEW": {
+      "FRENCH_TUTORS": "Fransızca Öğretmenleri",
+      "DUTCH_TUTORS": "Felemenkçe Öğretmenleri",
+      "INTEGRATION": "Entegrasyon Desteği",
+      "OFFICIAL": "Resmi Sınav Hazırlığı"
+    },
+    "NOTIFY_BUTTON": "Hazır olduğunda bildir",
+    "INFO_TITLE": "Dil Öğrenme Hakkında",
+    "INFO_TEXT": "Dil öğrenme hizmetimiz, Fransızca ve Felemenkçe için nitelikli öğretmenler bulmanıza yardımcı olacak, Belçika'da daha hızlı entegrasyon ve daha iyi fırsatlara erişim sağlayacaktır."
+  },
+  "UKR_CHANNELS_HERO": {
+    "TITLE": "🇺🇦 Belçika'daki Ukrayna İletişim Kanalları",
+    "DESCRIPTION": "Telegram, Facebook, WhatsApp ve Viber'daki Ukrayna topluluklarını, sohbetleri ve kanalları bulun. Diğer Ukraynalılarla bağlantı kurun, destek alın ve Belçika'daki yaşam hakkında güncel bilgiler edinin.",
+    "FEATURES": {
+      "TELEGRAM": "Telegram kanalları",
+      "COMMUNITY": "Topluluklar",
+      "SUPPORT": "Destek",
+      "INFO": "Güncel bilgiler"
+    },
+    "SOON_SUBTITLE": "Hizmet yakında başlıyor",
+    "SOON_TEXT": "Belçika'daki aktif Ukrayna kanallarını ve topluluklarını topluyoruz. Yakında diğer Ukraynalılarla iletişim kurmak, yardım almak ve bilgi paylaşmak için sohbetler bulabileceksiniz.",
+    "PREVIEW": {
+      "TELEGRAM": "Telegram kanalları",
+      "FACEBOOK": "Facebook grupları",
+      "WHATSAPP": "WhatsApp sohbetleri",
+      "VIBER": "Viber toplulukları"
+    },
+    "NOTIFY_BUTTON": "Hazır olduğunda bildir",
+    "INFO_TITLE": "Ukrayna kanalları hakkında",
+    "INFO_TEXT": "Hizmetimiz, Belçika'da iletişim kurmak, destek almak ve ülkedeki yaşam hakkında faydalı bilgiler paylaşmak için Ukrayna toplulukları bulmanıza yardımcı olacaktır."
+  },
   "PRIVACY": {
     "LINK": "Gizlilik Politikası",
     "TITLE": "Gizlilik Politikası",
@@ -509,5 +610,37 @@
     "BACK": "Geri",
     "NO": "Hayır",
     "COMING_SOON": "Yakında"
+  },
+  "FEEDBACK": {
+    "BUTTON_ARIA": "Geri bildirim gönder",
+    "BUTTON_TOOLTIP": "Bize ulaşın",
+    "DIALOG_TITLE": "Bize Ulaşın",
+    "DIALOG_SUBTITLE": "Sizden haber almaktan mutluluk duyarız. Aşağıdaki formu doldurun, en kısa sürede size dönüş yapalım.",
+    "INQUIRY_TYPE_LABEL": "Ben bir",
+    "INQUIRY_TYPE_REQUIRED": "Lütfen bir seçenek belirleyin",
+    "INQUIRY_TYPES": {
+      "CARRIER": "Taşıyıcı",
+      "TUTOR": "Dil Öğretmeni",
+      "REALTOR": "Emlak Danışmanı",
+      "TRANSLATOR": "Çevirmen",
+      "OTHER": "Diğer"
+    },
+    "NAME_LABEL": "Ad",
+    "NAME_PLACEHOLDER": "Adınızı girin",
+    "NAME_REQUIRED": "Ad gerekli",
+    "NAME_MINLENGTH": "Ad en az 2 karakter olmalıdır",
+    "EMAIL_LABEL": "Email",
+    "EMAIL_PLACEHOLDER": "Email adresinizi girin",
+    "EMAIL_REQUIRED": "Email gerekli",
+    "EMAIL_INVALID": "Lütfen geçerli bir email girin",
+    "MESSAGE_LABEL": "Mesaj",
+    "MESSAGE_PLACEHOLDER": "Hizmetleriniz veya size nasıl yardımcı olabileceğimiz hakkında bilgi verin...",
+    "MESSAGE_REQUIRED": "Mesaj gerekli",
+    "MESSAGE_MINLENGTH": "Mesaj en az 10 karakter olmalıdır",
+    "SEND_BUTTON": "Mesaj Gönder",
+    "CANCEL_BUTTON": "İptal",
+    "SUCCESS_MESSAGE": "Mesajınız başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.",
+    "ERROR_MESSAGE": "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+    "CLOSE_BUTTON": "Kapat"
   }
 }

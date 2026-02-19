@@ -1,0 +1,281 @@
+:host {
+  display: block;
+}
+
+// Dialog Header
+.dialog-header {
+  text-align: center;
+  padding: 24px 24px 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  margin:  0;
+  padding-bottom: 24px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+.header-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  
+  mat-icon {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    color: white;
+  }
+}
+
+h2[mat-dialog-title] {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+}
+
+// Form Styles
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 0 8px;
+  min-width: 320px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  
+  .half-width {
+    flex: 1;
+  }
+}
+
+// Inquiry Type Field Special Styling
+.inquiry-type-field {
+  .mat-mdc-form-field-infix {
+    padding: 12px 0;
+  }
+  
+  mat-select {
+    font-weight: 500;
+  }
+  
+  mat-option {
+    mat-icon {
+      margin-right: 12px;
+      vertical-align: middle;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+// Form Field Styling
+mat-form-field {
+  &.mat-mdc-form-field-type-mat-select {
+    .mat-mdc-form-field-icon-prefix {
+      color: #3b82f6;
+    }
+  }
+  
+  .mat-mdc-form-field-icon-prefix {
+    color: #64748b;
+    margin-right: 12px;
+    
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .mat-mdc-text-field-wrapper {
+    background-color: #f8fafc;
+    border-radius: 12px;
+  }
+  
+  .mat-mdc-form-field-focus-overlay {
+    background-color: rgba(59, 130, 246, 0.05);
+  }
+}
+
+// Select Options Styling
+::ng-deep {
+  .mat-mdc-select-panel {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    
+    mat-option {
+      padding: 12px 16px;
+      
+      mat-icon {
+        margin-right: 12px;
+        vertical-align: middle;
+      }
+      
+      &:hover {
+        background-color: #f1f5f9;
+      }
+      
+      &.mat-mdc-option-active {
+        background-color: #e0f2fe;
+      }
+      
+      &[value="carrier"] mat-icon {
+        color: #f59e0b;
+      }
+      
+      &[value="tutor"] mat-icon {
+        color: #00bcd4;
+      }
+      
+      &[value="realtor"] mat-icon {
+        color: #8b5cf6;
+      }
+      
+      &[value="translator"] mat-icon {
+        color: #ec4899;
+      }
+      
+      &[value="other"] mat-icon {
+        color: #64748b;
+      }
+    }
+  }
+}
+
+// Dialog Actions
+mat-dialog-actions {
+  padding: 16px 24px 24px;
+  gap: 12px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 8px;
+  
+  button {
+    min-width: 120px;
+    height: 44px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+    &.cancel-btn {
+      border-color: #cbd5e1;
+      color: #64748b;
+      
+      &:hover {
+        background-color: #f1f5f9;
+        border-color: #94a3b8;
+      }
+    }
+    
+    &.submit-btn {
+      background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+      color:white;
+      
+      &:hover:not(:disabled) {
+        background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+        transform: translateY(-1px);
+      }
+      
+      &:disabled {
+        background: #cbd5e1;
+        box-shadow: none;
+      }
+    }
+    
+    mat-icon {
+      margin-right: 8px;
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+mat-dialog-content {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+// Mobile Responsive
+@media (max-width: 480px) {
+  .dialog-header {
+    padding: 20px 16px;
+    margin: -16px -16px 0;
+    
+    .header-icon {
+      width: 56px;
+      height: 56px;
+      
+      mat-icon {
+        font-size: 28px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+    
+    h2[mat-dialog-title] {
+      font-size: 20px;
+    }
+    
+    .dialog-subtitle {
+      font-size: 13px;
+    }
+  }
+  
+  .contact-form {
+    min-width: auto;
+    gap: 16px;
+    padding: 16px 0 0;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  mat-dialog-actions {
+    flex-direction: column-reverse;
+    padding: 12px 16px 16px;
+    
+    button {
+      width: 100%;
+    }
+  }
+}

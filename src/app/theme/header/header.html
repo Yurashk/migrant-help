@@ -1,11 +1,14 @@
-<mat-toolbar color="primary">
-  <ng-content>
-    <button mat-icon-button (click)="drawer.toggle()" aria-label="Меню">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </ng-content>
-  <img style="width: 120px;align-self: center;cursor: pointer;" (click)="goToItem()" lin src="assets/images/Logo-new.png"/>
-  <!-- <span><i>{{"MAIN_TITLE" | translate}}</i></span> -->
+<mat-toolbar class="app-header">
+  <button mat-icon-button (click)="drawer.toggle()" aria-label="Меню" class="menu-btn">
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+  <div class="logo-container" (click)="goToItem()">
+    <img src="assets/images/logo-new.png" alt="Rooted" class="logo"/>
+    <span class="brand-name">Rooted</span>
+  </div>
+  
   <span class="spacer"></span>
+  
   <app-language-switcher></app-language-switcher>
 </mat-toolbar>

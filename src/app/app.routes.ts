@@ -13,6 +13,8 @@ import { FindHouse } from './pages/find-house/find-house';
 import { PrivacyPolicy } from './pages/privacy-policy';
 import { TranslatorHelp } from './pages/translator-help/translator-help';
 import { CarriersPage } from './pages/carriers-page/carriers-page';
+import { LanguageTutorsPage } from './pages/language-tutors-page/language-tutors-page';
+import { UkrainianChannelsPage } from './pages/ukrainian-channels-page/ukrainian-channels-page';
 
 export const routes: Routes = [
   {
@@ -89,6 +91,16 @@ export const routes: Routes = [
         path: 'carriers',
         component: CarriersPage,
         data: { breadcrumbKey: 'NAV.CARRIERS' },
+      },
+      {
+        path: 'language-tutors',
+        component: LanguageTutorsPage,
+        data: { breadcrumbKey: 'NAV.LANGUAGE_TUTORS' },
+      },
+      {
+        path: 'ukrainian-channels',
+        component: UkrainianChannelsPage,
+        data: { breadcrumbKey: 'NAV.UKRAINIAN_CHANNELS' },
       },
       { path: 'privacy-policy', component: PrivacyPolicy },
     ],

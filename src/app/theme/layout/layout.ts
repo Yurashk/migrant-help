@@ -12,11 +12,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { MatDividerModule } from '@angular/material/divider';
 import { BredCrumbs } from "../../pages/bred-crumbs/bred-crumbs";
+import { FeedbackFabComponent } from "../../components/feedback-fab/feedback-fab";
 import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-layout',
-  imports: [CommonModule, Header, RouterModule, Footer, MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule, MatIconModule, MatCard, TranslateModule, MatDividerModule, BredCrumbs],
+  imports: [CommonModule, Header, RouterModule, Footer, MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule, MatIconModule, MatCard, TranslateModule, MatDividerModule, BredCrumbs, FeedbackFabComponent],
   templateUrl: './layout.html',
   styleUrl: './layout.scss'
 })

@@ -1,3 +1,12 @@
-<mat-toolbar color="primary" class="footer-toolbar" role="contentinfo">
-    <span>&copy; {{ currentYear }} Migration Assistant. All rights reserved.</span>
-  </mat-toolbar>
+<footer class="app-footer" role="contentinfo">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="footer-logo">Migration Assistant</span>
+      <span class="footer-year">&copy; {{ currentYear }}</span>
+    </div>
+    
+    <nav class="footer-links">
+      <a routerLink="/privacy-policy" class="footer-link">{{ 'MENU.PRIVACY' | translate }}</a>
+    </nav>
+  </div>
+</footer>

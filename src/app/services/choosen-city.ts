@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
 import { City } from '../models/city';
 
 const KEY = 'app.city.selected';
@@ -79,24 +80,35 @@ export const CITIES_BE: City[] = [
 export class ChoosenCity {
   private allowed = new Set(CITIES_BE.map((c) => c.id));
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   private readInitial(): string {
-    const v = localStorage.getItem(KEY) || '';
-    return v ? v : 'bruxelles';
+    if (isPlatformBrowser(this.platformId)) {
+      const v = localStorage.getItem(KEY) || '';
+      return v ? v : 'bruxelles';
+    }
+    return 'bruxelles';
   }
+  
   readonly city$ = new BehaviorSubject<string>(this.readInitial());
 
   get value(): string {
     return this.city$.value;
   }
+  
   getCities() {
     return CITIES_BE;
   }
+  
   setCity(id: string):void {
     console.log(id)
     const next = this.allowed.has(id) ? id : '';
     if (next === this.city$.value) return;
     this.city$.next(next);
-    next ? localStorage.setItem(KEY, next) : localStorage.removeItem(KEY);
+    
+    if (isPlatformBrowser(this.platformId)) {
+      next ? localStorage.setItem(KEY, next) : localStorage.removeItem(KEY);
+    }
   }
 
   clear() {

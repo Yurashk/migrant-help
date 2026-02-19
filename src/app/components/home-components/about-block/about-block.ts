@@ -18,10 +18,11 @@ export interface FeatureItem {
 })
 export class AboutBlock {
   features: FeatureItem[] = [
-    { id: 'CPAS_SEARCH', icon: 'location_on', color: '#4CAF50' },
+    // { id: 'CPAS_SEARCH', icon: 'location_on', color: '#4CAF50' },
     { id: 'MULTILANG', icon: 'language', color: '#2196F3' },
-    { id: 'LETTER_BUILDER', icon: 'gavel', color: '#9C27B0' },
-    { id: 'FAQ', icon: 'contact_support', color: '#00BCD4' },
+    { id: 'CARRIERS', icon: 'local_shipping', color: '#FF9800' },
+    { id: 'TRANSLATORS', icon: 'translate', color: '#E91E63' },
+    { id: 'LANGUAGE_TUTORS', icon: 'school', color: '#00BCD4' },
     { id: 'PRIVACY', icon: 'security', color: '#607D8B' }
   ];
 }
