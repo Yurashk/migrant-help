@@ -4,6 +4,16 @@
     
     <p class="about-description">{{ "HOME.APP_INFO.DESCRIPTION" | translate }}</p>
     
+    <a [href]="'HOME.APP_INFO.TELEGRAM_URL' | translate" target="_blank" class="telegram-card-link">
+      <mat-card class="telegram-card">
+        <div class="card-content">
+          <mat-icon class="tg-icon">send</mat-icon>
+          <div class="text-container">
+            <span class="telegram-text">{{ "HOME.APP_INFO.TELEGRAM_SUBSCRIBE" | translate }}</span>
+          </div>
+        </div>
+      </mat-card>
+    </a>
     <div class="features-list-container">
       <div class="divider"></div>
       
