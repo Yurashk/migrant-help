@@ -205,6 +205,8 @@
       "TITLE": "Soutien aux migrants en Belgique",
       "DESCRIPTION": "Cette application aide les migrants en Belgique à naviguer dans les services locaux tels que CPAS/OCMW, Actiris et VDAB. Grâce au support multilingue, elle facilite la communication avec les autorités et aide à comprendre les procédures officielles.",
       "TELEGRAM_SUBSCRIBE": "Pour être informé des annonces et des mises à jour, abonnez-vous à notre chaîne Telegram.",
+      "TELEGRAM_CLICK": "Cliquez pour vous abonner",
+      "TELEGRAM_NEWS": "Dernières nouvelles",
       "TELEGRAM_URL": "https://t.me/rooted_be",
       "FEATURES_TITLE": "Fonctionnalités clés",
       "FEATURES": {

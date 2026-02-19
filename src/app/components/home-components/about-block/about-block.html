@@ -6,10 +6,15 @@
     
     <a [href]="'HOME.APP_INFO.TELEGRAM_URL' | translate" target="_blank" class="telegram-card-link">
       <mat-card class="telegram-card">
-        <div class="card-content">
-          <mat-icon class="tg-icon">send</mat-icon>
-          <div class="text-container">
+        <div class="tg-bg-pattern"></div>
+        <div class="tg-content">
+          <div class="tg-icon-wrapper">
+            <mat-icon class="tg-icon">send</mat-icon>
+          </div>
+          <div class="tg-text-container">
+            <span class="tg-badge">📢 {{ "HOME.APP_INFO.TELEGRAM_NEWS" | translate }}</span>
             <span class="telegram-text">{{ "HOME.APP_INFO.TELEGRAM_SUBSCRIBE" | translate }}</span>
+            <span class="tg-cta">{{ "HOME.APP_INFO.TELEGRAM_CLICK" | translate }} →</span>
           </div>
         </div>
       </mat-card>
