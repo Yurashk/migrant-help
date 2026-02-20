@@ -1,0 +1,38 @@
+/* Контейнер внутри карточки */
+mat-card {
+  width: 100%;
+  background-color: rgba(218, 165, 32, 0.2);
+  padding: 0;
+   margin-top:5px;
+}
+.telegram-chanel-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  /* Отступ между текстом и кнопкой */
+}
+
+/* Стили для текста описания */
+.promo-text {
+  font-size: 14px; /* Небольшой шрифт */
+  color: #555; /* Спокойный серый цвет */
+  line-height: 1.4;
+  flex: 1; /* Позволяет тексту занимать свободное место */
+}
+
+/* Стили для кнопки */
+.tg-button {
+  /* Приятный полупрозрачный голубой (RGBA) */
+  background-color: rgba(0, 136, 204, 0.15) !important;
+  color: #0088cc !important; /* Цвет текста и иконки Telegram */
+  box-shadow: none !important; /* Убираем лишние тени для чистоты дизайна */
+  border: 1px solid rgba(0, 136, 204, 0.3);
+}
+
+/* Убираем стандартные паддинги mat-card-content, если они мешают */
+mat-card-content {
+  padding: 16px !important;
+}

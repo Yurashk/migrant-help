@@ -204,12 +204,13 @@
     "APP_INFO": {
       "TITLE": "Soutien aux migrants en Belgique",
       "DESCRIPTION": "Cette application aide les migrants en Belgique à naviguer dans les services locaux tels que CPAS/OCMW, Actiris et VDAB. Grâce au support multilingue, elle facilite la communication avec les autorités et aide à comprendre les procédures officielles.",
-      "TELEGRAM_SUBSCRIBE": "Pour être informé des annonces et des mises à jour, abonnez-vous à notre chaîne Telegram.",
+      
       "TELEGRAM_CLICK": "Cliquez pour vous abonner",
       "TELEGRAM_NEWS": "Dernières nouvelles",
-      "TELEGRAM_URL": "https://t.me/rooted_be",
+      "TELEGRAM_URL": "https://t.me/svoi_be_info",
       "FEATURES_TITLE": "Fonctionnalités clés",
       "FEATURES": {
+        "TELEGRAM_SUBSCRIBE": "Pour être informé des annonces et des mises à jour, abonnez-vous à notre chaîne Telegram.",
         "CPAS_SEARCH": "Recherchez les centres CPAS/OCMW par ville et région, avec adresses et contacts.",
         "MULTILANG": "Support multilingue : ukrainien, turc, anglais, français et néerlandais.",
         "CARRIERS": "Trouvez des transporteurs fiables pour vos déménagements entre l'Ukraine et la Belgique.",

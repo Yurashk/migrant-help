@@ -4,21 +4,6 @@
     
     <p class="about-description">{{ "HOME.APP_INFO.DESCRIPTION" | translate }}</p>
     
-    <a [href]="'HOME.APP_INFO.TELEGRAM_URL' | translate" target="_blank" class="telegram-card-link">
-      <mat-card class="telegram-card">
-        <div class="tg-bg-pattern"></div>
-        <div class="tg-content">
-          <div class="tg-icon-wrapper">
-            <mat-icon class="tg-icon">send</mat-icon>
-          </div>
-          <div class="tg-text-container">
-            <span class="tg-badge">📢 {{ "HOME.APP_INFO.TELEGRAM_NEWS" | translate }}</span>
-            <span class="telegram-text">{{ "HOME.APP_INFO.TELEGRAM_SUBSCRIBE" | translate }}</span>
-            <span class="tg-cta">{{ "HOME.APP_INFO.TELEGRAM_CLICK" | translate }} →</span>
-          </div>
-        </div>
-      </mat-card>
-    </a>
     <div class="features-list-container">
       <div class="divider"></div>
       
@@ -27,7 +12,7 @@
           <div class="icon-circle" [style.background-color]="feature.color">
             <mat-icon>{{ feature.icon }}</mat-icon>
           </div>
-          <span class="feature-text">{{ "HOME.APP_INFO.FEATURES." + feature.id | translate }}</span>
+          <span class="feature-text">{{ "HOME.APP_INFO.FEATURES." + feature.id | translate }}<a *ngIf="feature.id==`TELEGRAM_SUBSCRIBE`" style="color:blue"> telega</a></span>
         </div>
       </div>
       
@@ -35,3 +20,6 @@
     </div>
   </mat-card-content>
 </mat-card>
+<app-telegram-chanel>
+  
+</app-telegram-chanel>

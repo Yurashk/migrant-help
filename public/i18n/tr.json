@@ -203,12 +203,13 @@
     "APP_INFO": {
       "TITLE": "Belçika'daki Göçmenler İçin Destek",
       "DESCRIPTION": "Bu uygulama, Belçika'daki göçmenlerin CPAS, Actiris ve VDAB gibi yerel hizmetlerde yolunu bulmasına yardımcı olur. Çok dilli destek sayesinde yetkililerle iletişimi kolaylaştırır ve resmi prosedürleri anlamanıza yardımcı olur.",
-      "TELEGRAM_SUBSCRIBE": "Duyuruları ve güncellemeleri öğrenmek için Telegram kanalımıza abone olun.",
+      
       "TELEGRAM_CLICK": "Abone olmak için tıklayın",
       "TELEGRAM_NEWS": "Son Haberler",
-      "TELEGRAM_URL": "https://t.me/rooted_be",
+      "TELEGRAM_URL": "https://t.me/svoi_be_info",
       "FEATURES_TITLE": "Ana Özellikler",
       "FEATURES": {
+        "TELEGRAM_SUBSCRIBE": "Duyuruları ve güncellemeleri öğrenmek için Telegram kanalımıza abone olun.",
         "CPAS_SEARCH": "Şehir ve bölgeye göre CPAS merkezlerini arayın.",
         "MULTILANG": "Ukraynaca, Rusça, İngilizce, Fransızca ve Hollandaca dillerinde destek.",
         "CARRIERS": "Ukrayna ile Belçika arasında eşya taşımak için güvenilir nakliyeciler bulun.",
