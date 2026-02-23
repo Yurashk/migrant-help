@@ -10,6 +10,7 @@ export interface SeoConfig {
   ogDescription?: string;
   ogImage?: string;
   ogUrl?: string;
+  ogSiteName?: string;
   twitterCard?: string;
   twitterTitle?: string;
   twitterDescription?: string;
@@ -24,70 +25,67 @@ export interface SeoConfig {
 export class SeoService {
   private meta = inject(Meta);
   private title = inject(Title);
+  private platformId = inject(PLATFORM_ID);
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  // Дефолтні налаштування українською мовою
+  private readonly DEFAULT_TITLE = 'SVOI — Допомога мігрантам у Бельгії';
+  private readonly DEFAULT_DESC = 'SVOI допомагає новоприбулим у Бельгії: навігація по CPAS/OCMW, Actiris та VDAB. Підтримка штучного інтелекту рідною мовою.';
+  private readonly DEFAULT_KEYWORDS = 'біженці, бельгія, допомога, CPAS, OCMW, Actiris, VDAB, імміграція';
 
   updateMetaTags(config: SeoConfig): void {
-    // Update title
-    this.title.setTitle(config.title);
-
-    // Basic meta tags
-    this.meta.updateTag({ name: 'description', content: config.description });
+    const fullTitle = config.title.includes('SVOI') ? config.title : `${config.title} | SVOI`;
     
-    if (config.keywords) {
-      this.meta.updateTag({ name: 'keywords', content: config.keywords });
-    }
+    this.title.setTitle(fullTitle);
 
-    // Robots meta tag
-    if (config.noIndex) {
-      this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
-    } else {
-      this.meta.updateTag({ name: 'robots', content: 'index, follow' });
-    }
+    // Основні теги
+    this.meta.updateTag({ name: 'description', content: config.description });
+    this.meta.updateTag({ name: 'keywords', content: config.keywords || this.DEFAULT_KEYWORDS });
 
-    // Open Graph meta tags
-    this.meta.updateTag({ property: 'og:title', content: config.ogTitle || config.title });
+    // Robots
+    this.meta.updateTag({ 
+      name: 'robots', 
+      content: config.noIndex ? 'noindex, nofollow' : 'index, follow' 
+    });
+
+    // Open Graph (Facebook, Telegram)
+    this.meta.updateTag({ property: 'og:title', content: config.ogTitle || fullTitle });
     this.meta.updateTag({ property: 'og:description', content: config.ogDescription || config.description });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: config.ogSiteName || 'SVOI' });
     
-    if (config.ogUrl) {
-      this.meta.updateTag({ property: 'og:url', content: config.ogUrl });
-    }
-    
-    if (config.ogImage) {
-      this.meta.updateTag({ property: 'og:image', content: config.ogImage });
-    }
+    if (config.ogUrl) this.meta.updateTag({ property: 'og:url', content: config.ogUrl });
+    if (config.ogImage) this.meta.updateTag({ property: 'og:image', content: config.ogImage });
 
-    // Twitter Card meta tags
+    // Twitter
     this.meta.updateTag({ name: 'twitter:card', content: config.twitterCard || 'summary_large_image' });
-    this.meta.updateTag({ name: 'twitter:title', content: config.twitterTitle || config.title });
+    this.meta.updateTag({ name: 'twitter:title', content: config.twitterTitle || fullTitle });
     this.meta.updateTag({ name: 'twitter:description', content: config.twitterDescription || config.description });
-    
-    if (config.twitterImage) {
-      this.meta.updateTag({ name: 'twitter:image', content: config.twitterImage });
+    if (config.twitterImage) this.meta.updateTag({ name: 'twitter:image', content: config.twitterImage });
+
+    // Оновлення Canonical URL
+    if (config.canonicalUrl) {
+      this.setCanonicalUrl(config.canonicalUrl);
     }
   }
 
   setCanonicalUrl(url: string): void {
-    // Only manipulate DOM in browser environment
-    if (!isPlatformBrowser(this.platformId)) {
-      return;
-    }
+    if (!isPlatformBrowser(this.platformId)) return;
     
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-    
     if (!link) {
       link = document.createElement('link');
       link.setAttribute('rel', 'canonical');
       document.head.appendChild(link);
     }
-    
     link.setAttribute('href', url);
   }
 
   resetMetaTags(): void {
-    // Reset to default values
-    this.title.setTitle('Rooted - Support for Migrants in Belgium');
-    this.meta.updateTag({ name: 'description', content: 'Rooted helps newcomers in Belgium navigate local services like CPAS/OCMW, Actiris, and VDAB. Multilingual support available.' });
+    this.updateMetaTags({
+      title: this.DEFAULT_TITLE,
+      description: this.DEFAULT_DESC,
+      keywords: this.DEFAULT_KEYWORDS,
+      ogImage: 'https://svoi.website/assets/og-image.png' // Ваша буква "ї" або "S"
+    });
   }
 }

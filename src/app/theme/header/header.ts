@@ -27,7 +27,7 @@ export class Header {
     const currentLang = this.translate.currentLang;
 
     translate.onLangChange.subscribe((event) => {
-      console.log('Изменился язык на:', event.lang);
+     
     });
   }
 

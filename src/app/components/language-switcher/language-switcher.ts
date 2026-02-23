@@ -25,28 +25,34 @@ export class LanguageSwitcher {
     { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
   ];
   currentLang: string = '';
-  
+
   constructor(
     private translate: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {
     translate.addLangs(this.languages.map((l) => l.code));
-    
+
     let storedLang: string | null = null;
-    
+
     // Only access localStorage in browser environment
     if (isPlatformBrowser(this.platformId)) {
       storedLang = localStorage.getItem('lang');
     }
-    
+
     const browserLang = storedLang || translate.getBrowserLang() || 'en';
-    translate.use(browserLang?.match(/en|fr|uk|tr/) ? browserLang : 'en');
+    if (browserLang.match(/uk|ru/)) {
+      translate.use('uk');
+    } else if (browserLang.match(/en|fr|tr/)) {
+      translate.use(browserLang);
+    } else {
+      translate.use('uk'); // Фоллбек для всех остальных (нидерландский, немецкий и т.д.)
+    }
     this.currentLang = this.translate.currentLang;
     this.translate.onLangChange.subscribe((langEvent) => {
       this.currentLang = langEvent.lang;
     });
   }
-  
+
   switchLanguage(lang: string) {
     this.translate.use(lang);
     // Only access localStorage in browser environment

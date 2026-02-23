@@ -3,8 +3,6 @@ import {
   MatDialogRef,
   MatDialogContent,
   MatDialogActions,
-  MatDialogTitle,
-  MatDialogClose,
 } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
@@ -28,7 +26,6 @@ import emailjs from '@emailjs/browser';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    MatDialogTitle,
     MatDialogContent,
     MatDialogActions,
     MatButtonModule,

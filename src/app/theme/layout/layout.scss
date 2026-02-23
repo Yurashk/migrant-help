@@ -52,6 +52,12 @@
     0 8px 32px 0 var(--glass-shadow),
     inset 0 0 0 1px rgba(255, 255, 255, 0.8);
   overflow-x: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  
+  /* Убираем мерцание при отрисовке фильтров */
+  backface-visibility: hidden;
+  perspective: 1000px;
   
   &::before {
     content: '';

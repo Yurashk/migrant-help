@@ -21,11 +21,11 @@ export class PrivacyPolicy implements OnInit {
     this.updatedAt = `${day}.${month}.${year}`;
 
     this.seoService.updateMetaTags({
-      title: 'Privacy Policy - Rooted',
+      title: 'Privacy Policy - SVOI',
       description: 'Privacy Policy for Migrant Helper - Information about data collection, processing, and your rights.',
-      keywords: 'privacy policy, GDPR, data protection, Rooted',
-      ogTitle: 'Privacy Policy - Rooted',
-      ogDescription: 'Learn about how Rooted handles your data and protects your privacy.'
+      keywords: 'privacy policy, GDPR, data protection, SVOI',
+      ogTitle: 'Privacy Policy - SVOI',
+      ogDescription: 'Learn about how SVOI handles your data and protects your privacy.'
     });
   }
 }

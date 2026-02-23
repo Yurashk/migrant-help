@@ -1,0 +1,18 @@
+{
+  "routes": {
+    "/": {},
+    "/actiris-letter-creation": {},
+    "/carriers": {},
+    "/cpas": {},
+    "/cpas-info": {},
+    "/find-apartaments": {},
+    "/find-translate": {},
+    "/important-contacts": {},
+    "/just-arrived": {},
+    "/labor-exchange": {},
+    "/language-tutors": {},
+    "/letter-creation": {},
+    "/privacy-policy": {},
+    "/ukrainian-channels": {}
+  }
+}
