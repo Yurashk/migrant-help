@@ -1,0 +1,47 @@
+.disclaimer-container {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border: 1px solid #F59E0B;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.disclaimer-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  
+  mat-icon {
+    color: white;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.disclaimer-content {
+  flex: 1;
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #92400E;
+  }
+}
+
+@media (max-width: 480px) {
+  .disclaimer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

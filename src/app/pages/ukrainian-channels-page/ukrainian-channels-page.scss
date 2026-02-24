@@ -319,6 +319,110 @@ mat-card-actions {
   }
 }
 
+// Channels Section
+.channels-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--channels-text-primary);
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.channel-card {
+  border-radius: var(--channels-radius);
+  box-shadow: var(--channels-shadow);
+  background: var(--channels-white);
+  border: 1px solid var(--channels-border);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+  }
+  
+  &.telegram {
+    .channel-type-badge {
+      background: linear-gradient(135deg, #0088cc 0%, #005f9e 100%);
+    }
+    
+    .join-btn {
+      background: #0088cc;
+    }
+  }
+  
+  &.whatsapp {
+    .channel-type-badge {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    }
+    
+    .join-btn {
+      background: #25D366;
+    }
+  }
+}
+
+.channel-type-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  
+  mat-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.channel-card mat-card-content {
+  padding: 16px 20px 12px;
+}
+
+.channel-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--channels-text-primary);
+  margin: 0 0 8px;
+}
+
+.channel-description {
+  font-size: 14px;
+  color: var(--channels-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.channel-card mat-card-actions {
+  padding: 0 20px 20px;
+  
+  .join-btn {
+    width: 100%;
+    font-weight: 600;
+    color: white;
+    
+    mat-icon {
+      margin-right: 6px;
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
 // Mobile Responsive
 @media (max-width: 768px) {
   .channels-container {
@@ -401,5 +505,9 @@ mat-card-actions {
     mat-card-title {
       font-size: 1.25rem;
     }
+  }
+  
+  .channels-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -526,6 +526,10 @@
     "INFO_TITLE": "About Transport Service",
     "INFO_TEXT": "Our transport service will help you find reliable carriers for moving between Ukraine and Belgium, whether you need to transport personal belongings, goods, or travel yourself."
   },
+  "CARRIERS": {
+    "DRIVERS_TITLE": "Available Drivers",
+    "RULES": "Rules"
+  },
   "TUTORS_HERO": {
     "TITLE": "Language Learning",
     "DESCRIPTION": "Find professional language tutors to learn French or Dutch. Improve your language skills to better integrate into Belgian society and access more opportunities.",
@@ -567,6 +571,13 @@
     "NOTIFY_BUTTON": "Notify me when ready",
     "INFO_TITLE": "About Ukrainian channels",
     "INFO_TEXT": "Our service will help you find Ukrainian communities in Belgium for communication, getting support and sharing useful information about life in the country."
+  },
+  "CHANNELS": {
+    "TITLE": "Channels & Groups",
+    "JOIN": "Join"
+  },
+  "LEGAL_NOTICE": {
+    "TEXT": "We carefully select who we add to svoi.be, but please remember: our site is only an information guide. We do not control the service provision process and cannot guarantee their quality. All financial settlements and agreements occur directly between you and the service provider. The platform administration is not an intermediary and is not responsible for the results of your cooperation. Please be careful, ask clarifying questions to providers and additionally verify information. Your safety comes first!"
   },
   "PRIVACY": {
     "LINK": "Privacy Policy",

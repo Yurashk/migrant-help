@@ -525,6 +525,10 @@
     "INFO_TITLE": "Nakliyat Hizmeti Hakkında",
     "INFO_TEXT": "Nakliyat hizmetimiz, Ukrayna ile Belçika arasında taşınmak için kişisel eşyalarınızı, mallarızı taşımanız veya kendiniz seyahat etmeniz gerekip gerekmediğine bakılmaksızın güvenilir taşıyıcılar bulmanıza yardımcı olacaktır."
   },
+  "CARRIERS": {
+    "DRIVERS_TITLE": "Mevcut Şoförler",
+    "RULES": "Kurallar"
+  },
   "TUTORS_HERO": {
     "TITLE": "Dil Öğrenme",
     "DESCRIPTION": "Fransızca veya Felemenkçe öğrenmek için profesyonel dil öğretmenleri bulun. Belçika toplumuna daha iyi entegre olmak ve daha fazla fırsata erişmek için dil becerilerinizi geliştirin.",
@@ -566,6 +570,13 @@
     "NOTIFY_BUTTON": "Hazır olduğunda bildir",
     "INFO_TITLE": "Ukrayna kanalları hakkında",
     "INFO_TEXT": "Hizmetimiz, Belçika'da iletişim kurmak, destek almak ve ülkedeki yaşam hakkında faydalı bilgiler paylaşmak için Ukrayna toplulukları bulmanıza yardımcı olacaktır."
+  },
+  "CHANNELS": {
+    "TITLE": "Kanallar ve Gruplar",
+    "JOIN": "Katıl"
+  },
+  "LEGAL_NOTICE": {
+    "TEXT": "Svoi.be'ye eklediklerimizi çok dikkatli seçiyoruz, ancak lütfen unutmayın: sitemiz yalnızca bir bilgi rehberidir. Hizmet sağlama sürecini kontrol etmiyor ve kalitelerini garanti edemiyoruz. Tüm mali anlaşmalar ve düzenlemeler doğrudan siz ile hizmet sağlayıcı arasında yapılır. Platform yönetimi aracı değildir ve işbirliğinizin sonuçlarından sorumlu değildir. Lütfen dikkatli olun, sağlayıcılara açıklayıcı sorular sorun ve bilgileri ayrıca doğrulayın. Güvenliğiniz her şeyden önemlidir!"
   },
   "PRIVACY": {
     "LINK": "Gizlilik Politikası",

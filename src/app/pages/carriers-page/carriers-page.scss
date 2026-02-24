@@ -318,6 +318,198 @@ mat-card-actions {
   }
 }
 
+// Drivers Section
+.drivers-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--carriers-text-primary);
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.driver-card {
+  border-radius: var(--carriers-radius);
+  box-shadow: var(--carriers-shadow);
+  background: var(--carriers-white);
+  border: 1px solid var(--carriers-border);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.driver-route-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.driver-card mat-card-header {
+  padding: 20px 20px 12px;
+}
+
+.driver-avatar {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  mat-icon {
+    color: white;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.driver-name {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--carriers-text-primary) !important;
+}
+
+.driver-card mat-card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--carriers-text-secondary) !important;
+  
+  .sub-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #64748b;
+  }
+}
+
+.driver-card mat-card-content {
+  padding: 0 20px 16px;
+}
+
+.driver-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: #64748b;
+  }
+  
+  span {
+    font-size: 14px;
+    color: var(--carriers-text-secondary);
+  }
+  
+  &.price {
+    .price-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: #10b981;
+    }
+    
+    mat-icon {
+      color: #10b981;
+    }
+  }
+}
+
+.rules-section {
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--carriers-text-primary);
+    margin: 0 0 10px;
+  }
+}
+
+.rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--carriers-text-secondary);
+    
+    mat-icon {
+      font-size: 14px;
+      width: 14px;
+      height: 14px;
+      color: #10b981;
+    }
+  }
+}
+
+.driver-card mat-card-actions {
+  padding: 0 20px 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  .contact-btn {
+    flex: 1;
+    min-width: 140px;
+    font-weight: 600;
+  }
+  
+  .telegram-btn {
+    font-weight: 600;
+    color: #0088cc;
+    border-color: #0088cc;
+    
+    mat-icon {
+      margin-right: 4px;
+    }
+  }
+}
+
 // Mobile Responsive
 @media (max-width: 768px) {
   .carriers-container {
@@ -401,6 +593,23 @@ mat-card-actions {
     
     mat-card-title {
       font-size: 1.25rem;
+    }
+  }
+  
+  .drivers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rules-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .driver-card mat-card-actions {
+    flex-direction: column;
+    
+    .contact-btn,
+    .telegram-btn {
+      width: 100%;
     }
   }
 }

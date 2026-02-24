@@ -33,6 +33,39 @@
     </div>
   </section>
 
+  <!-- Channels List -->
+  <section class="channels-section">
+    <h2 class="section-title">{{ 'CHANNELS.TITLE' | translate }}</h2>
+    
+    <div class="channels-grid">
+      @for (channel of channels; track channel.id) {
+        <mat-card class="channel-card" [class.telegram]="channel.type === 'telegram'" [class.whatsapp]="channel.type === 'whatsapp'">
+          <div class="channel-type-badge">
+            @if (channel.type === 'telegram') {
+              <mat-icon>send</mat-icon>
+              <span>Telegram</span>
+            } @else {
+              <mat-icon>chat</mat-icon>
+              <span>WhatsApp</span>
+            }
+          </div>
+          
+          <mat-card-content>
+            <h3 class="channel-name">{{ channel.name }}</h3>
+            <p class="channel-description">{{ channel.description }}</p>
+          </mat-card-content>
+          
+          <mat-card-actions>
+            <a mat-flat-button [href]="channel.link" target="_blank" class="join-btn">
+              <mat-icon>open_in_new</mat-icon>
+              {{ 'CHANNELS.JOIN' | translate }}
+            </a>
+          </mat-card-actions>
+        </mat-card>
+      }
+    </div>
+  </section>
+
   <!-- Coming Soon Card -->
   <mat-card class="coming-soon-card">
     <mat-card-header>

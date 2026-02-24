@@ -526,6 +526,10 @@
     "INFO_TITLE": "À propos du service de transport",
     "INFO_TEXT": "Notre service de transport vous aidera à trouver des transporteurs fiables pour vos déplacements entre l'Ukraine et la Belgique, que vous ayez besoin de transporter des effets personnels, des marchandises ou de voyager vous-même."
   },
+  "CARRIERS": {
+    "DRIVERS_TITLE": "Chauffeurs Disponibles",
+    "RULES": "Conditions"
+  },
   "TUTORS_HERO": {
     "TITLE": "Apprentissage des Langues",
     "DESCRIPTION": "Trouvez des professeurs de langue professionnels pour apprendre le français ou le néerlandais. Améliorez vos compétences linguistiques pour mieux vous intégrer dans la société belge et accéder à plus d'opportunités.",
@@ -567,6 +571,13 @@
     "NOTIFY_BUTTON": "M'avertir quand c'est prêt",
     "INFO_TITLE": "À propos des canaux ukrainiens",
     "INFO_TEXT": "Notre service vous aidera à trouver des communautés ukrainiennes en Belgique pour communiquer, obtenir du soutien et partager des informations utiles sur la vie dans le pays."
+  },
+  "CHANNELS": {
+    "TITLE": "Canaux et Groupes",
+    "JOIN": "Rejoindre"
+  },
+  "LEGAL_NOTICE": {
+    "TEXT": "Nous sélectionnons soigneusement les personnes que nous ajoutons sur svoi.be, mais n'oubliez pas : notre site est uniquement un guide d'information. Nous ne contrôlons pas le processus de fourniture de services et ne pouvons pas garantir leur qualité. Tous les règlements financiers et accords se font directement entre vous et le fournisseur de services. L'administration de la plateforme n'est pas un intermédiaire et n'est pas responsable des résultats de votre coopération. S'il vous plaît, soyez prudents, posez des questions clarificatrices aux fournisseurs et vérifiez additionally les informations. Votre sécurité est prioritaire !"
   },
   "PRIVACY": {
     "LINK": "Politique de confidentialité",

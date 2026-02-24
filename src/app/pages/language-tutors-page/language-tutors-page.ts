@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { TranslateModule } from '@ngx-translate/core';
+import { LegalNotice } from '../../legal-notice/legal-notice';
 
 @Component({
   selector: 'app-language-tutors-page',
@@ -13,7 +14,8 @@ import { TranslateModule } from '@ngx-translate/core';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    TranslateModule
+    TranslateModule,
+    LegalNotice
   ],
   templateUrl: './language-tutors-page.html',
   styleUrl: './language-tutors-page.scss'
