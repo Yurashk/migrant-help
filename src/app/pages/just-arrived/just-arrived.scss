@@ -42,36 +42,9 @@
   
   mat-card-header {
     padding: 24px 24px 20px;
-  }
-  
-  .header-avatar {
-    width: 56px;
-    height: 56px;
-    background: linear-gradient(135deg, var(--ja-primary) 0%, var(--ja-primary-dark) 100%);
-    border-radius: 16px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
-    
-    mat-icon {
-      color: white;
-      font-size: 28px;
-      width: 28px;
-      height: 28px;
-    }
-    
-    &.small {
-      width: 56px;
-      height: 44px;
-      border-radius: 12px;
-      
-      mat-icon {
-        font-size: 22px;
-        width: 22px;
-        height: 22px;
-      }
-    }
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   mat-card-title {
@@ -80,6 +53,7 @@
     color: var(--ja-text-primary);
     margin-bottom: 12px;
     letter-spacing: -0.025em;
+    line-height: 1.3;
   }
   
   mat-card-subtitle {
@@ -88,6 +62,63 @@
     line-height: 1.7;
     font-weight: 400;
   }
+}
+
+// Info Notification Card
+.info-notification-card {
+  border-radius: var(--ja-radius);
+  box-shadow: var(--ja-shadow);
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border: 1px solid #F59E0B;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  
+  mat-card-content {
+    padding: 20px 24px !important;
+  }
+}
+
+.info-notification-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.info-icon-wrapper {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  
+  mat-icon {
+    color: white;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.info-text-wrapper {
+  flex: 1;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #92400E;
+  margin: 0 0 6px 0;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #B45309;
+  line-height: 1.6;
+  margin: 0;
 }
 
 // Steps Card
@@ -248,10 +279,41 @@
   background: linear-gradient(135deg, var(--ja-white) 0%, #f8fafc 100%);
   border: 1px solid var(--ja-border);
   overflow: hidden;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8b5cf6 0%, #a78bfa 100%);
+  }
   
   mat-card-header {
     padding: 20px 24px 16px;
-    border-bottom: 1px solid var(--ja-border);
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-avatar.small {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    margin-right: 12px;
+    
+    mat-icon {
+      color: white;
+      font-size: 22px;
+      width: 22px;
+      height: 22px;
+    }
   }
   
   mat-card-title {
@@ -332,6 +394,21 @@
   .links-card {
     mat-card-header {
       padding: 16px 20px 12px;
+    }
+    
+    .header-avatar.small {
+      width: 40px;
+      height: 40px;
+      
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    
+    mat-card-title {
+      font-size: 1.125rem;
     }
   }
 }
@@ -417,69 +494,47 @@
         background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
       }
       
-      // Скрываем стандартную стрелку Material
+      // Hide default expansion indicator
       .mat-expansion-indicator {
         display: none !important;
-      }
-    }
-    
-    .accordion-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--ja-text-primary);
-      user-select: none;
-      
-      .accordion-icon {
-        color: var(--ja-primary);
-        font-size: 24px;
-        width: 24px;
-        height: 24px;
-        background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-        padding: 8px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
       }
     }
     
     .accordion-hint {
       display: flex;
       align-items: center;
-      gap: 6px;
-      color: var(--ja-primary);
-      font-size: 0.875rem;
-      font-weight: 500;
+      justify-content: center;
       margin-left: auto;
-      padding: 6px 12px;
-      background: rgba(59, 130, 246, 0.1);
-      border-radius: 20px;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      white-space: nowrap;
+      padding: 4px 10px;
+      background: rgba(16, 185, 129, 0.12);
+      border-radius: 16px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      transition: all 0.3s ease;
       
-      mat-icon {
-        font-size: 18px;
-        width: 18px;
-        height: 18px;
-        transition: transform 0.3s ease;
-      }
-      
-      span {
-        display: inline;
+      .hint-text {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #10b981;
       }
     }
     
-    // Поворачиваем иконку когда панель открыта
     .mat-expanded {
       .accordion-hint {
-        mat-icon {
+        background: rgba(59, 130, 246, 0.12);
+        border-color: rgba(59, 130, 246, 0.3);
+        
+        .hint-text {
+          color: var(--ja-primary);
+        }
+        
+        .mat-expansion-indicator {
           transform: rotate(180deg);
         }
       }
     }
   }
 }
+
 .mat-expansion-panel-body{
   padding: 0 !important;
 }
@@ -747,19 +802,32 @@
       }
       
       .accordion-hint {
-        padding: 4px 10px;
-        font-size: 0.8125rem;
+        padding: 3px 8px;
         
-        mat-icon {
-          font-size: 16px;
-          width: 16px;
-          height: 16px;
-        }
-        
-        span {
-          display: inline;
+        .hint-text {
+          font-size: 0.6875rem;
         }
       }
+    }
+  }
+  
+  .info-notification-card {
+    margin-bottom: 1rem;
+    
+    mat-card-content {
+      padding: 16px !important;
+    }
+    
+    .info-notification-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+    }
+    
+    .info-icon-wrapper {
+      width: 40px;
+      height: 40px;
     }
   }
   

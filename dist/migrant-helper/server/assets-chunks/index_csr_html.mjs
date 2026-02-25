@@ -42,5 +42,5 @@ export default `<!DOCTYPE html>
   <link rel="stylesheet" href="styles-DMI7HBL7.css"></head>
   <body ngcm="">
     <app-root></app-root>
-  <script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-TAGCK4IZ.js" type="module"></script></body>
+  <script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-RMMZDDCJ.js" type="module"></script></body>
 </html>`;

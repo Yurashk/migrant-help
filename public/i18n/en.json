@@ -122,12 +122,12 @@
       "STEP_1": {
         "icon": "verified_user",
         "title": "Obtain Protection in Belgium",
-        "description": "Go to the registration centre in Brussels at Rue Belliard 68, 1000 Brussels. The centre is open from Monday to Friday, with registration starting at 08:30. The number of places is limited, so it is recommended to arrive early in the morning. Here you can apply for temporary protection or refugee status."
+        "description": "Go to the registration centre in Brussels at Rue Belliard 68, 1000 Brussels. The centre is open from Monday to Friday, with registration starting at 08:30. The number of places is limited, so it is recommended to arrive early in the morning. Here you can apply for temporary protection."
       },
       "STEP_2": {
         "icon": "home",
-        "title": "Find Housing or Stay in Refugee Camp",
-        "description": "Look for temporary or permanent accommodation. If you have no housing, you may be assigned to a refugee reception centre."
+        "title": "Find Housing",
+        "description": "Look for temporary or permanent accommodation. You will need your own housing to complete the registration process."
       },
       "STEP_3": {
         "icon": "how_to_reg",
@@ -158,7 +158,7 @@
   },
   "TEMP_PROTECTION": {
     "TITLE": "Temporary Protection (TP) in Belgium: Quick Guide",
-    "CLICK_TO_EXPAND": "Click to expand",
+    "CLICK_TO_EXPAND": "open",
     "REGISTRATION": {
       "WHERE": "Where does registration take place?",
       "TEXT": "All matters are handled at the single registration center IBZ in Brussels.",
@@ -198,6 +198,10 @@
       "CARD_A_TITLE": "Card A",
       "CARD_A": "Plastic residence permit that gives the right to work and access to the social system."
     }
+  },
+  "INFO_NOTE": {
+    "TITLE": "Please note",
+    "TEXT": "We recommend double-checking information as addresses and operating hours may change."
   },
   "HOME": {
     "APP_INFO": {

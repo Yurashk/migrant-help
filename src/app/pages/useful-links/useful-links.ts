@@ -34,7 +34,7 @@ export const USEFUL_LINKS: UsefulLink[] = [
     id: 'FIND_GP',
     icon: 'local_hospital',
     color: '#9C27B0',
-    url: 'https://www.health.belgium.be/en/find-doctor'
+    url: 'https://www.doctoranytime.be/'
   },
   {
     id: 'EMERGENCY',

@@ -122,12 +122,12 @@
       "STEP_1": {
         "icon": "verified_user",
         "title": "Belçika’da Koruma Alın",
-        "description": "Brüksel’deki kayıt merkezine gidin: Rue Belliard 68, 1000 Bruxelles. Merkez pazartesiden cumaya açıktır ve kayıt işlemleri saat 08:30’da başlar. Kontenjan sınırlıdır, bu nedenle sabah erken gelmeniz tavsiye edilir. Burada geçici koruma veya mülteci statüsü için başvurabilirsiniz."
+        "description": "Brüksel’deki kayıt merkezine gidin: Rue Belliard 68, 1000 Bruxelles. Merkez pazartesiden cumaya açıktır ve kayıt işlemleri saat 08:30’da başlar. Kontenjan sınırlıdır, bu nedenle sabah erken gelmeniz tavsiye edilir. Burada geçici koruma için başvurabilirsiniz."
       },
       "STEP_2": {
         "icon": "home",
-        "title": "Konut Bulun veya Mülteci Kampında Kalın",
-        "description": "Geçici veya kalıcı konut arayın. Eğer konutunuz yoksa, bir mülteci kabul merkezine yönlendirilebilirsiniz."
+        "title": "Konut Bulun",
+        "description": "Geçici veya kalıcı konut arayın. Kayıt işlemini tamamlamak için kendi konutunuza ihtiyacınız olacak."
       },
       "STEP_3": {
         "icon": "how_to_reg",
@@ -158,7 +158,7 @@
   },
   "TEMP_PROTECTION": {
     "TITLE": "Belçika'da Geçici Koruma (GK): Hızlı Kılavuz",
-    "CLICK_TO_EXPAND": "Genişletmek için tıklayın",
+    "CLICK_TO_EXPAND": "aç",
     "REGISTRATION": {
       "WHERE": "Kayıt nerede yapılır?",
       "TEXT": "Tüm işlemler Brüksel'deki tek kayıt merkezi IBZ'de yapılır.",
@@ -198,6 +198,10 @@
       "CARD_A_TITLE": "A Kartı",
       "CARD_A": "Çalışma hakkı ve sosyal sisteme erişim veren plastik ikamet izni."
     }
+  },
+  "INFO_NOTE": {
+    "TITLE": "Dikkat",
+    "TEXT": "Adresler ve çalışma saatleri değişebileceğinden bilgileri iki kez kontrol etmenizi öneririz."
   },
   "HOME": {
     "APP_INFO": {

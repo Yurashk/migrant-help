@@ -77,12 +77,12 @@
       "STEP_1": {
         "icon": "verified_user",
         "title": "Obtenir la protection en Belgique",
-        "description": "Adressez-vous au centre d’enregistrement à Bruxelles, situé Rue Belliard 68, 1000 Bruxelles. Le centre est ouvert du lundi au vendredi, avec le début des enregistrements à 08h30. Le nombre de places est limité, il est donc conseillé d’arriver tôt le matin. Vous pouvez y introduire une demande de protection temporaire ou de statut de réfugié."
+        "description": "Adressez-vous au centre d’enregistrement à Bruxelles, situé Rue Belliard 68, 1000 Bruxelles. Le centre est ouvert du lundi au vendredi, avec le début des enregistrements à 08h30. Le nombre de places est limité, il est donc conseillé d’arriver tôt le matin. Vous pouvez y introduire une demande de protection temporaire."
       },
       "STEP_2": {
         "icon": "home",
-        "title": "Trouver un logement ou rester dans un centre pour réfugiés",
-        "description": "Cherchez un logement temporaire ou permanent. Si vous n'avez pas de logement, vous pouvez être orienté vers un centre d'accueil pour réfugiés."
+        "title": "Trouver un logement",
+        "description": "Cherchez un logement temporaire ou permanent. Vous aurez besoin de votre propre logement pour compléter le processus d'enregistrement."
       },
       "STEP_3": {
         "icon": "how_to_reg",
@@ -113,7 +113,7 @@
   },
   "TEMP_PROTECTION": {
     "TITLE": "Protection Temporaire (PT) en Belgique : Guide Rapide",
-    "CLICK_TO_EXPAND": "Cliquez pour déplier",
+    "CLICK_TO_EXPAND": "ouvrir",
     "REGISTRATION": {
       "WHERE": "Où a lieu l'enregistrement ?",
       "TEXT": "Toutes les démarches se font au centre d'enregistrement unique IBZ à Bruxelles.",
@@ -153,6 +153,10 @@
       "CARD_A_TITLE": "Carte A",
       "CARD_A": "Titre de séjour en plastique qui donne le droit de travailler et d'accéder au système social."
     }
+  },
+  "INFO_NOTE": {
+    "TITLE": "Attention",
+    "TEXT": "Nous vous recommandons de vérifier les informations car les adresses et les horaires peuvent changer."
   },
   "MENU": {
     "HELP": "Help",
